@@ -14,12 +14,14 @@ interface ProjectSliderProps {
   images: ImageData[];
   name: string;
   title: any;
+  keyword: any;
   onClick: any;
   products: string[];
 }
 
 const ProjectSlider: React.FC<ProjectSliderProps> = ({
   images,
+  keyword,
   name,
   title,
   onClick,
@@ -28,6 +30,7 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
   return (
     <div className={styles.projectSlider}>
       <ProjectCarousel images={images} />
+
       <div
         className={styles.projectDetails}
         onClick={() => {

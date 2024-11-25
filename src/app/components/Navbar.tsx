@@ -20,6 +20,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Image from "next/image";
 interface Props {
   window?: () => Window;
 }
@@ -53,7 +54,7 @@ export default function DrawerAppBar(props: Props) {
           cursor: "pointer",
         }}
       />
-      <Typography variant="h6" sx={{ my: 2 }}>
+      {/* <Typography variant="h6" sx={{ my: 2 }}>
         Deal Magsil
         <br />
         <Typography
@@ -61,7 +62,18 @@ export default function DrawerAppBar(props: Props) {
         >
           Since 1991
         </Typography>
-      </Typography>
+      </Typography> */}
+
+      <Image
+        src="/images/logo3.png"
+        alt="DEAL MAGSIL"
+        width={200}
+        height={20}
+        style={{
+          objectFit: "contain",
+          marginTop: "40px",
+        }}
+      />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -73,7 +85,14 @@ export default function DrawerAppBar(props: Props) {
                   color: "black",
                 }}
               >
-                <ListItemText primary={item.label} />
+                <ListItemText
+                  primary={item.label}
+                  primaryTypographyProps={{
+                    style: {
+                      letterSpacing: "1px", // Adjust letter spacing
+                    },
+                  }}
+                />
               </ListItemButton>
             </Link>
           </ListItem>
@@ -193,20 +212,32 @@ export default function DrawerAppBar(props: Props) {
             <Box
               sx={{ display: { xs: "none", sm: "block", marginTop: "10px" } }}
             >
-              <h2
+              {
+                /* <h2
                 style={{
                   color: "white",
                   letterSpacing: "4px",
                   marginTop: "15px",
                   fontSize: "25px",
+                  fontFamily: "'Rajdhani', sans-serif",
                 }}
               >
                 DEAL MAGSIL
-              </h2>
+              </h2> */
+                <Image
+                  src="/images/logo1.png"
+                  alt="DEAL MAGSIL"
+                  width={200}
+                  height={20}
+                  style={{
+                    marginTop: "5px",
+                  }}
+                />
+              }
             </Box>
           </Link>
           {/* DEAL MAGSIL Text for Mobile View */}
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{
@@ -217,7 +248,23 @@ export default function DrawerAppBar(props: Props) {
             }}
           >
             DEAL MAGSIL
-          </Typography>
+          </Typography> */}
+          <Box
+            sx={{
+              display: { xs: "block", sm: "none" },
+              marginLeft: "auto",
+            }}
+          >
+            <Image
+              src="/images/logo1.png"
+              alt="DEAL MAGSIL"
+              width={200}
+              height={20}
+              style={{
+                objectFit: "contain",
+              }}
+            />
+          </Box>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

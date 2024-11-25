@@ -61,10 +61,19 @@
   }
 
   .introHeading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 393px;
+    margin-left: -38px;
   }
 
   .introSubHeading {
-    font-size: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-left: -6px;
+  }
+  .introContainer {
+    margin-top: 40px;
+    width: 100%;
   }
 }

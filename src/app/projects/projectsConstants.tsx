@@ -74,11 +74,14 @@ const projectImages2 = [
     caption: "Caption ten",
   },
 ];
+
 export const projects = [
   {
     name: "Asansol (PAHARPUR COOLING TOWERS)",
     title: "​PAVER BLOCKS , GRASS PAVERS SUPPLYING & EXECUTION",
     images: [...projectImages],
+    keyword: "Corporate Department",
+
     products: [
       "Bricks",
       "coils",
@@ -104,6 +107,8 @@ export const projects = [
     name: "PINNACLE HONDA Showroom (Asansol)",
     title: "​PAVER BLOCKS , GRASS PAVERS",
     images: [...projectImages1],
+    keyword: "Corporate Department",
+
     products: [
       "Bricks",
       "coils",
@@ -129,6 +134,8 @@ export const projects = [
     name: "NATIONAL HIGHWAY (NH-2)  ( PANAGARH to BARBADDA STRETCH)",
     title: "FENCING PILLARS ",
     images: [...projectImages1],
+    keyword: "Road Department",
+
     products: [
       "Bricks",
       "coils",
@@ -154,6 +161,8 @@ export const projects = [
     name: " BAPL Andal AIRPORT (Asansol)",
     title: " RCC TILES SLABS OVER CABLE LINES",
     images: [...projectImages1],
+    keyword: "Airport Department",
+
     products: [
       "Bricks",
       "coils",
@@ -176,9 +185,39 @@ export const projects = [
     ],
   },
   {
-    name: " NATIONAL HIGNWAY (NH-2) & KMDA Baidyabati Water Treatment Plant",
+    name: " NATIONAL HIGNWAY (NH-2) ",
     title: "PRECAST INTERLOCKING DRAINS",
     images: [...projectImages1],
+    keyword: "Road Department",
+
+    products: [
+      "Bricks",
+      "coils",
+      "roads",
+      "cements",
+      "bench",
+      "dustbeens",
+      "Bricks",
+      "coils",
+      "roads",
+      "cements",
+      "bench",
+      "dustbeens",
+      "Bricks",
+      "coils",
+      "roads",
+      "cements",
+      "bench",
+      "dustbeens",
+    ],
+  },
+
+  {
+    name: "  KMOil Department Plant",
+    title: "PRECAST INTERLOCKING DRAINS",
+    images: [...projectImages1],
+    keyword: "Water Department",
+
     products: [
       "Bricks",
       "coils",
@@ -204,6 +243,8 @@ export const projects = [
     name: "DVC RAGHUNATHPUR THERMAL POWER PLANT (Purulia)",
     title: "PRECAST RCC SLABS ",
     images: [...projectImages1],
+    keyword: "Power Department",
+
     products: [
       "Bricks",
       "coils",
@@ -229,6 +270,8 @@ export const projects = [
     name: "TRANSDAMODAR COAL MINING (P) (Barjora)",
     title: "PRECAST COMPOUND WALL BOUNDARY",
     images: [...projectImages1],
+    keyword: "Coal Department",
+
     products: [
       "Bricks",
       "coils",
@@ -254,6 +297,8 @@ export const projects = [
     name: "DVC - MEJHIA THERMAL POWER STATION (MTPS) (Bankura)",
     title: "PRECAST GAURD POSTS & FENCING PILLARS",
     images: [...projectImages1],
+    keyword: "Power Department",
+
     products: [
       "Bricks",
       "coils",
@@ -279,6 +324,8 @@ export const projects = [
     name: " SAIL - IISCO (Burnpur Steel Plant)",
     title: " RAILWAY SLEEPERS",
     images: [...projectImages1],
+    keyword: "Plant Department",
+
     products: [
       "Bricks",
       "coils",
@@ -304,6 +351,7 @@ export const projects = [
     name: " JHONSON TILES PLANT (PANAGARH) ",
     title: " GRASS PAVERS ",
     images: [...projectImages2],
+    keyword: "Corporate Department",
     products: [
       "Bricks",
       "coils",
@@ -329,6 +377,8 @@ export const projects = [
     name: " L&T CONSTRUCTIONS (Bankura)",
     title: " RCC STEP OF STAIRCASE",
     images: [...projectImages2],
+    keyword: "Corporate Department",
+
     products: [
       "Bricks",
       "coils",
@@ -354,6 +404,8 @@ export const projects = [
     name: "ASANSOL MUNICIPAL CORPORATION  (Asansol)",
     title: " PAVER BLOCKS",
     images: [...projectImages2],
+    keyword: "Corporation Department",
+
     products: [
       "Bricks",
       "coils",
@@ -379,6 +431,8 @@ export const projects = [
     name: "DUMKA MUNICIPAL CORPORATION BUS TERMINAL (Asansol)",
     title: "PAVER BLOCKS",
     images: [...projectImages2],
+    keyword: "Corporation Department",
+
     products: [
       "Bricks",
       "coils",
@@ -404,6 +458,8 @@ export const projects = [
     name: " ARMY BASE CAMP (Panagarh)",
     title: " PRECAST CONCRETE BLOCKS ",
     images: [...projectImages2],
+    keyword: "Army Department",
+
     products: [
       "Bricks",
       "coils",
@@ -429,6 +485,8 @@ export const projects = [
     name: " Maithon Hydral Power Station  (Maithon)",
     title: " DESIGNER TILES ",
     images: [...projectImages2],
+    keyword: "Water Department",
+
     products: [
       "Bricks",
       "coils",
@@ -454,6 +512,8 @@ export const projects = [
     name: " BHARAT PETROLEUM CORPORATION LIMITED (BPCL) PUMP (Jharkhand)",
     title: " PAVER BLOCKS",
     images: [...projectImages2],
+    keyword: "Oil Department",
+
     products: [
       "Bricks",
       "coils",
@@ -479,6 +539,8 @@ export const projects = [
     name: " RELIANCE CEMENT PLANT ,  RAGHUNATHPUR (PURULIA)",
     title: " PRECAST RCC WATER TANKS",
     images: [...projectImages2],
+    keyword: "Plant Department",
+
     products: [
       "Bricks",
       "coils",
@@ -504,6 +566,8 @@ export const projects = [
     name: " ASANSOL / DURGAPUR MUNICIPAL CORPORATION (AMC / DMC)",
     title: "PRECAST RCC GARBAGE BINS",
     images: [...projectImages2],
+    keyword: "Corporation Department",
+
     products: [
       "Bricks",
       "coils",
@@ -529,6 +593,8 @@ export const projects = [
     name: "  WBSEDCL (Electricity Department) & NATIONAL HIGHWAY (NH-2)",
     title: "PRECAST RCC SLABS ",
     images: [...projectImages2],
+    keyword: "Electricity Department",
+
     products: [
       "Bricks",
       "coils",
@@ -554,6 +620,8 @@ export const projects = [
     name: " INDIAN OIL CORPOTATION LIMITED & NATIONAL HIGHWAY (NH-2)",
     title: "PRECAST CRASH BARRIERS",
     images: [...projectImages2],
+    keyword: "Oil Department",
+
     products: [
       "Bricks",
       "coils",

@@ -7,11 +7,10 @@ export default function Hero() {
       <div className={styles.introContainer}>
         <p className={styles.introHeading}>
           <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil —</span>
-          <span style={{ fontSize: "1.8rem" }}>
-            {" "}
-            Where Innovation Meets Durability! We warmly welcome you to a world
-            of exceptional craftsmanship and timeless elegance.
-          </span>
+          {/* <span style={{ fontSize: "1.8rem" }}> */} Where Innovation Meets
+          Durability! We warmly welcome you to a world of exceptional
+          craftsmanship and timeless elegance.
+          {/* </span> */}
         </p>
         <p className={styles.introSubHeading}>
           Create Spaces That Speak to You Our mission is to bring your ideas to
