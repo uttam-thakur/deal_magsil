@@ -1,0 +1,131 @@
+.mainContainer {
+  padding: 20px;
+  margin-top: -60px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: white;
+  z-index: -1;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  /* height: 400px; */
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  opacity: 0.95;
+  margin-top: 50px;
+}
+
+.slide {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.feedbackText {
+  font-style: normal;
+  color: #555;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  min-width: 150px;
+  min-height: 150px;
+}
+
+.name {
+  font-weight: bold;
+  color: #333;
+}
+
+.designation {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Left and right arrow buttons */
+.navButton {
+  color: #555;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: -50px;
+}
+
+.navButton.left {
+  left: 10px;
+}
+
+.navButton.right {
+  right: 10px;
+}
+
+/* Radio button pagination */
+.radioContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+
+.radioButton {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.radioButton.active {
+  background-color: #333;
+}
+
+@media (max-width: 600px) {
+  .sliderContainer {
+    padding: 15px;
+  }
+
+  .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .feedbackText {
+    font-size: 0.9rem;
+    height: auto;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .designation {
+    font-size: 0.8rem;
+  }
+}

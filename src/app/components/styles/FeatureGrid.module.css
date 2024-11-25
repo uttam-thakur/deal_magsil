@@ -1,0 +1,23 @@
+.featureGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 24px 0px 24px 0px;
+}
+/* styles.css */
+.customTitle {
+  color: gray;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 50px;
+}
+.featuregridSliderDiv {
+  margin-top: 50px;
+}
+@media (max-width: 768px) {
+  .featureGrid {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}

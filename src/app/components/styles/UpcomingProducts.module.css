@@ -1,0 +1,54 @@
+.main {
+  background-color: rgb(238, 236, 233);
+  margin-top: 50px;
+}
+.upcomingproductssection {
+  padding: 3rem;
+}
+.customcard {
+  margin-bottom: 50px;
+}
+.carouselimage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.titleCenter {
+  color: gray;
+  text-align: center;
+  font-size: "2rem";
+  font-weight: 700;
+  padding-top: 2rem;
+}
+.carouselitem img {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .carouselimage,
+  .carouselitem img {
+    height: 300px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .upcomingproductssection {
+    padding: 0;
+    margin-top: 30px;
+  }
+  .titleCenter {
+    font-size: 1.5em;
+    font-weight: 600;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: "1px";
+  }
+  .carouselimage,
+  .carouselitem img {
+    height: 200px;
+    width: 100%;
+  }
+}
