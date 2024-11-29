@@ -5,6 +5,7 @@ import UpcomingProduct from "../components/UpcomingProduct";
 import FeatureGrid from "../components/FeatureGrid";
 import FeatureGridSlider from "../components/FeatureGridSlider";
 import { products } from "./ProductsConstants";
+import FeatureGridSlider2 from "../components/FeatureGridSlider2";
 
 const ProductInfo: React.FC = () => {
   return (
@@ -21,7 +22,8 @@ const ProductInfo: React.FC = () => {
         </div>
       </div>
 
-      <FeatureGridSlider />
+      {/* <FeatureGridSlider /> */}
+      <FeatureGridSlider2 />
     </div>
   );
 };

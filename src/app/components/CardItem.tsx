@@ -20,18 +20,7 @@ export default function HomePage() {
           <h2 className={styles.title}>
             The Process and Benefits of Precast Concrete
           </h2>
-          {/* <p className={styles.subtitle}>Explore Anywhere, Anytime</p> */}
           <ul className={styles.list}>
-            {/* <li>
-              Precasting offers unmatched versatility, durability, and
-              efficiency, delivering solutions that combine exceptional
-              craftsmanship with timeless elegance. From resilient
-              infrastructure to aesthetic architectural elements, precasting
-              allows for the creation of sustainable and reliable products,
-              ensuring quality and innovation in every piece. Experience a
-              seamless blend of functionality and beauty with our advanced
-              precasting solutions, tailored to bring your vision to life.
-            </li> */}
             <p className={styles.subtitle}>Process</p>
 
             <li>
