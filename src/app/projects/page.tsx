@@ -262,7 +262,7 @@ import { projects } from "./projectsConstants";
 
 const ProjectsPage = () => {
   const [showProjectView, setShowProjectView] = useState(false);
-  const [selectedProject, setSelectedProject] = useState({});
+  const [selectedProject, setSelectedProject]: any = useState({});
 
   const onProjectClick = (projectData: any) => {
     setSelectedProject(projectData);
@@ -275,9 +275,14 @@ const ProjectsPage = () => {
   };
 
   // Extract unique keywords
-  const uniqueKeywords = [
-    ...new Set(projects.map((project: any) => project.keyword)),
-  ];
+  // const uniqueKeywords = [
+  //   ...new Set(projects.map((project) => project.keyword)),
+  // ];
+
+  // Extract unique keywords
+  const uniqueKeywords = Array.from(
+    new Set(projects.map((project) => project.keyword))
+  );
 
   // Group projects by keyword
   const groupedProjects = uniqueKeywords.map((keyword) => ({

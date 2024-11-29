@@ -12,6 +12,7 @@ const Home = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Hero />
+      {/* <Carousel /> */}
       <WelcomeCard />
 
       <Carouselinfra />

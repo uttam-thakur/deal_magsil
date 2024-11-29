@@ -31,7 +31,11 @@
   width: 90%;
   padding: 20px;
 }
-
+.imgaeHero {
+  z-index: 1;
+  position: "relative";
+  margin-top: "100px";
+}
 .introHeading {
   font-size: 2rem;
   font-weight: bold;
@@ -75,5 +79,10 @@
   .introContainer {
     margin-top: 40px;
     width: 100%;
+  }
+  .imgaeHero {
+    height: 180px;
+    width: 300px;
+    margin-top: 0px;
   }
 }

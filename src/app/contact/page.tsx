@@ -50,7 +50,7 @@ export default function Contact() {
         <ContactModal open={openModal} onClose={() => setOpenModal(false)} />
       </div>
       <GetInTouchForm />
-      <FAQ />
+      {/* <FAQ /> */}
     </>
   );
 }

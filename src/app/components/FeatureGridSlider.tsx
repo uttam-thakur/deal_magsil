@@ -1,16 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import {
-  Box,
-  Typography,
-  Button,
-  Card,
-  CardMedia,
-  CardContent,
-  Grid,
-} from "@mui/material";
+import Image from "next/image";
+import { Box, Typography, Button, CardMedia, Grid } from "@mui/material";
 import Modal from "./common-components/Modal";
-
+import styles from "../../app/products/page.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -24,6 +17,183 @@ type PrecastItem = {
 };
 
 const precastItems: PrecastItem[] = [
+  {
+    //tiles
+    images: [
+      "/images/tiles/Dotted/1.jpg",
+      "/images/tiles/Dotted/2.webp",
+      "/images/tiles/Dotted/3.jpg",
+      "/images/tiles/Dotted/4.jpg",
+    ],
+    title: "DOTTED",
+    description:
+      "A versatile, dotted pattern tile ideal for adding subtle texture and depth to any space.",
+  },
+  {
+    images: [
+      "/images/tiles/Barfi/1.jpg",
+      "/images/tiles/Barfi/2.webp",
+      "/images/tiles/Barfi/3.jpg",
+      "/images/tiles/Barfi/4.jpg",
+    ],
+    title: "BARFI",
+    description:
+      "Inspired by classic Barfi shapes, this tile brings a unique charm with its geometric elegance.",
+  },
+  {
+    images: [
+      "/images/tiles/QuarterCircle/1.jpg",
+      "/images/tiles/QuarterCircle/2.webp",
+      "/images/tiles/QuarterCircle/3.jpg",
+      "/images/tiles/QuarterCircle/4.jpg",
+      "/images/tiles/QuarterCircle/5.jpg",
+    ],
+    title: "QUARTER CIRCLE",
+    description:
+      "Features a unique quarter-circle design, perfect for creating dynamic patterns in floors or walls.",
+  },
+  {
+    images: [
+      "/images/tiles/Chequered/1.jpg",
+      "/images/tiles/Chequered/2.webp",
+      "/images/tiles/Chequered/3.jpg",
+      "/images/tiles/Chequered/4.jpg",
+      "/images/tiles/Chequered/5.jpg",
+    ],
+    title: "CHEQUERED",
+    description:
+      "A classic chequered pattern that brings a bold, timeless style to interiors and exteriors.",
+  },
+
+  {
+    images: [
+      "/images/tiles/Cadburry/2.jpg",
+      "/images/tiles/Cadburry/1.jpg",
+      "/images/tiles/Cadburry/3.jpg",
+      "/images/tiles/Cadburry/4.jpg",
+      "/images/tiles/Cadburry/5.jpg",
+      "/images/tiles/Cadburry/6.jpg",
+    ],
+    title: "CADBURRY",
+    description:
+      "Rich and smooth, the Cadbury tile adds an elegant, luxurious feel to any surface.",
+  },
+  {
+    images: [
+      "/images/tiles/RoofTile/1.txt",
+      "/images/tiles/RoofTile/2.txt",
+      "/images/tiles/RoofTile/3.txt",
+      "/images/tiles/RoofTile/4.txt",
+      "/images/tiles/RoofTile/5.jpg",
+    ],
+    title: "ROOF TILE",
+    description:
+      "Durable and weather-resistant, this tile is ideal for roofing with a stylish, traditional look.",
+  },
+  {
+    images: [
+      "/images/tiles/B&W  Checker/1.jpg",
+      "/images/tiles/B&W  Checker/2.webp",
+      "/images/tiles/B&W  Checker/3.jpg",
+      "/images/tiles/B&W  Checker/4.jpg",
+      "/images/tiles/B&W  Checker/5.webp",
+    ],
+    title: "BLACK AND WHITE CHECKER",
+    description:
+      "A bold black-and-white checker pattern that enhances spaces with a striking, modern appeal.",
+  },
+  {
+    images: [
+      "/images/tiles/LShapedSandBlast/1.jpg",
+      "/images/tiles/LShapedSandBlast/2.jpg",
+      "/images/tiles/LShapedSandBlast/3.jpg",
+      "/images/tiles/LShapedSandBlast/4.jpg",
+      "/images/tiles/LShapedSandBlast/5.txt",
+      "/images/tiles/LShapedSandBlast/6.txt",
+      "/images/tiles/LShapedSandBlast/7.txt",
+      "/images/tiles/LShapedSandBlast/8.txt",
+    ],
+    title: "L-SHAPED SAND BLAST",
+    description:
+      "The L-shaped design with a sandblast finish adds texture and modernity to any project.",
+  },
+  {
+    images: [
+      "/images/tiles/TRIHEX/1.jpg",
+      "/images/tiles/TRIHEX/2.txt",
+      "/images/tiles/TRIHEX/3.txt",
+      "/images/tiles/TRIHEX/4.txt",
+      "/images/tiles/TRIHEX/5.txt",
+      "/images/tiles/TRIHEX/6.txt",
+      "/images/tiles/TRIHEX/7.txt",
+    ],
+    title: "TRI - HEX",
+    description:
+      "Combines triangular and hexagonal shapes, perfect for creating eye-catching, intricate patterns.",
+  },
+  {
+    images: [
+      "/images/tiles/ZigZagUniPaver/1.txt",
+      "/images/tiles/ZigZagUniPaver/2.txt",
+      "/images/tiles/ZigZagUniPaver/3.txt",
+      "/images/tiles/ZigZagUniPaver/4.txt",
+      "/images/tiles/ZigZagUniPaver/5.txt",
+      "/images/tiles/ZigZagUniPaver/6.txt",
+      "/images/tiles/ZigZagUniPaver/7.jpg",
+      "/images/tiles/ZigZagUniPaver/8.jpg",
+      "/images/tiles/ZigZagUniPaver/9.jpg",
+    ],
+    title: "ZIG - ZAG INTERLOCKING PAVER",
+    description:
+      "A unique zig-zag pattern that provides strong interlocking support for outdoor paving needs.",
+  },
+  {
+    images: [
+      "/images/tiles/Milano/1.jpg",
+      "/images/tiles/Milano/2.jpg",
+      "/images/tiles/Milano/3.jpg",
+      "/images/tiles/Milano/4.jpg",
+      "/images/tiles/Milano/5.jpg",
+      "/images/tiles/Milano/6.txt",
+      "/images/tiles/Milano/7.txt",
+      "/images/tiles/Milano/8.txt",
+      "/images/tiles/Milano/9.txt",
+    ],
+    title: "MILANO",
+    description:
+      "Elegant and smooth, Milano tiles are designed to bring Italian charm and sophistication to any surface.",
+  },
+  {
+    images: [
+      "/images/tiles/SquaredStoneFinish/1.jpg",
+      "/images/tiles/SquaredStoneFinish/2.webp",
+      "/images/tiles/SquaredStoneFinish/3.jpg",
+      "/images/tiles/SquaredStoneFinish/4.jpg",
+      "/images/tiles/SquaredStoneFinish/5.jpg",
+    ],
+    title: "SQUARED SHAPED STONE FINISH",
+    description:
+      "Features a natural stone finish that adds earthy tones and texture to floors or walls.",
+  },
+
+  {
+    images: [
+      "/images/tiles/BrickShaped/1.txt",
+      "/images/tiles/BrickShaped/2.txt",
+      "/images/tiles/BrickShaped/3.txt",
+      "/images/tiles/BrickShaped/4.txt",
+      "/images/tiles/BrickShaped/5.txt",
+      "/images/tiles/BrickShaped/6.txt",
+      "/images/tiles/BrickShaped/7.txt",
+      "/images/tiles/BrickShaped/8.txt",
+      "/images/tiles/BrickShaped/9.txt",
+      "/images/tiles/BrickShaped/10.txt",
+    ],
+    title: "BRICK SHAPED",
+    description:
+      "A classic brick shape that offers a rustic, timeless appeal for both indoor and outdoor spaces.",
+  },
+  //precast items
   {
     images: [
       "/images/products/Precast Slabs/1.jpg",
@@ -157,6 +327,63 @@ const precastItems: PrecastItem[] = [
     description:
       "We are a leading supplier and processor of all allied precast concrete products no matter how bulk the quantity is.You provide us your requirement in precasting and we will deliver you our best solution and service.We produce Precast Concrete Products From 50 lbs to 10 tons, no matter what shape or size we meet the commitments.(But we entertain requirements of special designed Precast Products only in Bulk / Huge Quantities requirement.All our products are processed from high quality raw materials which make the construction of various products durable, structurally sound, versatile and economic as compared to Cast-In-Situ Procedure. ​Honesty, impeccable quality, on time delivery, affordable pricing and customer satisfaction has helped us maintain a close association with our clients.",
   },
+  //new Products
+  {
+    images: [
+      "/images/products/Newly Launch Product/1.jfif",
+      "/images/products/Newly Launch Product/2.jfif",
+      "/images/products/Newly Launch Product/3.jfif",
+    ],
+    title: "CELLULAR LIGHT WEIGHT CONCRETE BLOCKS",
+    description:
+      "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/precast Door Frame.webp",
+      "/images/products/Newly Launch Product/precast-door-frame.avif",
+      "/images/products/Newly Launch Product/images.jfif",
+    ],
+    title: "CEMENT DOOR WINDOW FRAME",
+    description:
+      "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/cement bench.avif",
+      "/images/products/Newly Launch Product/cement bench1.jfif",
+      "/images/products/Newly Launch Product/cement bench2.jpg",
+    ],
+    title: "CEMENT Bench For OutDoor",
+    description: "Bench",
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
+      "/images/products/Newly Launch Product/precast wall pannels.jfif",
+      "/images/products/Newly Launch Product/stairs.jfif",
+      "/images/products/Newly Launch Product/precast housing unit.jpg",
+    ],
+    title: "Beam & columns / Wall Panels / Stairs / Structural Slab",
+    description: "Beam & columns / Wall Panels / Stairs / Structural Slab",
+  },
+  {
+    images: [
+      "/images/products/Cement/1.jpg",
+      "/images/products/Cement/2.jpg",
+
+      "/images/products/Cement/3.jpg",
+      "/images/products/Cement/4.jpg",
+      "/images/products/Cement/5.jpg",
+      "/images/products/Cement/6.jpg",
+    ],
+    title: "Cement ",
+    description:
+      "For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity. We can Provide You the following Brands (Trade Material) depending on their Availability",
+  },
 ];
 
 const NextArrow = ({ onClick }: any) => (
@@ -191,6 +418,7 @@ const PrevArrow = ({ onClick }: any) => (
 
 const FeatureGridSlider = () => {
   const [selectedItem, setSelectedItem] = useState<PrecastItem | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const settings = {
     dots: true,
@@ -204,6 +432,11 @@ const FeatureGridSlider = () => {
     prevArrow: <PrevArrow />,
   };
 
+  // Handles input changes for search term
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value.toLowerCase());
+  };
+
   const handleOpenModal = (item: PrecastItem) => {
     setSelectedItem(item);
   };
@@ -212,207 +445,265 @@ const FeatureGridSlider = () => {
     setSelectedItem(null);
   };
 
+  // Filter precastItems based on the search term
+  const filteredItems = precastItems.filter((item) =>
+    item.title.toLowerCase().includes(searchTerm)
+  );
+
   return (
     <>
-      <div style={{ backgroundColor: "rgb(255, 249, 249)" }}>
-        <Typography
-          variant="h5"
-          sx={{
-            marginTop: "1rem",
-            fontWeight: "700",
-            fontSize: { xs: "1.2rem", md: "2rem" },
-            color: "gray",
-            textAlign: "center",
-          }}
-        >
-          PRECAST PRODUCTS
-        </Typography>
-        <Box sx={{ padding: "16px" }}>
-          <Grid container spacing={3}>
-            {precastItems.map((item, index) => (
-              <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                <Card
-                  sx={{
-                    padding: "1rem",
-                    boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-                    borderRadius: "10px",
-                    height: "100%",
-                    display: "flex",
-                    flexDirection: "column",
-                    justifyContent: "space-between",
-                    transition: "transform 0.3s ease, box-shadow 0.3s ease",
-                    "&:hover": {
-                      transform: "translateY(-5px)",
-                      boxShadow: "0 6px 10px rgba(0, 0, 0, 0.2)",
-                    },
-                  }}
-                >
-                  <Slider {...settings}>
-                    {item.images.map((image, imgIndex) => (
-                      <CardMedia
-                        key={imgIndex}
-                        component="img"
-                        image={image}
-                        alt={`Slide ${imgIndex} for ${item.title}`}
-                        sx={{
-                          width: "100%",
-                          maxHeight: "200px",
-                          objectFit: "cover",
-                          borderRadius: "8px",
-                        }}
-                      />
-                    ))}
-                  </Slider>
+      {/* Search Bar Section */}
 
-                  <CardContent
+      <div className={styles.searchBarContainer}>
+        <input
+          type="text"
+          placeholder="Search Products"
+          value={searchTerm}
+          onChange={handleSearch}
+          className={styles.searchbar}
+        />
+      </div>
+
+      <div>
+        <Box sx={{ padding: { xs: "8px", md: "16px" } }}>
+          <Grid container spacing={2}>
+            {filteredItems.length > 0 ? (
+              filteredItems.map((item, index) => (
+                <Grid item xs={12} key={index}>
+                  <Box
                     sx={{
-                      textAlign: "center",
+                      display: "flex",
+                      flexDirection: { xs: "column", md: "row" }, // Stack items on small screens
+                      alignItems: { xs: "center", md: "flex-start" },
+                      justifyContent: "space-between",
+                      padding: "1rem",
+                      borderBottom: "1px solid #ddd",
                     }}
                   >
-                    <Typography
-                      variant="h6"
+                    {/* Image Slider */}
+                    <Box
                       sx={{
-                        marginBottom: "0.5rem",
-                        fontWeight: "700",
-                        textAlign: "left",
+                        flex: 1,
+                        position: "relative",
+                        display: "flex",
+                        justifyContent: "center",
+                        marginBottom: { xs: "1rem", md: "0" }, // Add spacing on small screens
                       }}
                     >
-                      {item.title}
-                    </Typography>
-                    <Typography
-                      variant="body2"
-                      color="textSecondary"
-                      sx={{ marginBottom: "1rem", textAlign: "left" }}
-                    >
-                      {item.description.substring(0, 120)}...
-                    </Typography>
-                    <Button
-                      variant="contained"
-                      fullWidth
-                      onClick={() => handleOpenModal(item)}
+                      <Box
+                        sx={{
+                          width: "100%",
+                          maxWidth: { xs: "250px", md: "300px" }, // Adjust size for smaller screens
+                          borderRadius: "8px",
+                          overflow: "hidden",
+                        }}
+                      >
+                        <Slider {...settings}>
+                          {item.images.map((image, imgIndex) => (
+                            <Box
+                              key={imgIndex}
+                              sx={{
+                                position: "relative",
+                                height: { xs: "150px", md: "200px" }, // Adjust height for mobile
+                                overflow: "hidden",
+                                borderRadius: "8px",
+                              }}
+                            >
+                              <CardMedia
+                                component="img"
+                                image={image}
+                                alt={`Slide ${imgIndex} for ${item.title}`}
+                                sx={{
+                                  width: "100%",
+                                  height: "100%",
+                                  objectFit: "cover",
+                                }}
+                              />
+                            </Box>
+                          ))}
+                        </Slider>
+                      </Box>
+                    </Box>
+
+                    {/* Text Section */}
+                    <Box
                       sx={{
-                        backgroundColor: "transparent",
-                        borderColor: "blue", // Outline color
-                        color: "rgb(21,80,139)", // Text color                        "&:hover": {
-                        "&:hover": {
-                          backgroundColor: "rgb(24, 92, 160)", // Optional hover effect
-                          borderColor: "rgb(21,80,139)",
+                        flex: 1,
+                        textAlign: { xs: "center", md: "left" }, // Center text for small screens
+                      }}
+                    >
+                      <Typography
+                        variant="h6"
+                        sx={{
+                          marginBottom: "0.5rem",
+                          fontWeight: "700",
+                        }}
+                      >
+                        {item.title}
+                      </Typography>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        sx={{
+                          marginBottom: "1rem",
+                          display: "-webkit-box",
+                          WebkitBoxOrient: "vertical",
+                          WebkitLineClamp: 2, // Limit to two lines
+                          overflow: "hidden",
+                          textOverflow: "ellipsis",
+                        }}
+                      >
+                        {item.description.substring(0, 120)}...
+                      </Typography>
+                      <Button
+                        variant="contained"
+                        onClick={() => handleOpenModal(item)}
+                        sx={{
+                          backgroundColor: "rgb(24, 92, 160)",
+                          "&:hover": {
+                            backgroundColor: "darkred",
+                          },
                           color: "white",
-                        },
-                      }}
-                    >
-                      READ MORE
-                    </Button>
-                  </CardContent>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-          {selectedItem && (
-            <Modal open={!!selectedItem}>
+                          width: { xs: "100%", md: "40%" }, // Full width for small screens
+                        }}
+                      >
+                        READ MORE
+                      </Button>
+                    </Box>
+                  </Box>
+                </Grid>
+              ))
+            ) : (
               <Box
                 sx={{
-                  backgroundColor: "#fff",
-                  padding: { xs: "1rem", md: "2rem" },
-                  borderRadius: "10px",
-                  width: { xs: "90%", md: "60%" },
-                  maxHeight: "80vh",
-                  overflowY: "auto",
-                  margin: "0 auto",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
                   textAlign: "center",
+                  marginTop: "2rem",
+                  color: "gray",
+                  padding: { xs: "0 1rem", md: "0" },
                 }}
               >
-                <Typography
-                  variant="h5"
-                  sx={{
-                    marginTop: "1rem",
-                    fontWeight: "700",
-                    fontSize: { xs: "1.2rem", md: "1.5rem" },
-                  }}
-                >
-                  {selectedItem.title}
+                <Image
+                  alt="no image found"
+                  src="/images/noProductFound.png"
+                  height={200}
+                  width={300} // Adjust image size for smaller screens
+                  style={{ marginBottom: "1rem" }}
+                />
+                <Typography variant="body1">
+                  No products found matching "{searchTerm}".
                 </Typography>
-
-                <Grid
-                  container
-                  spacing={2}
-                  sx={{
-                    marginTop: "1rem",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                  }}
-                >
-                  {selectedItem.images.map((image, index) => (
-                    <Grid
-                      item
-                      xs={12}
-                      sm={6}
-                      md={4}
-                      lg={3}
-                      key={index}
-                      sx={{
-                        padding: "0.5rem",
-                      }}
-                    >
-                      <img
-                        src={image}
-                        alt={`${selectedItem.title} - Slide ${index + 1}`}
-                        style={{
-                          width: "100%",
-                          height: "auto",
-                          borderRadius: "10px",
-                          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.15)",
-                          transition:
-                            "transform 0.3s ease, box-shadow 0.3s ease",
-                        }}
-                        onMouseEnter={(e) => {
-                          e.currentTarget.style.transform = "scale(1.05)";
-                          e.currentTarget.style.boxShadow =
-                            "0 8px 12px rgba(0, 0, 0, 0.2)";
-                        }}
-                        onMouseLeave={(e) => {
-                          e.currentTarget.style.transform = "scale(1)";
-                          e.currentTarget.style.boxShadow =
-                            "0 4px 6px rgba(0, 0, 0, 0.15)";
-                        }}
-                      />
-                    </Grid>
-                  ))}
-                </Grid>
-
-                <Typography
-                  variant="body2"
-                  sx={{
-                    margin: "1rem 0",
-                    lineHeight: "1.5",
-                    letterSpacing: "1px",
-                    fontSize: { xs: "0.9rem", md: "1rem" },
-                  }}
-                >
-                  {selectedItem.description}
-                </Typography>
-
-                <Button
-                  variant="outlined"
-                  color="primary"
-                  onClick={handleCloseModal}
-                  sx={{
-                    marginTop: "1rem",
-                    fontSize: { xs: "0.8rem", md: "1rem" },
-                    backgroundColor: "rgb(21,80,139)",
-                    "&:hover": {
-                      backgroundColor: "darkred", // Optional hover effect
-                    },
-                    color: "white",
-                  }}
-                >
-                  Close
-                </Button>
               </Box>
-            </Modal>
-          )}
+            )}
+          </Grid>
         </Box>
+
+        {/* Modal Section */}
+        {selectedItem && (
+          <Modal open={!!selectedItem}>
+            <Box
+              sx={{
+                backgroundColor: "#fff",
+                padding: { xs: "1rem", md: "2rem" },
+                borderRadius: "10px",
+                width: { xs: "90%", md: "60%" },
+                maxHeight: "80vh",
+                overflowY: "auto",
+                margin: "0 auto",
+                textAlign: "center",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  marginTop: "1rem",
+                  fontWeight: "700",
+                  fontSize: { xs: "1.2rem", md: "1.5rem" },
+                }}
+              >
+                {selectedItem.title}
+              </Typography>
+
+              <Grid
+                container
+                spacing={2}
+                sx={{
+                  marginTop: "1rem",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                {selectedItem.images.map((image, index) => (
+                  <Grid
+                    item
+                    xs={12}
+                    sm={6}
+                    md={4}
+                    lg={3}
+                    key={index}
+                    sx={{
+                      padding: "0.5rem",
+                    }}
+                  >
+                    <img
+                      src={image}
+                      alt={`${selectedItem.title} - Slide ${index + 1}`}
+                      style={{
+                        width: "100%",
+                        height: "auto",
+                        borderRadius: "10px",
+                        transition: "transform 0.3s ease, box-shadow 0.3s ease",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.transform = "scale(1.05)";
+                        e.currentTarget.style.boxShadow =
+                          "0 8px 12px rgba(0, 0, 0, 0.2)";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.transform = "scale(1)";
+                        e.currentTarget.style.boxShadow =
+                          "0 4px 6px rgba(0, 0, 0, 0.15)";
+                      }}
+                    />
+                  </Grid>
+                ))}
+              </Grid>
+
+              <Typography
+                variant="body2"
+                sx={{
+                  margin: "1rem 0",
+                  lineHeight: "1.5",
+                  letterSpacing: "1px",
+                  fontSize: { xs: "0.9rem", md: "1rem" },
+                }}
+              >
+                {selectedItem.description}
+              </Typography>
+
+              <Button
+                variant="outlined"
+                color="primary"
+                onClick={handleCloseModal}
+                sx={{
+                  marginTop: "1rem",
+                  fontSize: { xs: "0.8rem", md: "1rem" },
+                  backgroundColor: "rgb(21,80,139)",
+                  "&:hover": {
+                    backgroundColor: "darkred",
+                  },
+                  color: "white",
+                }}
+              >
+                Close
+              </Button>
+            </Box>
+          </Modal>
+        )}
       </div>
     </>
   );

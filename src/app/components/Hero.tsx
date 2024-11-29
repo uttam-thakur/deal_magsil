@@ -1,5 +1,7 @@
 "use client";
+import { Category } from "@mui/icons-material";
 import styles from "./styles/Hero.module.css";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -7,9 +9,9 @@ export default function Hero() {
       <div className={styles.introContainer}>
         <p className={styles.introHeading}>
           <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil —</span>
-          {/* <span style={{ fontSize: "1.8rem" }}> */} Where Innovation Meets
-          Durability! We warmly welcome you to a world of exceptional
-          craftsmanship and timeless elegance.
+          {/* <span style={{ fontSize: "1.8rem" }}> */} the world of precasting,
+          where engineering precision and design artistry converge to create
+          structures that stand the test of time.
           {/* </span> */}
         </p>
         <p className={styles.introSubHeading}>
@@ -27,6 +29,15 @@ export default function Hero() {
           <p>Visit Us Today—Where Dreams Become Reality!</p>
         </div>
       </div>
+      <Image
+        alt="make in india logo"
+        src="/images/makeinindia6.png"
+        height={250}
+        width={550}
+        className={styles.imgaeHero}
+      />
     </div>
   );
 }
+// consent to operate under green Category
+// west bengal pollution control board

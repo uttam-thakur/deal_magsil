@@ -28,8 +28,8 @@ interface Props {
 const drawerWidth = 240;
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Projects", path: "/projects" },
   { label: "Products", path: "/products" },
+  { label: "Projects", path: "/projects" },
   { label: "Contact Us", path: "/contact" },
   { label: "Brouchers", path: "/brouchers" },
 ];

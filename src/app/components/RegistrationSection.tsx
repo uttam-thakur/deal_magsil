@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Box, Typography, Paper, Grid } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
+import { EmojiEvents } from "@mui/icons-material";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import style from "./styles/RegistrationSection.module.css";
 const RegistrationSection = () => {
   const registrations = [
@@ -61,7 +63,14 @@ const RegistrationSection = () => {
                 height: "100%",
               }}
             >
-              <CheckCircle sx={{ color: "green", mr: 2 }} />
+              <WorkspacePremiumIcon
+                sx={{
+                  color: "green",
+                  mr: 2,
+                  height: "2.5rem",
+                  width: "2.5rem",
+                }}
+              />
               <Typography variant="body1" color="rgb(212,168,99)">
                 {item}
               </Typography>
