@@ -18,7 +18,6 @@ const Home = () => {
       <Carouselinfra />
 
       <FeedbackSlider />
-
       <RegistrationSection />
 
       {/* <WhyUs /> */}

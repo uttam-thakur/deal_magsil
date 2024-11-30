@@ -12,7 +12,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 
@@ -29,6 +28,7 @@ const drawerWidth = 240;
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Products", path: "/products" },
+  { label: "Clients", path: "/clients" },
   { label: "Projects", path: "/projects" },
   { label: "Contact Us", path: "/contact" },
   { label: "Brouchers", path: "/brouchers" },
@@ -54,15 +54,6 @@ export default function DrawerAppBar(props: Props) {
           cursor: "pointer",
         }}
       />
-      {/* <Typography variant="h6" sx={{ my: 2 }}>
-        Deal Magsil
-        <br />
-        <Typography
-          sx={{ my: 2, fontSize: "15px", color: "gray", marginTop: "-5px" }}
-        >
-          Since 1991
-        </Typography>
-      </Typography> */}
 
       <Image
         src="/images/logo3.png"
@@ -213,17 +204,6 @@ export default function DrawerAppBar(props: Props) {
               sx={{ display: { xs: "none", sm: "block", marginTop: "10px" } }}
             >
               {
-                /* <h2
-                style={{
-                  color: "white",
-                  letterSpacing: "4px",
-                  marginTop: "15px",
-                  fontSize: "25px",
-                  fontFamily: "'Rajdhani', sans-serif",
-                }}
-              >
-                DEAL MAGSIL
-              </h2> */
                 <Image
                   src="/images/logo1.png"
                   alt="DEAL MAGSIL"
@@ -236,19 +216,7 @@ export default function DrawerAppBar(props: Props) {
               }
             </Box>
           </Link>
-          {/* DEAL MAGSIL Text for Mobile View */}
-          {/* <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              display: { xs: "block", sm: "none" },
-              marginLeft: "auto",
-              color: "white",
-              letterSpacing: "2px",
-            }}
-          >
-            DEAL MAGSIL
-          </Typography> */}
+
           <Box
             sx={{
               display: { xs: "block", sm: "none" },

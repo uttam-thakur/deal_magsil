@@ -4,6 +4,7 @@ import Footer from "../app/components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FABWhatsApp from "./components/fabComponents/FABWhatsApp";
 import FABLocation from "./components/fabComponents/FABLocation";
+import FABProduct from "./components/fabComponents/FABProduct";
 import SEO from "./components/SEO";
 
 export const metadata = {
@@ -34,6 +35,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
         <FABLocation />
         <FABWhatsApp />
+        <FABProduct />
         <div style={{ marginTop: "-145px" }}>
           <Footer />
         </div>
