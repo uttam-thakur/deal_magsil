@@ -1,5 +1,6 @@
 .heroSection {
-  background-image: url("/images/deal-magsil.jpg");
+  /* background-image: url("/images/deal-magsil.jpg"); */
+  background-image: url("/images/hero2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
