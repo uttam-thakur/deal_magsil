@@ -104,17 +104,17 @@
 
 /* Custom diamond pattern layout */
 .clientsGrid > :nth-child(1) {
-  grid-column: 2; /* Start from the 2nd column */
-  grid-row: 1; /* First row */
+  grid-column: 2;
+  grid-row: 1;
 }
 
 .clientsGrid > :nth-child(2) {
-  grid-column: 1; /* First column */
+  grid-column: 1;
   grid-row: 2;
 }
 
 .clientsGrid > :nth-child(3) {
-  grid-column: 3; /* Third column */
+  grid-column: 3;
   grid-row: 2;
 }
 
@@ -139,5 +139,3 @@
     gap: 8px;
   }
 }
-
-/* Add more placements as needed for additional items */

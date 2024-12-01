@@ -1,6 +1,11 @@
 import React from "react";
 import styles from "./page.module.css";
-
+import {
+  introHeading,
+  introSubHeading,
+  heading,
+  description,
+} from "../common/constant/clients";
 const Clients = () => {
   const clients = [
     { name: "GrayGrids", logo: "/images/clients/1.jpg" },
@@ -28,22 +33,14 @@ const Clients = () => {
     <>
       <div className={styles.main}>
         <div className={styles.introContainer}>
-          <p className={styles.introHeading}>Meet Our Valued Clients</p>
-          <p className={styles.introSubHeading}>
-            Building strong partnerships with companies and individuals who
-            trust us to deliver excellence in every project.
-          </p>
+          <p className={styles.introHeading}>{introHeading}</p>
+          <p className={styles.introSubHeading}>{introSubHeading}</p>
         </div>
       </div>{" "}
       <div className={styles.clientsSection}>
         {/* <h5 className={styles.subHeading}>MEET OUR CLIENTS</h5> */}
-        <h2 className={styles.heading}>Our Awesome Clients</h2>
-        <p className={styles.description}>
-          "We are incredibly grateful to have worked with such amazing clients.
-          Your trust and collaboration inspire us to strive for excellence every
-          day. Thank you for being a part of our journey and letting us be a
-          part of yours!"
-        </p>
+        <h2 className={styles.heading}>{heading}</h2>
+        <p className={styles.description}>{description}</p>
         <div className={styles.clientsGrid}>
           {clients.map((client, index) => (
             <div key={index} className={styles.clientCard}>

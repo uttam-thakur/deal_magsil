@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCarousel from "../../ProjectCarousel/index";
 import styles from "./styles.module.css";
-import { BsThreeDots } from "react-icons/bs";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { AiOutlineProduct } from "react-icons/ai";
 

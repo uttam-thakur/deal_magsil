@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { toast } from "react-toastify";
 import { sendEmail } from "../services/services";
+import { title, subTitle, description } from "../common/constant/contact ";
 import styles from "./styles/GetInTouch.module.css";
 
 export default function GetInTouchForm() {
@@ -59,19 +60,10 @@ export default function GetInTouchForm() {
         {/* Left Section */}
         <div className={styles.leftSection}>
           <div className={styles.info}>
-            <h1 className={styles.title}>Get in Touch with Us</h1>
+            <h1 className={styles.title}>{title}</h1>
             <div className={styles.infoWindow}>
-              <h2 className={styles.subTitle}>
-                Quick answers and reliable support are just a message away.
-              </h2>
-              <p className={styles.description}>
-                We believe that good communication builds strong partnerships.
-                Whether you have a quick question, require detailed information,
-                or need help resolving a challenge, we’re just a click or call
-                away. Our dedicated team ensures that every query is met with
-                promptness and expertise, helping you achieve the results you
-                need.
-              </p>
+              <h2 className={styles.subTitle}>{subTitle} </h2>
+              <p className={styles.description}>{description}</p>
             </div>
           </div>
         </div>

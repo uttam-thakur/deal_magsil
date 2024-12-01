@@ -13,6 +13,7 @@ import {
 
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Styles from "./page.module.css";
+import { brochureHeading, brouchersPara } from "../common/constant/brouchers";
 const brochures = [
   {
     id: 1,
@@ -49,12 +50,10 @@ export default function Brochures() {
           {/* Header Section */}
           <header className="text-center mb-12">
             <h1 className="text-5xl font-extrabold text-blue-900">
-              Download Our Brochures
+              {brochureHeading}
             </h1>
             <p className="text-lg text-gray-700 mt-4 max-w-xl mx-auto">
-              Get detailed information on our products and services by
-              downloading our brochures. Stay up-to-date with the latest
-              insights.
+              {brouchersPara}
             </p>
           </header>
 

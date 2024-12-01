@@ -14,9 +14,7 @@ const Home = () => {
       <Hero />
       {/* <Carousel /> */}
       <WelcomeCard />
-
       <Carouselinfra />
-
       <FeedbackSlider />
       <RegistrationSection />
 

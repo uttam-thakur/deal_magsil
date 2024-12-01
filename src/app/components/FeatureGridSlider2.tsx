@@ -109,7 +109,7 @@ const FeatureGridSlider2 = () => {
               backgroundColor: "#fff",
               padding: { xs: "1rem", md: "2rem" },
               borderRadius: "10px",
-              width: { xs: "90%", md: "60%" },
+              width: { xs: "100%", md: "60%" },
               maxHeight: "80vh",
               overflowY: "auto",
               margin: "0 auto",
@@ -125,12 +125,15 @@ const FeatureGridSlider2 = () => {
                   key={index}
                   src={image}
                   alt={`${selectedItem.title} - Slide ${index + 1}`}
-                  width={400}
-                  height={300}
+                  width={300}
+                  height={200}
                   style={{
                     margin: "0.5rem",
                     borderRadius: "8px",
                     display: "inline-block",
+                    width: window.innerWidth <= 500 ? "100%" : "400px", // Adjust width for mobile
+                    height: "auto", // Keep aspect ratio
+                    marginLeft: "1px",
                   }}
                 />
               ))}

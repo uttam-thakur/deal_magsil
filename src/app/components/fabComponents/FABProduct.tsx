@@ -1,9 +1,9 @@
 "use client";
 
-import { FaBox } from "react-icons/fa";
+import { AiFillProduct } from "react-icons/ai";
 import { useScrolling } from "../../common/hooks/useScrolling";
 import "./style.css";
-import { useRouter } from "next/navigation"; // Import from next/navigation
+import { useRouter } from "next/navigation";
 
 const FABProduct = () => {
   const router = useRouter();
@@ -17,7 +17,7 @@ const FABProduct = () => {
       onClick={handleProductClick}
       className={`fab-product ${!scrolling ? "visible" : "hidden"}`}
     >
-      <FaBox className="fab-product-icon" />
+      <AiFillProduct className="fab-product-icon" />
       <p className="paraProduct">visit here for products</p>
     </button>
   );

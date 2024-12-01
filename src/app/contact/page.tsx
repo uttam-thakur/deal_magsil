@@ -6,9 +6,9 @@ import ContactModal from "../components/ContactModal";
 import GetInTouchForm from "../components/GetInTouchForm";
 
 import { infoData, contactData } from "../common/constant";
-
-import styles from "./contact.module.css";
 import { handleLocationClick } from "../components/fabComponents/FABLocation";
+import { contactHeaderH1, contactHeaderP } from "../common/constant/contact ";
+import styles from "./contact.module.css";
 
 export default function Contact() {
   const [openModal, setOpenModal] = useState(false);
@@ -27,8 +27,8 @@ export default function Contact() {
 
       <div className={styles.container}>
         <div className={styles.contactHeader}>
-          <h1>Contact our friendly team</h1>
-          <p>Let us know how we can help.</p>
+          <h1>{contactHeaderH1}</h1>
+          <p>{contactHeaderP}</p>
         </div>
 
         <div className={styles.grid}>

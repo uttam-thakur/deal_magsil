@@ -37,8 +37,8 @@
   right: 1.5rem; /* Adjust as needed */
   background-color: #363535;
   z-index: 2;
-  border-radius: 9999px; /* Full rounding */
-  padding: 1rem; /* Padding similar to Tailwind's p-4 */
+  border-radius: 9999px;
+  padding: 1rem;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(21, 29, 49, 0.24);
   display: flex;
@@ -58,25 +58,27 @@
 }
 
 .fab-location-icon {
-  font-size: 1.875rem; /* Equivalent to text-3xl */
-  color: white; /* Equivalent to text-white */
+  font-size: 1.875rem;
+  color: white;
 }
 
+.fab-location-icon:hover {
+  color: red;
+}
 /* Product */
 .fab-product {
   position: fixed;
-  top: calc(100vh - 350px); /* Use vh for responsive positioning */
-  right: 1.5rem; /* Adjust as needed */
+  top: calc(100vh - 350px);
+  right: 1.5rem;
   background-color: #363535;
   z-index: 2;
-  padding: 1rem; /* Padding similar to Tailwind's p-4 */
+  padding: 1rem;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(21, 29, 49, 0.24);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.85s ease, transform 2s ease;
-  /* border-radius: 9999px; */
 }
 
 .fab-product.hidden {
@@ -90,8 +92,8 @@
 }
 
 .fab-product-icon {
-  font-size: 1.875rem; /* Equivalent to text-3xl */
-  color: white; /* Equivalent to text-white */
+  font-size: 1.875rem;
+  color: white;
 }
 .paraProduct {
   color: rgb(218, 204, 13);

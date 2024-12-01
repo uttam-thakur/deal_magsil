@@ -22,10 +22,15 @@
 }
 
 .image {
+  transition: transform 0.3s ease-in-out; /* Smooth scaling */
+
   border-radius: 10px;
   width: 80%;
-  /* height: 400px; */
   height: 300px;
+}
+.image:hover {
+  transform: scale(1.1); /* Enlarges the image slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
 }
 
 .textContainer {
@@ -179,14 +184,14 @@
   .searchBarContainer {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 90%;
     margin-top: 0px;
   }
 
   /* Search Bar Styling with Bottom Border */
   .searchbar {
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     padding: 12px 0;
     font-size: 1.1rem;
     color: #333;
