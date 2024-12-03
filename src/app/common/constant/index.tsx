@@ -67,9 +67,24 @@ export const contactData = [
 ];
 
 //CardItems
-export const sectionData = [
+interface ContentBlock {
+  subtitle: string;
+  details: string[];
+}
+
+interface SectionData {
+  id: number;
+  images: string[];
+  image: String;
+  altText: string;
+  title: string;
+  content: ContentBlock[];
+}
+
+export const sectionData: SectionData[] = [
   {
     id: 1,
+    images: ["/images/mainImage1.webp", "/images/mainImage5.webp"],
     image: "/images/mainImage1.webp",
     altText: "Virtual Property Exploration",
     title: "The Process and Benefits of Precast Concrete",
@@ -95,7 +110,9 @@ export const sectionData = [
   },
   {
     id: 2,
+    images: ["/images/mainImage5.webp"],
     image: "/images/mainImage5.webp",
+
     altText: "On-Site Expertise",
     title: "On-Site Expertise",
     content: [

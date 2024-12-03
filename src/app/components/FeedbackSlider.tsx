@@ -30,7 +30,7 @@ const FeedbackSlider: React.FC = () => {
           backgroundSize: "cover",
           backgroundColor: "black",
           backgroundPosition: "center",
-          padding: "50px 20px",
+          padding: "73px 20px",
         }}
         className={styles.mainContainer}
       >

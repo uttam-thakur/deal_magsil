@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "../components/styles/welcomeCard.module.css";
 import { sectionData } from "../common/constant";
@@ -21,9 +23,10 @@ export default function HomePage() {
               className={styles.image}
             />
           </div>
+
           <div className={styles.textContainer}>
             <h2 className={styles.title}>{section.title}</h2>
-            {section.content.map((contentBlock: any, index: any) => (
+            {section?.content?.map((contentBlock: any, index: any) => (
               <div key={index}>
                 <p className={styles.subtitle}>{contentBlock.subtitle}</p>
                 <ul className={styles.list}>

@@ -25,6 +25,7 @@
   border-radius: 10px;
   width: 65%;
   height: auto;
+  margin-left: 90px;
 }
 
 .textContainer {
@@ -109,6 +110,8 @@
 
   .image {
     width: 90%;
+
+    margin-left: 0px;
   }
   .imageSliderContainer {
     position: relative;
@@ -148,5 +151,9 @@
 
   .image {
     width: 100%;
+    margin-left: 0px;
+  }
+  .nextButton {
+    right: 10px;
   }
 }
