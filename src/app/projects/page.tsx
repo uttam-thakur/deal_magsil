@@ -1,8 +1,15 @@
 "use client";
 
 import { useState } from "react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  introHeading,
+  introSubHeading,
+  ctaContainer,
+  projectDescription,
+  projectHeading,
+} from "../common/constant/projects";
 import cx from "classnames";
 
 import Client from "../components/Clients";
@@ -31,65 +38,75 @@ const ProjectsPage = () => {
     setShowProjectView(false);
   };
 
+  const uniqueKeywords = Array.from(
+    new Set(projects.map((project) => project.keyword))
+  );
+
+  // Group projects by keyword
+  const groupedProjects = uniqueKeywords.map((keyword) => ({
+    keyword,
+    projects: projects.filter((project) => project.keyword === keyword),
+  }));
+
   return (
     <>
+      {/* Intro Section */}
       <div className={styles.mainSection}>
         <div className={styles.introContainer}>
-          <p className={styles.introHeading}>
-            We take immense pride in contributing to transformative projects
-            that redefine possibilities and shape a brighter future.
-          </p>
-          <p className={styles.introSubHeading}>
-            With over 27 years of trusted expertise, we are dedicated to
-            offering innovative solutions tailored to your needs. Let us help
-            you create spaces that inspire, with products that stand the test of
-            time.
-          </p>
+          <p className={styles.introHeading}>{introHeading}</p>
+          <p className={styles.introSubHeading}>{introSubHeading}</p>
           <div className={styles.ctaContainer}>
-            <p>Your satisfaction is our priority—visit us today!</p>
+            <p>{ctaContainer}</p>
           </div>
         </div>
       </div>
 
+      {/* Projects Section */}
       <div className={styles.projectSection}>
         <div className={styles.projectGreeting}>
-          <h1 className={styles.projectHeading}>Building the Future</h1>
-          <h3 className={styles.projectDescription}>
-            At Deal Magsil, we take pride in being a trusted supplier of
-            high-quality products, including pavement bricks, dustbins, and a
-            variety of brick types. Our materials have played a key role in
-            numerous infrastructure developments, including prestigious
-            government projects.
-          </h3>
+          <h1 className={styles.projectHeading}>{projectHeading}</h1>
+          <h3 className={styles.projectDescription}>{projectDescription}</h3>
         </div>
 
-        <Swiper
-          navigation
-          modules={[Pagination]}
-          slidesPerView="auto"
-          className={cx(styles.projectSlider, "projects-swiper-outer")}
-          pagination={{ clickable: true }}
-        >
-          {projects.map((project, index) => (
-            <SwiperSlide key={index} className={styles.swiperSlide}>
-              <ProjectSlider
-                images={project.images}
-                name={project.name}
-                title={project?.title}
-                products={project?.products}
-                onClick={onProjectClick}
-              />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        {/* Dynamically Render Sections Based on Keywords */}
+        {groupedProjects.map((group, index) => (
+          <div key={index} className={styles.departmentSection}>
+            <h2 className={styles.departmentHeading}>
+              {group.keyword} Projects
+            </h2>
+            <Swiper
+              navigation
+              pagination={{ clickable: true }}
+              modules={[Pagination, Navigation]}
+              slidesPerView="auto"
+              spaceBetween={30}
+              className={cx(styles.projectSlider, "projects-swiper-outer")}
+            >
+              {group.projects.map((project, projIndex) => (
+                <SwiperSlide key={projIndex} className={styles.swiperSlide}>
+                  <ProjectSlider
+                    images={project.images}
+                    name={project.name}
+                    title={project.title}
+                    keyword={project.keyword}
+                    products={project.products}
+                    onClick={() => onProjectClick(project)}
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        ))}
       </div>
 
+      {/* Project Viewer Modal */}
       <ProjectsViewer
         onClose={onProjectImageViewClose}
         images={selectedProject?.images}
         showProjectView={showProjectView}
       />
 
+      {/* Clients Section */}
       <Client />
     </>
   );

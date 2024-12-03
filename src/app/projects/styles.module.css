@@ -24,7 +24,11 @@
   height: 100svh;
   background-color: rgba(0, 0, 0, 0.6);
 }
-
+.departmentHeading {
+  color: #f0f0f0;
+  z-index: 1;
+  position: relative;
+}
 .introContainer {
   z-index: 1;
   text-align: center;

@@ -12,7 +12,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 
@@ -20,6 +19,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
+import Image from "next/image";
 interface Props {
   window?: () => Window;
 }
@@ -27,8 +27,9 @@ interface Props {
 const drawerWidth = 240;
 const navItems = [
   { label: "Home", path: "/" },
-  { label: "Projects", path: "/projects" },
   { label: "Products", path: "/products" },
+  { label: "Clients", path: "/clients" },
+  { label: "Projects", path: "/projects" },
   { label: "Contact Us", path: "/contact" },
   { label: "Brouchers", path: "/brouchers" },
 ];
@@ -53,15 +54,17 @@ export default function DrawerAppBar(props: Props) {
           cursor: "pointer",
         }}
       />
-      <Typography variant="h6" sx={{ my: 2 }}>
-        Deal Magsil
-        <br />
-        <Typography
-          sx={{ my: 2, fontSize: "15px", color: "gray", marginTop: "-5px" }}
-        >
-          Since 1991
-        </Typography>
-      </Typography>
+
+      <Image
+        src="/images/logo3.png"
+        alt="DEAL MAGSIL"
+        width={200}
+        height={20}
+        style={{
+          objectFit: "contain",
+          marginTop: "40px",
+        }}
+      />
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -73,7 +76,14 @@ export default function DrawerAppBar(props: Props) {
                   color: "black",
                 }}
               >
-                <ListItemText primary={item.label} />
+                <ListItemText
+                  primary={item.label}
+                  primaryTypographyProps={{
+                    style: {
+                      letterSpacing: "1px", // Adjust letter spacing
+                    },
+                  }}
+                />
               </ListItemButton>
             </Link>
           </ListItem>
@@ -193,31 +203,36 @@ export default function DrawerAppBar(props: Props) {
             <Box
               sx={{ display: { xs: "none", sm: "block", marginTop: "10px" } }}
             >
-              <h2
-                style={{
-                  color: "white",
-                  letterSpacing: "4px",
-                  marginTop: "15px",
-                  fontSize: "25px",
-                }}
-              >
-                DEAL MAGSIL
-              </h2>
+              {
+                <Image
+                  src="/images/logo1.png"
+                  alt="DEAL MAGSIL"
+                  width={200}
+                  height={20}
+                  style={{
+                    marginTop: "5px",
+                  }}
+                />
+              }
             </Box>
           </Link>
-          {/* DEAL MAGSIL Text for Mobile View */}
-          <Typography
-            variant="h6"
-            component="div"
+
+          <Box
             sx={{
               display: { xs: "block", sm: "none" },
               marginLeft: "auto",
-              color: "white",
-              letterSpacing: "2px",
             }}
           >
-            DEAL MAGSIL
-          </Typography>
+            <Image
+              src="/images/logo1.png"
+              alt="DEAL MAGSIL"
+              width={200}
+              height={20}
+              style={{
+                objectFit: "contain",
+              }}
+            />
+          </Box>
 
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (

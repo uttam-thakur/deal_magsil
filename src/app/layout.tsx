@@ -4,6 +4,8 @@ import Footer from "../app/components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import FABWhatsApp from "./components/fabComponents/FABWhatsApp";
 import FABLocation from "./components/fabComponents/FABLocation";
+import FABProduct from "./components/fabComponents/FABProduct";
+
 import SEO from "./components/SEO";
 
 export const metadata = {
@@ -18,7 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <SEO
           title="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
           description="Deal Magsil specializes in high-quality cement products including precast slabs, fencing pillars, roofing tiles, RCC pipes, and more for industrial and commercial use."
-          keywords="Asansol cement product, durgapur cement product, cement products, precast concrete, roofing tiles, fencing pillars, RCC pipes, cement slabs, concrete blocks, precast construction materials, precast housing solutions, high-quality concrete, tiles"
+          keywords="Asansol cement product, durgapur cement product, cement products, precast concrete, roofing tiles, fencing pillars, RCC pipes, cement slabs, concrete blocks, precast construction materials, precast housing solutions, high-quality concrete, tiles, bricks, zigzag, pavour, interlock, cement bricks,cement tiles, tiles, precast, precasting, precast products, slabs, deal, deal magsil, magsil"
           author="Deal Magsil"
           canonical="https://yourwebsite.com"
           ogTitle="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
@@ -34,6 +36,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <Navbar />
         <FABLocation />
         <FABWhatsApp />
+        <FABProduct />
         <div style={{ marginTop: "-145px" }}>
           <Footer />
         </div>

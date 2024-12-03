@@ -65,3 +65,67 @@ export const contactData = [
     contactInfo: "+91 9332331442",
   },
 ];
+
+//CardItems
+interface ContentBlock {
+  subtitle: string;
+  details: string[];
+}
+
+interface SectionData {
+  id: number;
+  images: string[];
+  image: String;
+  altText: string;
+  title: string;
+  content: ContentBlock[];
+}
+
+export const sectionData: SectionData[] = [
+  {
+    id: 1,
+    images: ["/images/mainImage1.webp", "/images/mainImage5.webp"],
+    image: "/images/mainImage1.webp",
+    altText: "Virtual Property Exploration",
+    title: "The Process and Benefits of Precast Concrete",
+    content: [
+      {
+        subtitle: "Process",
+        details: [
+          "Custom molds are created to match exact project specifications.",
+          "Concrete is poured and cured in a factory setting for optimal quality.",
+          "Precast components are transported and assembled efficiently on-site.",
+        ],
+      },
+      {
+        subtitle: "Benefits",
+        details: [
+          "Built to withstand extreme conditions and heavy loads.",
+          "Reduces on-site work, ensuring quicker project completion.",
+          "Minimizes material waste and promotes sustainable practices.",
+          "Perfect for infrastructure, buildings, and custom designs.",
+        ],
+      },
+    ],
+  },
+  {
+    id: 2,
+    images: ["/images/mainImage5.webp"],
+    image: "/images/mainImage5.webp",
+
+    altText: "On-Site Expertise",
+    title: "On-Site Expertise",
+    content: [
+      {
+        subtitle: "Trust in Our Specialists",
+        details: [
+          "Since 1991, we’ve set benchmarks in the construction industry with a commitment to quality, speed, and service.",
+          "We use 100% clear, virgin raw materials and manufacture products under precision with advanced automated machinery.",
+          "Our innovative concrete products are cost-effective, maintenance-free, environmentally friendly, and superior to conventional materials.",
+          "We continuously improve by adopting modern technologies and enhancing the skills of our team to exceed customer expectations.",
+          "The <strong>DEAL MAGSIL</strong>  brand is synonymous with exceptional quality, advanced technology, and sustainable solutions.",
+        ],
+      },
+    ],
+  },
+];

@@ -4,7 +4,6 @@
   height: 100vh;
   overflow: hidden;
 }
-
 .carouselImage {
   margin-top: 75px;
   width: 100%;
@@ -15,6 +14,7 @@
   transition: background-image 1s ease-in-out;
   margin-top: -0px;
 }
+
 .carouselImage::after {
   content: "";
   position: absolute;

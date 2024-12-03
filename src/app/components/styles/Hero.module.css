@@ -1,5 +1,6 @@
 .heroSection {
-  background-image: url("/images/deal-magsil.jpg");
+  /* background-image: url("/images/deal-magsil.jpg"); */
+  background-image: url("/images/hero2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +32,11 @@
   width: 90%;
   padding: 20px;
 }
-
+.imgaeHero {
+  z-index: 1;
+  position: "relative";
+  margin-top: "100px";
+}
 .introHeading {
   font-size: 2rem;
   font-weight: bold;
@@ -61,10 +66,24 @@
   }
 
   .introHeading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 393px;
+    margin-left: -10px;
   }
 
   .introSubHeading {
-    font-size: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    margin-left: -6px;
+  }
+  .introContainer {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .imgaeHero {
+    height: 180px;
+    width: 300px;
+    margin-top: 0px;
   }
 }

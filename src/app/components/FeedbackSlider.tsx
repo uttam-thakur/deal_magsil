@@ -3,40 +3,7 @@ import React, { useState } from "react";
 import { Box, Typography, Avatar, Rating, IconButton } from "@mui/material";
 import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
 import styles from "../components/styles/FeedbackSlider.module.css";
-
-interface Feedback {
-  image: string;
-  feedback: string;
-  rating: number;
-  name: string;
-  designation: string;
-}
-
-const feedbackData: Feedback[] = [
-  {
-    image: "/images/feedback/profileImg.png",
-    feedback:
-      "Amazing service and top-notch product quality! The attention to detail exceeded my expectations.",
-    rating: 5,
-    name: "John Doe",
-    designation: "CEO, TechCorp",
-  },
-  {
-    image: "/images/feedback/profileImg1.png",
-    feedback:
-      "Incredible experience! Professionalism and product quality were top-notch.",
-    rating: 4.5,
-    name: "Jane Smith",
-    designation: "Marketing Director, Webify",
-  },
-  {
-    image: "/images/feedback/profileImg2.jpg",
-    feedback: "Great service, quick turnaround, and excellent product quality!",
-    rating: 5,
-    name: "Robert Johnson",
-    designation: "Project Manager, BuildIt",
-  },
-];
+import { feedbackData } from "../common/constant/home";
 
 const FeedbackSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -63,7 +30,7 @@ const FeedbackSlider: React.FC = () => {
           backgroundSize: "cover",
           backgroundColor: "black",
           backgroundPosition: "center",
-          padding: "50px 20px",
+          padding: "73px 20px",
         }}
         className={styles.mainContainer}
       >

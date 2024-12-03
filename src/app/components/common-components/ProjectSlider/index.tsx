@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCarousel from "../../ProjectCarousel/index";
 import styles from "./styles.module.css";
-import { BsThreeDots } from "react-icons/bs";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { AiOutlineProduct } from "react-icons/ai";
 
@@ -14,12 +13,14 @@ interface ProjectSliderProps {
   images: ImageData[];
   name: string;
   title: any;
+  keyword: any;
   onClick: any;
   products: string[];
 }
 
 const ProjectSlider: React.FC<ProjectSliderProps> = ({
   images,
+  keyword,
   name,
   title,
   onClick,
@@ -28,6 +29,7 @@ const ProjectSlider: React.FC<ProjectSliderProps> = ({
   return (
     <div className={styles.projectSlider}>
       <ProjectCarousel images={images} />
+
       <div
         className={styles.projectDetails}
         onClick={() => {

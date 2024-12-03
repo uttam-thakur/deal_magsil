@@ -42,6 +42,7 @@
   font-size: 1.2rem;
   color: var(--text-color);
   margin-bottom: 1.5rem;
+  font-weight: 500;
 }
 
 .list {
@@ -53,6 +54,47 @@
 .list li {
   margin-bottom: 0.8rem;
   line-height: 1.6;
+}
+
+.imageSliderContainer {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%; /* Each slide takes up 100% of the container */
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 50px;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (max-width: 1024px) {
@@ -67,6 +109,18 @@
 
   .image {
     width: 90%;
+  }
+  .imageSliderContainer {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+  }
+  .prevButton {
+    left: 10px;
+  }
+
+  .nextButton {
+    right: 75px;
   }
 
   .textContainer {

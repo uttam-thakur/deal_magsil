@@ -133,19 +133,16 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* Adjust spacing between the logo and text */
 }
 
 .logoText {
   font-size: 1.25rem;
-  /* font-weight: bold; */
   color: white;
   letter-spacing: 1px;
 }
 
 @media (max-width: 1024px) {
   .footerBorder {
-    /* flex-direction: column; */
     align-items: center;
     padding: 1rem;
   }
@@ -164,7 +161,7 @@
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr; /* Switch to two columns for medium screens */
+    grid-template-columns: 1fr 1fr;
   }
 
   .sectionTitle {
@@ -175,7 +172,7 @@
 
 @media (max-width: 768px) {
   .grid {
-    grid-template-columns: 1fr; /* Switch to single column for small screens */
+    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 

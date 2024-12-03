@@ -1,5 +1,6 @@
 import Hero from "./components/Hero";
 import WelcomeCard from "./components/CardItem";
+import CardItems2 from "./components/CardItems2";
 import Carouselinfra from "./components/Carouselinfra";
 import FeedbackSlider from "./components/FeedbackSlider";
 import RegistrationSection from "./components/RegistrationSection";
@@ -12,12 +13,11 @@ const Home = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Hero />
-      <WelcomeCard />
-
+      {/* <Carousel /> */}
+      {/* <WelcomeCard /> */}
+      <CardItems2 />
       <Carouselinfra />
-
       <FeedbackSlider />
-
       <RegistrationSection />
 
       {/* <WhyUs /> */}

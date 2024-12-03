@@ -1,17 +1,11 @@
 import * as React from "react";
 import { Box, Typography, Paper, Grid } from "@mui/material";
 import { CheckCircle } from "@mui/icons-material";
+import { EmojiEvents } from "@mui/icons-material";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
+import { registrations } from "../common/constant/home";
 import style from "./styles/RegistrationSection.module.css";
 const RegistrationSection = () => {
-  const registrations = [
-    "Government of West Bengal registered S.S.I Unit.",
-    "An ISO 9001 : 2008 CERTIFIED & Registered Company.",
-    "Registered Technical support member from Council of Architecture, India.",
-    "Registered Trade Licence Holder from Asansol Municipal Corporation.",
-    "Registered Company of Directorate of Commercial Taxes Government of West Bengal.",
-    "Vendor Registration of many elite Government & Private Companies.",
-  ];
-
   return (
     <Box
       sx={{
@@ -61,7 +55,14 @@ const RegistrationSection = () => {
                 height: "100%",
               }}
             >
-              <CheckCircle sx={{ color: "green", mr: 2 }} />
+              <WorkspacePremiumIcon
+                sx={{
+                  color: "green",
+                  mr: 2,
+                  height: "2.5rem",
+                  width: "2.5rem",
+                }}
+              />
               <Typography variant="body1" color="rgb(212,168,99)">
                 {item}
               </Typography>

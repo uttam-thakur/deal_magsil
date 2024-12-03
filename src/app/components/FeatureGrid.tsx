@@ -123,9 +123,6 @@ const FeatureGrid: React.FC<FeatureGridProps> = ({ searchTerm }) => {
           />
         ))}
       </div>
-      <div className={styles.featuregridSliderDiv}>
-        {/* <FeatureGridSlider /> */}
-      </div>
     </div>
   );
 };
