@@ -37,6 +37,12 @@
   position: "relative";
   margin-top: "100px";
 }
+.imgaeBG {
+  z-index: 1;
+  position: "relative";
+  margin-top: "50px";
+}
+
 .introHeading {
   font-size: 2rem;
   font-weight: bold;

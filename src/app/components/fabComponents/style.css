@@ -79,6 +79,9 @@
   justify-content: center;
   align-items: center;
   transition: opacity 0.85s ease, transform 2s ease;
+  /* height: 48px;
+  width: 240px;
+  top: calc(100vh - 98px); */
 }
 
 .fab-product.hidden {
@@ -100,4 +103,20 @@
   margin-left: 10px;
   margin-top: 10px;
   text-transform: capitalize;
+}
+
+@media only screen and (max-width: 768px) {
+  .fab-product {
+    height: 48px;
+    width: 240px;
+    top: calc(100vh - 90px);
+  }
+  .fab-location {
+    height: 62px;
+    width: 62px;
+  }
+  .fab-whatsapp {
+    height: 62px;
+    width: 62px;
+  }
 }

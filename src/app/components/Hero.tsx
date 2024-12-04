@@ -7,6 +7,13 @@ export default function Hero() {
   return (
     <div className={styles.heroSection}>
       <div className={styles.introContainer}>
+        <Image
+          alt="bg logo logo"
+          src="/images/bg-logo2.png"
+          height={100}
+          width={350}
+          className={styles.imgaeBG}
+        />
         <p className={styles.introHeading}>
           <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil —</span>
           {/* <span style={{ fontSize: "1.8rem" }}> */} the world of precasting,
@@ -29,6 +36,7 @@ export default function Hero() {
           <p>Visit Us Today—Where Dreams Become Reality!</p>
         </div>
       </div>
+
       <Image
         alt="make in india logo"
         src="/images/makeinindia6.png"
