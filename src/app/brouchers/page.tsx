@@ -10,7 +10,7 @@ import {
   CardText,
   Button,
 } from "reactstrap";
-
+import Image from "next/image";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import Styles from "./page.module.css";
 import { brochureHeading, brouchersPara } from "../common/constant/brouchers";
@@ -52,6 +52,13 @@ export default function Brochures() {
             <h1 className="text-5xl font-extrabold text-blue-900">
               {brochureHeading}
             </h1>
+            <Image
+              alt="bg logo logo"
+              src="/images/bg-logo2.png"
+              height={200}
+              width={550}
+              className="imgaeBG"
+            />
             <p className="text-lg text-gray-700 mt-4 max-w-xl mx-auto">
               {brouchersPara}
             </p>

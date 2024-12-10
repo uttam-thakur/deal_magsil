@@ -55,3 +55,9 @@ li a {
 .swiper-pagination-bullet-active {
   background-color: white !important;
 }
+
+.imgaeBG {
+  z-index: 1;
+  position: "relative";
+  margin-top: "50px";
+}

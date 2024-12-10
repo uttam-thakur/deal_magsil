@@ -12,6 +12,19 @@ const images = [
   "/images/mainImage7.webp",
   "/images/mainImage8.webp",
   "/images/mainImage9.webp",
+  //carousel image
+  // "/images/cover/c1.jpg",
+  // "/images/cover/c2.jpg",
+  // "/images/cover/c3.jpg",
+  // "/images/cover/c4.jpg",
+  // "/images/cover/c9.jpg",
+  // "/images/cover/c10.jpg",
+  // "/images/cover/c5.jpg",
+  // "/images/cover/c6.jpg",
+  // "/images/cover/c7.jpg",
+  // "/images/cover/c8.jpg",
+  // "/images/cover/c11.webp",
+  // "/images/cover/c12.webp",
 ];
 
 export default function Carousel() {

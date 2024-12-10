@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import {
   introHeading,
   introSubHeading,
@@ -53,6 +54,13 @@ const ProjectsPage = () => {
       {/* Intro Section */}
       <div className={styles.mainSection}>
         <div className={styles.introContainer}>
+          <Image
+            alt="bg logo logo"
+            src="/images/bg-logo2.png"
+            height={200}
+            width={550}
+            className={styles.imgaeBG}
+          />
           <p className={styles.introHeading}>{introHeading}</p>
           <p className={styles.introSubHeading}>{introSubHeading}</p>
           <div className={styles.ctaContainer}>

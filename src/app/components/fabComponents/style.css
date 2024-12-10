@@ -68,20 +68,19 @@
 /* Product */
 .fab-product {
   position: fixed;
-  top: calc(100vh - 350px);
+  top: calc(100vh - 93px);
   right: 1.5rem;
   background-color: #363535;
   z-index: 2;
-  padding: 1rem;
+  padding: 0.5rem;
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(21, 29, 49, 0.24);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: opacity 0.85s ease, transform 2s ease;
-  /* height: 48px;
-  width: 240px;
-  top: calc(100vh - 98px); */
+
+  border-radius: 15px;
 }
 
 .fab-product.hidden {
@@ -101,7 +100,7 @@
 .paraProduct {
   color: rgb(218, 204, 13);
   margin-left: 10px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
   text-transform: capitalize;
 }
 

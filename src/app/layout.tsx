@@ -20,7 +20,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <SEO
           title="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
           description="Deal Magsil specializes in high-quality cement products including precast slabs, fencing pillars, roofing tiles, RCC pipes, and more for industrial and commercial use."
-          keywords="Asansol cement product, durgapur cement product, cement products, precast concrete, roofing tiles, fencing pillars, RCC pipes, cement slabs, concrete blocks, precast construction materials, precast housing solutions, high-quality concrete, tiles, bricks, zigzag, pavour, interlock, cement bricks,cement tiles, tiles, precast, precasting, precast products, slabs, deal, deal magsil, magsil"
+          keywords="Asansol cement product, durgapur cement product, cement products, precast concrete, roofing tiles, fencing pillars, RCC pipes, cement slabs, concrete blocks, precast construction materials, precast housing solutions, high-quality concrete, tiles, bricks, zigzag, pavour, interlocking, cement bricks,cement tiles, tiles, precast, precasting, precast products, slabs, deal, deal magsil, magsil"
           author="Deal Magsil"
           canonical="https://yourwebsite.com"
           ogTitle="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
@@ -34,8 +34,8 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
         <main>{children}</main>
         <div className="application-portal" id={"portalRoot"}></div>
         <Navbar />
-        <FABLocation />
         <FABWhatsApp />
+        <FABLocation />
         <FABProduct />
         <div style={{ marginTop: "-145px" }}>
           <Footer />
