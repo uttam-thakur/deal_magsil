@@ -54,13 +54,6 @@ const ProjectsPage = () => {
       {/* Intro Section */}
       <div className={styles.mainSection}>
         <div className={styles.introContainer}>
-          <Image
-            alt="bg logo logo"
-            src="/images/bg-logo2.png"
-            height={200}
-            width={550}
-            className={styles.imgaeBG}
-          />
           <p className={styles.introHeading}>{introHeading}</p>
           <p className={styles.introSubHeading}>{introSubHeading}</p>
           <div className={styles.ctaContainer}>
@@ -69,6 +62,8 @@ const ProjectsPage = () => {
         </div>
       </div>
 
+      {/* Clients Section */}
+      <Client />
       {/* Projects Section */}
       <div className={styles.projectSection}>
         <div className={styles.projectGreeting}>
@@ -113,9 +108,6 @@ const ProjectsPage = () => {
         images={selectedProject?.images}
         showProjectView={showProjectView}
       />
-
-      {/* Clients Section */}
-      <Client />
     </>
   );
 };
