@@ -67,7 +67,351 @@ type PrecastItem = {
   title: string;
   description: string;
 };
+type precastItemsWhatsapp = {
+  images: string[];
+  title: string;
+  description: string;
+  subDescription?: string[];
+  specification?: any;
+};
 
+export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
+  {
+    images: [
+      "/images/tiles/Dotted/1.jpg",
+      "/images/tiles/Dotted/2.webp",
+      "/images/tiles/Dotted/3.jpg",
+      "/images/tiles/Dotted/4.jpg",
+    ],
+    title:
+      "RCC / PCC Base Plate Pad SLABS For PCC Electricity Distribution Poles",
+    description: `We are the leading Manufacturers of RCC / PCC Base Plate Pad SLABS used under 8Meters / 9Meters PCC Electricity Distribution Poles in West Bengal. Our Chief Intake Vendors are:`,
+    subDescription: [
+      "WBSEDCL (West Bengal State Electricity Distribution Company)",
+      "L&T Power Transmission & Distribution",
+      "Lumino Industries Ltd",
+      "Voltas Limited",
+      "Bajaj Electricals Ltd",
+      "KEI Industries Limited",
+      "Laser Power & Infra Pvt. Ltd",
+      "Gupta Power Infrastructure Ltd",
+      "NCC Limited",
+    ],
+    specification: [
+      " ✅️ We Provide Base Plate Slabs With / Without Reinforcement as per Customer's Specifications & Requirements such as the following:<br>",
+      "1️⃣ 450mm × 450mm × 75mm <strong>RCC Base Plate</strong> (M20 Grade) for 8Meters Pole<br>",
+      "2️⃣ 500mm × 500mm × 100mm <strong>PCC Base Plate</strong> (M25 Grade) for 8Meters Pole<br>",
+      "3️⃣ 600mm × 600mm × 100mm <strong>PCC Base Plate</strong> (M25 Grade) for 9Meters Pole<br>",
+
+      "4️⃣ 600mm × 600mm × 100mm <strong>RCC Base Plate</strong> (M20 Grade) for 9Meters Pole<br><br>",
+      "☑️ Our Base Plate SLABS Carry Pay Load of the 8Meters / 9Meters PCC Poles of 550 to 700 Kgs Weight at Ease.<br>",
+
+      "These Slabs are specially designed according to our Chief Vendors' Requirements.",
+    ],
+    // `,
+  },
+
+  {
+    images: [
+      "/images/tiles/ZigZagUniPaver/1.txt",
+      "/images/tiles/ZigZagUniPaver/2.txt",
+      "/images/tiles/ZigZagUniPaver/3.txt",
+      "/images/tiles/ZigZagUniPaver/4.txt",
+      "/images/tiles/ZigZagUniPaver/5.txt",
+      "/images/tiles/ZigZagUniPaver/6.txt",
+      "/images/tiles/ZigZagUniPaver/7.jpg",
+      "/images/tiles/ZigZagUniPaver/8.jpg",
+      "/images/tiles/ZigZagUniPaver/9.jpg",
+    ],
+    title: "ZIG - ZAG INTERLOCKING PAVER",
+    description: `A unique zig-zag pattern that provides strong interlocking support for outdoor paving needs.
+      Available on 60mm or 80mm Height of Different Grades & Standards.
+    `,
+    subDescription: [
+      "🟡 Economical",
+      "🟢 Variety in Design Patterns, Styles & Colours",
+      "🟣 Easy & Fast Installation",
+      "🔵 Maintenance Free",
+      "🟠 Highly Durable",
+      "🟤 High Strength",
+      "🔴 Stronger than Poured Concrete",
+      "⚫️ Weather & Water Resistant",
+    ],
+  },
+  {
+    images: [
+      "/images/tiles/Chequered/1.jpg",
+      "/images/tiles/Chequered/2.webp",
+      "/images/tiles/Chequered/3.jpg",
+      "/images/tiles/Chequered/4.jpg",
+      "/images/tiles/Chequered/5.jpg",
+    ],
+    title: "CHEQUERED",
+    description: `A classic chequered pattern that brings a bold, timeless style to interiors and exteriors.`,
+
+    subDescription: [
+      "🟨 Thickness: *25mm*",
+
+      "🟥 Size: *300mm × 300mm*",
+
+      "🟦 Shape: *Square*",
+
+      "🟪 Manufactured as per *IS* Standards.",
+    ],
+  },
+  {
+    images: [
+      "/images/products/Fencing Poles/1.jpg",
+      "/images/products/Fencing Poles/2.jpg",
+      "/images/products/Fencing Poles/3.jpg",
+      "/images/products/Fencing Poles/4.jpg",
+      "/images/products/Fencing Poles/5.jpg",
+      "/images/products/Fencing Poles/6.jpg",
+      "/images/products/Fencing Poles/7.jpg",
+    ],
+    title: "Fencing Pillar Post",
+    description: `Barbed wire fencing posts / Chain link fencing posts / Precast boundary wall pillar support / Guard pillar posts. Fencing poles offered by us is the right choice for fencing of agricultural land or land under possession. Manufactured by us in a variety of sizes and widths. Estimated life of each Fencing Pole is not less than 50 years, and due to this, they are highly demanded in the market. The fencing poles can be supplied in bulk at affordable prices
+    `,
+    subDescription: [
+      "🔴 Usage/Application: *Fencing Boundary / Demarcation* ",
+      "🟢 Length of Pillar: *3feet to 10feet*",
+      "🟡 Design: *RCC (Reinforced Cement Concrete)*",
+      "🔵 Shape: *Cubical*",
+      "🟠 Surface Treatment: *Precast Concrete Shuttering Finish*",
+      "🟣 Concrete Grade: *M30 Onwards*",
+      "⚫️ Mould Frame Finishing: *Mild Steel*",
+    ],
+  },
+
+  {
+    images: [
+      "/images/products/Precast Drains/1.jpg",
+      "/images/products/Precast Drains/2.webp",
+      "/images/products/Precast Drains/3.jpg",
+      "/images/products/Precast Drains/4.webp",
+      "/images/products/Precast Drains/5.jpg",
+      "/images/products/Precast Drains/6.jpg",
+    ],
+    title: "Precast RCC Drains",
+    description: `We are one of the topmost manufacturers and supplier of a wide range of Precast R.C.C. Drains in our domain.  These drains have holes and permit the collected water to get discharges into another drainage system. Designed by experienced and knowledgeable professionals, these drains exhibit optimum operational features.Precast U / V- Shaped Drains of various sizes for drainage of water along road sides, and in commercial, residential, and industrial areas. These products are made available to the customers in varied specifications, in order to meet their diverse requirements effectively.We are offering a wide range of Precast Concrete Box Culverts provide high flow capacity even where there is low gradient or headroom is not allowed. Our range of precast concrete box culverts are highly durable and can be easily installed on the site. Each Box Culverts are individually designed so as to cater to a varied external loading conditions.We accept Order of Precast Drains only in Bulk /Huge Quantities.
+     `,
+    subDescription: [
+      "🟣 Shape: *Customerised Specifications & Sizes*",
+      "🟠 Material: *RCC*",
+      "🟡 Grade: *M-25 / M-30 / M-40*",
+      "🔵 Built Type: *Precast*",
+    ],
+  },
+  {
+    images: [
+      "/images/products/Precast Boundary Walls/1.jpg",
+      "/images/products/Precast Boundary Walls/2.jpg",
+      "/images/products/Precast Boundary Walls/3.jpg",
+      "/images/products/Precast Boundary Walls/4.jpg",
+      "/images/products/Precast Boundary Walls/5.webp",
+      "/images/products/Precast Boundary Walls/6.webp",
+    ],
+    title: "Boundary wall",
+    description: `Our product range includes a wide range of Boundary Walls such as Concrete Boundary Walls, Industrial Boundary Walls, Precast RCC Wall Panels, Precast RCC Columns/ Struts/ Posts and many more items.Our offered walls are manufactured from optimum quality materials and advanced technology at our sound manufacturing premises in adherence to the defined industry standards.We have performed strict quality inspection regarding strength and quality of the walls. Thereby, these are widely preferred and appreciated among our clients. In order to meet clients’ specific demands, our entire range is available in various standard length options such as 1800mm , 2100mm , 2400mm and also can be customerized according to client's requirements
+   `,
+    subDescription: [
+      "🟡 Reliability",
+      "🟣 Excellent finish",
+      "🟠 Unique outlook",
+      "🔵 Cost Economical Compared to Traditional Brick Boundary Wall.",
+    ],
+    specification: [
+      "🟩 Built Type: Modular Panel Build",
+      "🟦 Material: Steel",
+      "🟨 Beam size: 6 x 6 inches (150 mm x 150 mm)",
+      "🟪 Plank length: 5 feet",
+      "🟧 Plank height: 1 feet",
+      "🟥 Plank width: 1.7 inch",
+    ],
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/cement bench.avif",
+      "/images/products/Newly Launch Product/cement bench1.jfif",
+      "/images/products/Newly Launch Product/cement bench2.jpg",
+    ],
+    title: "CEMENT Bench For OutDoor",
+    description: ` We Manufacture & Supply superior quality RCC Garden Benches With / Without Arm Rests. 
+   `,
+    subDescription: [
+      "🟡 The offered array of RCC garden benches is designed by our professionals in compliance with the global quality standards.",
+
+      "🟣 These spacious RCC garden benches are very beautiful and provide aesthetic looks to parks and lawns.",
+
+      "🔵 Clients can avail these benches from us in various types and other specifications.",
+    ],
+  },
+  {
+    images: [
+      "/images/tiles/SquaredStoneFinish/1.jpg",
+      "/images/tiles/SquaredStoneFinish/2.webp",
+      "/images/tiles/SquaredStoneFinish/3.jpg",
+      "/images/tiles/SquaredStoneFinish/4.jpg",
+      "/images/tiles/SquaredStoneFinish/5.jpg",
+    ],
+    title: "SQUARED SHAPED STONE FINISH PAVER BLOCKS ",
+    description:
+      "Features a natural stone finish that adds earthy tones and texture to floors or walls.These Exquisite design of Paver Blocks makes You feel like Cobble Stone Finishes & Touches.",
+  },
+  {
+    images: [
+      "/images/tiles/LShapedSandBlast/1.jpg",
+      "/images/tiles/LShapedSandBlast/2.jpg",
+      "/images/tiles/LShapedSandBlast/3.jpg",
+      "/images/tiles/LShapedSandBlast/4.jpg",
+      "/images/tiles/LShapedSandBlast/5.txt",
+      "/images/tiles/LShapedSandBlast/6.txt",
+      "/images/tiles/LShapedSandBlast/7.txt",
+      "/images/tiles/LShapedSandBlast/8.txt",
+    ],
+    title: "L-SHAPED Interlocking PAVER BLOCKS",
+    description:
+      "The L-shaped design with a sandblast finish adds texture and modernity to any project.",
+  },
+  {
+    images: [
+      "/images/tiles/BrickShaped/1.txt",
+      "/images/tiles/BrickShaped/2.txt",
+      "/images/tiles/BrickShaped/3.txt",
+      "/images/tiles/BrickShaped/4.txt",
+      "/images/tiles/BrickShaped/5.txt",
+      "/images/tiles/BrickShaped/6.txt",
+      "/images/tiles/BrickShaped/7.txt",
+      "/images/tiles/BrickShaped/8.txt",
+      "/images/tiles/BrickShaped/9.txt",
+      "/images/tiles/BrickShaped/10.txt",
+    ],
+    title: "BRICK SHAPED PAVER BLOCKS",
+    description:
+      "A classic brick shape that offers a rustic, timeless appeal for both indoor and outdoor spaces.",
+  },
+
+  {
+    images: [
+      "/images/tiles/Milano/1.jpg",
+      "/images/tiles/Milano/2.jpg",
+      "/images/tiles/Milano/3.jpg",
+      "/images/tiles/Milano/4.jpg",
+      "/images/tiles/Milano/5.jpg",
+      "/images/tiles/Milano/6.txt",
+      "/images/tiles/Milano/7.txt",
+      "/images/tiles/Milano/8.txt",
+      "/images/tiles/Milano/9.txt",
+    ],
+    title: "MILANO INTERLOCKING PAVER BLOCKS",
+    description:
+      "Elegant and smooth, Milano tiles are designed to bring Italian charm and sophistication to any surface.",
+  },
+  {
+    images: [
+      "/images/tiles/TRIHEX/1.jpg",
+      "/images/tiles/TRIHEX/2.txt",
+      "/images/tiles/TRIHEX/3.txt",
+      "/images/tiles/TRIHEX/4.txt",
+      "/images/tiles/TRIHEX/5.txt",
+      "/images/tiles/TRIHEX/6.txt",
+      "/images/tiles/TRIHEX/7.txt",
+    ],
+    title: "TRI - HEX INTERLOCKING PAVER BLOCKS",
+    description:
+      "Combines triangular and hexagonal shapes, perfect for creating eye-catching, intricate patterns.",
+  },
+  {
+    images: [
+      "/images/tiles/RoofTile/1.txt",
+      "/images/tiles/RoofTile/2.txt",
+      "/images/tiles/RoofTile/3.txt",
+      "/images/tiles/RoofTile/4.txt",
+      "/images/tiles/RoofTile/5.jpg",
+    ],
+    title: "PRECAST PCC ROOF TILE",
+    description:
+      "Durable and weather-resistant, this tile is ideal for roofing with a stylish, traditional look.",
+  },
+  {
+    images: [
+      "/images/products/Kerbstones/1.jpg",
+      "/images/products/Kerbstones/2.jpg",
+      "/images/products/Kerbstones/3.jpg",
+      "/images/products/Kerbstones/4.jpg",
+      "/images/products/Kerbstones/5.jpg",
+      "/images/products/Kerbstones/6.jpg",
+      "/images/products/Kerbstones/7.jpg",
+      "/images/products/Kerbstones/8.jpg",
+      "/images/products/Kerbstones/9.jpg",
+    ],
+    title: "Precast Kerb Stone",
+    description:
+      "We are a prominent manufacturer & supplier of huge assortment of Kerbstone, Precast Concrete Kerb Stones, Curbstone; that are widely used in construction sector and available in various sizes and shapes.We are concerned in offering an adequate range of Kerb Stones which have Cutting - Edge Or Champhered Edge Finish as per client's requirements. These are manufactured using the quality raw material and are widely used in the construction industries using Vibration or Hydraullic Manufacturing Process.Various tests are done by our quality controllers in order to achieve prevailing industrial standards. Apart from these, we offer these ranges to the clients at market-leading prices with Durability & Dimensions & Designs.",
+  },
+
+  {
+    images: [
+      "/images/products/Precast Cement Products/1.avif",
+      "/images/products/Precast Cement Products/2.jpg",
+      "/images/products/Precast Cement Products/3.avif",
+      "/images/products/Precast Cement Products/4.jpg",
+      "/images/products/Precast Cement Products/5.webp",
+      "/images/products/Precast Cement Products/6.webp",
+    ],
+    title: "Precast Cement Products",
+    description:
+      "We are a leading supplier and processor of all allied precast concrete products no matter how bulk the quantity is.You provide us your requirement in precasting and we will deliver you our best solution and service.We produce Precast Concrete Products From 50 lbs to 10 tons, no matter what shape or size we meet the commitments.(But we entertain requirements of special designed Precast Products only in Bulk / Huge Quantities requirement.All our products are processed from high quality raw materials which make the construction of various products durable, structurally sound, versatile and economic as compared to Cast-In-Situ Procedure. ​Honesty, impeccable quality, on time delivery, affordable pricing and customer satisfaction has helped us maintain a close association with our clients.",
+  },
+  //new Products
+  {
+    images: [
+      "/images/products/Newly Launch Product/1.jfif",
+      "/images/products/Newly Launch Product/2.jfif",
+      "/images/products/Newly Launch Product/3.jfif",
+    ],
+    title: "CELLULAR LIGHT WEIGHT CONCRETE BLOCKS",
+    description:
+      "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/precast Door Frame.webp",
+      "/images/products/Newly Launch Product/precast-door-frame.avif",
+      "/images/products/Newly Launch Product/images.jfif",
+    ],
+    title: "CEMENT DOOR WINDOW FRAME",
+    description:
+      "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+  },
+
+  {
+    images: [
+      "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
+      "/images/products/Newly Launch Product/precast wall pannels.jfif",
+      "/images/products/Newly Launch Product/stairs.jfif",
+      "/images/products/Newly Launch Product/precast housing unit.jpg",
+    ],
+    title: "Beam & columns / Wall Panels / Stairs / Structural Slab",
+    description: "Beam & columns / Wall Panels / Stairs / Structural Slab",
+  },
+  {
+    images: [
+      "/images/products/Cement/1.jpg",
+      "/images/products/Cement/2.jpg",
+
+      "/images/products/Cement/3.jpg",
+      "/images/products/Cement/4.jpg",
+      "/images/products/Cement/5.jpg",
+      "/images/products/Cement/6.jpg",
+    ],
+    title: "Cement ",
+    description:
+      "For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity. We can Provide You the following Brands (Trade Material) depending on their Availability",
+  },
+];
 export const precastItems: PrecastItem[] = [
   {
     //tiles

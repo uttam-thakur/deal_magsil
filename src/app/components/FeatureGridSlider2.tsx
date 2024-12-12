@@ -157,27 +157,32 @@
 // };
 
 // export default FeatureGridSlider2;
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-// import { Box, Typography, Button } from "@mui/material";
 import Modal from "./common-components/Modal";
 import styles from "../components/styles/FeatureGridSlider2.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Box, Typography, Button, CardMedia, Grid } from "@mui/material";
 
-import { precastItems } from "../products/ProductsConstants";
-
+import {
+  precastItems,
+  precastItemsWhatsapp,
+} from "../products/ProductsConstants";
+import { contactOnWhatsapp } from "../common/helper";
+import { whatsappNumber } from "../common/constant/index";
 type PrecastItem = {
   images: string[];
   title: string;
   description: string;
+  subDescription?: string;
+  specification?: string;
 };
 
 const FeatureGridSlider2 = () => {
-  const [selectedItem, setSelectedItem] = useState<PrecastItem | null>(null);
+  const [selectedItem, setSelectedItem] = useState<PrecastItem | any>(null);
   const [searchTerm, setSearchTerm] = useState("");
-
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -194,7 +199,12 @@ const FeatureGridSlider2 = () => {
     setSelectedItem(null);
   };
 
-  const filteredItems = precastItems.filter((item) =>
+  const handleBuyNow = (item: PrecastItem) => {
+    const message = `Hello, I am interested in buying "${item.title}". Please provide more details.`;
+    contactOnWhatsapp(whatsappNumber, message);
+  };
+
+  const filteredItems = precastItemsWhatsapp.filter((item) =>
     item.title.toLowerCase().includes(searchTerm)
   );
 
@@ -213,7 +223,7 @@ const FeatureGridSlider2 = () => {
 
       {/* Items Section */}
       {filteredItems.length > 0 ? (
-        filteredItems.map((item, index) => (
+        filteredItems.map((item: any, index: any) => (
           <div
             key={index}
             className={`${styles.section} ${
@@ -250,6 +260,28 @@ const FeatureGridSlider2 = () => {
               >
                 READ MORE
               </Button>
+              <Button
+                onClick={() => handleBuyNow(item)}
+                sx={{
+                  backgroundColor: "rgb(24, 92, 140)",
+                  marginLeft: "20px",
+                  "&:hover": { backgroundColor: "green" },
+                  color: "white",
+                  marginTop: "1rem",
+                }}
+              >
+                Buy Now
+              </Button>
+              {/* Horizontal Line */}
+
+              <div
+                style={{
+                  width: "80%",
+                  height: "1px",
+                  backgroundColor: "gold",
+                  margin: "1rem auto 0",
+                }}
+              ></div>
             </div>
           </div>
         ))
@@ -303,7 +335,7 @@ const FeatureGridSlider2 = () => {
                 alignItems: "center",
               }}
             >
-              {selectedItem.images.map((image, index) => (
+              {selectedItem.images.map((image: any, index: any) => (
                 <Grid
                   item
                   xs={12}
@@ -349,6 +381,53 @@ const FeatureGridSlider2 = () => {
               }}
             >
               {selectedItem.description}
+            </Typography>
+
+            <Typography
+              variant="body2"
+              sx={{
+                margin: "1rem 0",
+                lineHeight: "1.5",
+                letterSpacing: "1px",
+                fontSize: { xs: "0.9rem", md: "1rem" },
+                textAlign: "left",
+              }}
+            >
+              <strong>Sub Description:</strong>
+              <ul>
+                {selectedItem?.subDescription?.length > 0 ? (
+                  selectedItem?.subDescription.map((item: any, index: any) => (
+                    <li key={index}>{item}</li>
+                  ))
+                ) : (
+                  <li>N/A</li>
+                )}
+              </ul>
+            </Typography>
+
+            <Typography
+              variant="body2"
+              sx={{
+                margin: "1rem 0",
+                lineHeight: "1.5",
+                letterSpacing: "1px",
+                fontSize: { xs: "0.9rem", md: "1rem" },
+                textAlign: "left",
+              }}
+            >
+              <strong>Specification:</strong>
+              <ul>
+                {selectedItem?.specification?.length > 0 ? (
+                  selectedItem?.specification.map((item: any, index: any) => (
+                    <li
+                      key={index}
+                      dangerouslySetInnerHTML={{ __html: item }}
+                    />
+                  ))
+                ) : (
+                  <li>N/A</li>
+                )}
+              </ul>
             </Typography>
 
             <Button

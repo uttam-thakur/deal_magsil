@@ -28,7 +28,6 @@ const drawerWidth = 240;
 const navItems = [
   { label: "Home", path: "/" },
   { label: "Products", path: "/products" },
-  // { label: "Clients", path: "/clients" },
   { label: "Clients & Projects", path: "/projects" },
   { label: "Contact Us", path: "/contact" },
   { label: "Brouchers", path: "/brouchers" },
@@ -37,9 +36,14 @@ const navItems = [
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [activeLink, setActiveLink] = React.useState(navItems[0].path);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const handleLinkClick = (path: string) => {
+    setActiveLink(path);
   };
 
   const drawer = (
@@ -71,9 +75,16 @@ export default function DrawerAppBar(props: Props) {
           <ListItem key={item.label} disablePadding>
             <Link href={item.path} passHref>
               <ListItemButton
+                onClick={() => handleLinkClick(item.path)}
                 sx={{
                   textAlign: "center",
-                  color: "black",
+                  color: activeLink === item.path ? "red" : "black",
+                  borderBottom:
+                    activeLink === item.path ? "2px solid red" : "none",
+
+                  "&:hover": {
+                    scale: "1.2",
+                  },
                 }}
               >
                 <ListItemText
@@ -238,11 +249,20 @@ export default function DrawerAppBar(props: Props) {
             {navItems.map((item) => (
               <Link href={item.path} passHref key={item.label}>
                 <Button
+                  onClick={() => handleLinkClick(item.path)}
                   sx={{
-                    color: "#fff",
+                    color: activeLink === item.path ? "red" : "#fff",
                     marginLeft: 2,
                     letterSpacing: "0.15rem",
                     marginTop: "15px",
+                    borderBottom:
+                      activeLink === item.path ? "2px solid red" : "none",
+
+                    "&:hover": {
+                      transition:
+                        "transform 0.5s ease-in-out, color 0.3s ease-in-out", // Smooth transition for scale and color
+                      scale: "1.05",
+                    },
                   }}
                 >
                   {item.label}

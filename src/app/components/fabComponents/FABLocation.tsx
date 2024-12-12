@@ -5,8 +5,8 @@ import { useScrolling } from "../../common/hooks/useScrolling";
 import "./style.css";
 
 export const handleLocationClick = () => {
-  const latitude = 23.70925;
-  const longitude = 86.95071;
+  const latitude = 23.709186057354245;
+  const longitude = 86.95074188056255;
 
   const googleMapsUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
