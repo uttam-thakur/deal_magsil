@@ -146,10 +146,15 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/Chequered/4.jpg",
       "/images/tiles/Chequered/5.jpg",
     ],
-    title: "CHEQUERED",
+    title: "25 SQUARE CHEQUERED TILES (CADBURRY)",
     description: `A classic chequered pattern that brings a bold, timeless style to interiors and exteriors.`,
-
     subDescription: [
+      `
+  Usage / Application:  *Ramps, Parking, Driveways, Footpaths, Walkway,* Etc.
+
+  `,
+    ],
+    specification: [
       "🟨 Thickness: *25mm*",
 
       "🟥 Size: *300mm × 300mm*",
@@ -236,7 +241,7 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/products/Newly Launch Product/cement bench1.jfif",
       "/images/products/Newly Launch Product/cement bench2.jpg",
     ],
-    title: "CEMENT Bench For OutDoor",
+    title: "Precast RCC Garden Bench",
     description: ` We Manufacture & Supply superior quality RCC Garden Benches With / Without Arm Rests. 
    `,
     subDescription: [
@@ -273,6 +278,14 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "L-SHAPED Interlocking PAVER BLOCKS",
     description:
       "The L-shaped design with a sandblast finish adds texture and modernity to any project.",
+
+    subDescription: [
+      "  _These paving blocks are most suitable for heavy-duty applications, able to support substantial loads and resist shearing and braking forces._",
+    ],
+    specification: [
+      `Available with Sand-Blast Texture & various Colour Option.
+  🔴🟡⚪️⚫️🔵🟢🟤`,
+    ],
   },
   {
     images: [
@@ -290,6 +303,17 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "BRICK SHAPED PAVER BLOCKS",
     description:
       "A classic brick shape that offers a rustic, timeless appeal for both indoor and outdoor spaces.",
+
+    subDescription: [
+      "  _These paving blocks are most suitable for heavy-duty applications, able to support substantial loads and resist shearing and braking forces._",
+    ],
+    specification: [
+      `🟩 Thickness: 40mm / 60mm
+🟧 Dimension: 200mm × 100 mm
+🟦 Application: Low Traffic Area, Footpath, Parking.
+🟪 Finish: Matt 
+⬛️ Manufacturing Technique: Hydraullic Vibro-Compaction`,
+    ],
   },
 
   {
@@ -307,6 +331,17 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "MILANO INTERLOCKING PAVER BLOCKS",
     description:
       "Elegant and smooth, Milano tiles are designed to bring Italian charm and sophistication to any surface.",
+
+    subDescription: [
+      `
+        💠  _It is made out of Appropriate Grade of Concrete with the incorporation of cutting-edge technology._
+
+🔶️ _The Paver Block is the most suitable for exterior applications as the tile is capable of enduring tough climate conditions, dust, chemical attacks, and other degrading factors._
+ 
+🔷️ _Milano Paver Block has got an impressive design and unique appearance, for this reason, we are seeing a huge demand for the Paver Block in the marketplace._
+▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪
+        `,
+    ],
   },
   {
     images: [
@@ -321,6 +356,17 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "TRI - HEX INTERLOCKING PAVER BLOCKS",
     description:
       "Combines triangular and hexagonal shapes, perfect for creating eye-catching, intricate patterns.",
+    subDescription: [
+      ` _Owing to our rich industrial experience, we are engaged in manufacturing and supplying a commendable range of_  *TRI - HEX Interlocking PAVER BLOCK.* 
+
+☑️ _These blocks are precision-engineered by our team of highly qualified and experienced professionals in order to ensure their adherence with the well-defined standards._
+        `,
+    ],
+    specification: [
+      `
+        ☆ _Manufactured by Hydraullic Vibro-Press Technique of Variable Thickness from 40mm to 100mm as per Client's requirement._☆
+        `,
+    ],
   },
   {
     images: [
@@ -349,6 +395,28 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "Precast Kerb Stone",
     description:
       "We are a prominent manufacturer & supplier of huge assortment of Kerbstone, Precast Concrete Kerb Stones, Curbstone; that are widely used in construction sector and available in various sizes and shapes.We are concerned in offering an adequate range of Kerb Stones which have Cutting - Edge Or Champhered Edge Finish as per client's requirements. These are manufactured using the quality raw material and are widely used in the construction industries using Vibration or Hydraullic Manufacturing Process.Various tests are done by our quality controllers in order to achieve prevailing industrial standards. Apart from these, we offer these ranges to the clients at market-leading prices with Durability & Dimensions & Designs.",
+    subDescription: [
+      `
+  Our Roof Tiles are designed in such a way that it reflects more Sunlight and absorbs less heat._
+
+☑️ _By reflecting the heat of the Sun instead of absorbing it, they keep buildings cooler and reduces the amount of energy needed to cool them, in turn reducing the use of air conditioners and electricity consumption._
+
+✅️ _Our Roof Tiles are Water Proof in property keeping Your Terrace free from any Dampness due to Rain._
+    `,
+    ],
+    specification: [
+      `
+    
+
+🔵 Pattern: *Flat Tiles*
+🟡 Size: *250mm × 250mm*
+🟣 Thickness: *20mm to 25mm*
+🟠 Colour: *Light Grey*
+🟢 Features: *Water Proof*
+🔴 Material: *Precast Plain Cement Concrete (M15 Grade)*
+🟤 Finish: *Matt (Can be Polished Further after Installation by Tiles Poloshing Machine)*
+    `,
+    ],
   },
 
   {
@@ -374,6 +442,34 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "CELLULAR LIGHT WEIGHT CONCRETE BLOCKS",
     description:
       "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+    subDescription: [
+      `
+    
+    _
+🟨 Provide additional strength to the edge of the carriageway.
+🟩 Provide a demarcation line between roads and footway and deter traffic from mounting on the footway, thereby ensuring the safety of the pedestrians.
+🟦 Prevent vegetation from encroaching on to the roads.
+🟪 Generally improve the aesthetics and contribute to a formal paved environment. 
+
+❇️ _KerbStones can be effectively used in pedestrian areas, domestic drives, public, private and commercial footways, school playgrounds, pedestrian precincts and industrial pavements._ ❇️
+    `,
+    ],
+    specification: [
+      `
+    ___
+
+🟠 Type: *Outdoor*
+🟢 Usage: *Roadway, Side Walls, Gutter Drainage, etc.*
+🔵 Color: *Grey Cement Color*
+🟤 Form: *Block*
+⚫️ Grade: *M-20*
+🔴 Size: *(300×230×100)mm , (300×250×150)mm , (300×450×100)mm.*
+🟣 Material: *Plain Cement Concrete*
+
+Due to prosperous industry practice, we are involved in providing a broad range of Kerb Stones. This range is enormously employed owing to their reasonable rates and strong nature.
+    
+    `,
+    ],
   },
 
   {
@@ -410,6 +506,23 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     title: "Cement ",
     description:
       "For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity. We can Provide You the following Brands (Trade Material) depending on their Availability",
+    subDescription: [
+      `
+   _For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity._
+  `,
+    ],
+    specification: [
+      `
+  We can Provide You the following Brands (Trade Material) depending on their Availability ~_
+
+🟩 AMBUJA
+🟦 AMBUJA +PLUS
+🟧 LAFARGE CONCRETO 
+🟪 ULTRATECH
+🟨 NU VISTA
+🟥 EMAMI DOUBLE BULL
+  `,
+    ],
   },
 ];
 export const precastItems: PrecastItem[] = [

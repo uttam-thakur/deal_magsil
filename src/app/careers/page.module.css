@@ -7,8 +7,31 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  padding: 2px;
 }
-
+.roleItem {
+  text-align: left;
+  line-height: 30px;
+}
+.accordion {
+  margin-left: 46%;
+  margin-top: 20px;
+}
+.accordion :hover {
+  color: red;
+  cursor: pointer;
+}
+.modalContent {
+  text-align: left;
+  color: black;
+  margin-left: 10px;
+}
+.modal {
+  margin-left: 35%;
+  background-color: #fff;
+  max-width: 40%;
+  margin-top: 20px;
+}
 /* Grid animation background */
 .grid {
   position: absolute;
@@ -107,4 +130,18 @@
 }
 .contactInfo {
   margin-top: 100px;
+}
+.btn {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .accordion {
+    margin-left: 32%;
+  }
 }

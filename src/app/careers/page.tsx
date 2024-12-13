@@ -188,6 +188,7 @@ import styles from "./page.module.css";
 const Careers: React.FC = () => {
   const [isAccordionOpen, setIsAccordionOpen] = useState(false);
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
+  const [isOpen, setIsOpen] = useState(false);
 
   const roles = [
     {
@@ -224,6 +225,7 @@ const Careers: React.FC = () => {
 
   const toggleAccordion = () => {
     setIsAccordionOpen(!isAccordionOpen);
+    setIsOpen(!isOpen);
   };
 
   const openModal = (role: string) => {
@@ -261,8 +263,12 @@ const Careers: React.FC = () => {
           Be part of something great and grow your career with us!{" "}
         </p>
 
-        <button className={styles.button} onClick={toggleAccordion}>
+        {/* <button className={styles.button} onClick={toggleAccordion}>
           See open roles
+        </button> */}
+
+        <button className={styles.button} onClick={toggleAccordion}>
+          See open roles {isOpen ? "▲" : "▼"}
         </button>
 
         {/* Accordion */}
@@ -324,7 +330,9 @@ const Careers: React.FC = () => {
                   </li>
                 </ul>
               )}
-              <button onClick={closeModal}>Close</button>
+              <button onClick={closeModal} className={styles.btn}>
+                Close
+              </button>
             </div>
           </div>
         )}
