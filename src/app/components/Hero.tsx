@@ -48,25 +48,11 @@ export default function Hero() {
               <Image
                 alt="Recycle image"
                 src="/images/recycle.webp"
-                height={140}
+                height={170}
                 width={220}
                 className={styles.imgaeHero}
               />
-              <span
-                className={styles.span}
-                // style={{
-                //   position: "absolute",
-                //   top: "50%",
-                //   left: "50%",
-                //   transform: "translate(-50%, -50%)",
-                //   fontSize: "24px",
-                //   fontWeight: "bold",
-                //   color: "white",
-                //   textShadow: "2px 2px 4px rgba(0, 0, 0, 0.6)",
-                // }}
-              >
-                RECYCLE
-              </span>
+              <span className={styles.span}>RECYCLE</span>
             </div>
           </div>
         </div>
