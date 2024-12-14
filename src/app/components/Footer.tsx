@@ -54,6 +54,16 @@ const Footer = () => {
                     About Us
                   </Link>{" "}
                 </p>
+                <p className={styles.sectionText}>
+                  <Link
+                    href="/careers"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.aboutLink}
+                  >
+                    Careers
+                  </Link>
+                </p>
               </div>
               {/* Contact Section */}
               <div className={styles.section}>

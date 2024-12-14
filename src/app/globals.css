@@ -6,6 +6,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+
   background-color: rgb(244, 242, 242);
 }
 
@@ -54,4 +55,29 @@ li a {
 
 .swiper-pagination-bullet-active {
   background-color: white !important;
+}
+
+.imgaeBG {
+  z-index: 1;
+  position: "relative";
+  margin-top: "50px";
+}
+
+/* Add AOS animations to trigger on scroll */
+[data-aos="fade-right"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-aos="fade-left"] {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Transitions for animations */
+[data-aos="fade-right"],
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(100px); /* Adjust this value to slide in from right */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }

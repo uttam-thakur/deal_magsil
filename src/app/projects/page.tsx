@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 import {
   introHeading,
   introSubHeading,
@@ -61,6 +62,8 @@ const ProjectsPage = () => {
         </div>
       </div>
 
+      {/* Clients Section */}
+      <Client />
       {/* Projects Section */}
       <div className={styles.projectSection}>
         <div className={styles.projectGreeting}>
@@ -105,9 +108,6 @@ const ProjectsPage = () => {
         images={selectedProject?.images}
         showProjectView={showProjectView}
       />
-
-      {/* Clients Section */}
-      <Client />
     </>
   );
 };

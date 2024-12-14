@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import FAQ from "../components/FAQ";
 import ContactModal from "../components/ContactModal";
 import GetInTouchForm from "../components/GetInTouchForm";
-
+import Image from "next/image";
 import { infoData, contactData } from "../common/constant";
 import { handleLocationClick } from "../components/fabComponents/FABLocation";
 import { contactHeaderH1, contactHeaderP } from "../common/constant/contact ";
@@ -17,6 +17,13 @@ export default function Contact() {
     <>
       <div className={styles.main}>
         <div className={styles.info}>
+          <Image
+            alt="bg logo logo"
+            src="/images/bg-logo2.png"
+            height={200}
+            width={550}
+            className={styles.imgaeBG}
+          />
           <div className={styles.title}>{infoData.title}</div>
           <div className={styles.infoWindow}>
             <div className={styles.subTitle}>{infoData.subTitle}</div>

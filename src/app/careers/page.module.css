@@ -1,0 +1,147 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 2px;
+}
+.roleItem {
+  text-align: left;
+  line-height: 30px;
+}
+.accordion {
+  margin-left: 46%;
+  margin-top: 20px;
+}
+.accordion :hover {
+  color: red;
+  cursor: pointer;
+}
+.modalContent {
+  text-align: left;
+  color: black;
+  margin-left: 10px;
+}
+.modal {
+  margin-left: 35%;
+  background-color: #fff;
+  max-width: 40%;
+  margin-top: 20px;
+}
+/* Grid animation background */
+.grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 49px,
+      rgba(255, 255, 255, 0.1) 50px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 49px,
+      rgba(255, 255, 255, 0.1) 50px
+    );
+  z-index: 1;
+  animation: moveGrid 10s linear infinite;
+}
+
+/* Keyframes for grid movement */
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100px 100px;
+  }
+}
+
+/* Content container */
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+/* Logo wrapper */
+.logoWrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 20px;
+}
+
+/* Rotating logo */
+.logo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: rotateLogo 4s linear infinite;
+}
+
+/* Keyframes for rotating logo */
+@keyframes rotateLogo {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Title styles */
+.title {
+  font-size: 3rem;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Description styles */
+.description {
+  font-size: 1.2rem;
+  margin: 10px 0 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Button styles */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6a0dad;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: #3d3ddb;
+}
+.contactInfo {
+  margin-top: 100px;
+}
+.btn {
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  .accordion {
+    margin-left: 32%;
+  }
+}

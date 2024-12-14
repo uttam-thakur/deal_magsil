@@ -6,6 +6,7 @@ import {
   heading,
   description,
 } from "../common/constant/clients";
+import Image from "next/image";
 const Clients = () => {
   const clients = [
     { name: "GrayGrids", logo: "/images/clients/1.jpg" },
@@ -33,12 +34,20 @@ const Clients = () => {
     <>
       <div className={styles.main}>
         <div className={styles.introContainer}>
+          <Image
+            alt="bg logo logo"
+            src="/images/bg-logo2.png"
+            height={200}
+            width={550}
+            className={styles.imgaeBG}
+          />
           <p className={styles.introHeading}>{introHeading}</p>
           <p className={styles.introSubHeading}>{introSubHeading}</p>
         </div>
       </div>{" "}
       <div className={styles.clientsSection}>
         {/* <h5 className={styles.subHeading}>MEET OUR CLIENTS</h5> */}
+
         <h2 className={styles.heading}>{heading}</h2>
         <p className={styles.description}>{description}</p>
         <div className={styles.clientsGrid}>

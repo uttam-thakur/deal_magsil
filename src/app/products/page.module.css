@@ -1,8 +1,9 @@
 /* Main page styling */
+/* background-image: url("/images/product3.webp"); */
 .main {
   padding: 36px;
   margin-top: 0;
-  background-image: url("/images/product3.webp");
+  background-image: url("/images/cover/c7.jpg");
   background-size: cover;
   background-position: center;
   height: 100svh;
