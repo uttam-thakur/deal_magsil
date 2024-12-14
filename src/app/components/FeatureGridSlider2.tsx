@@ -184,7 +184,7 @@ const FeatureGridSlider2 = () => {
   const [selectedItem, setSelectedItem] = useState<PrecastItem | any>(null);
   const [searchTerm, setSearchTerm] = useState("");
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 800 });
   }, []);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {

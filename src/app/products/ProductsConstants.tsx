@@ -101,6 +101,7 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       " ✅️ We Provide Base Plate Slabs With / Without Reinforcement as per Customer's Specifications & Requirements such as the following:<br>",
       "1️⃣ 450mm × 450mm × 75mm <strong>RCC Base Plate</strong> (M20 Grade) for 8Meters Pole<br>",
       "2️⃣ 500mm × 500mm × 100mm <strong>PCC Base Plate</strong> (M25 Grade) for 8Meters Pole<br>",
+
       "3️⃣ 600mm × 600mm × 100mm <strong>PCC Base Plate</strong> (M25 Grade) for 9Meters Pole<br>",
 
       "4️⃣ 600mm × 600mm × 100mm <strong>RCC Base Plate</strong> (M20 Grade) for 9Meters Pole<br><br>",
@@ -508,20 +509,17 @@ Due to prosperous industry practice, we are involved in providing a broad range 
       "For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity. We can Provide You the following Brands (Trade Material) depending on their Availability",
     subDescription: [
       `
-   _For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity._
+   For any Cement (Trade Materials) PPC / PSC Enquiry of Requirement You can contact us for Bulk Quantity._
   `,
     ],
     specification: [
-      `
-  We can Provide You the following Brands (Trade Material) depending on their Availability ~_
-
-🟩 AMBUJA
-🟦 AMBUJA +PLUS
-🟧 LAFARGE CONCRETO 
-🟪 ULTRATECH
-🟨 NU VISTA
-🟥 EMAMI DOUBLE BULL
-  `,
+      "🟡 AMBUJA",
+      "🟢 AMBUJA +PLUS",
+      "🟣 LAFARGE CONCRETO",
+      "🔵 ULTRATECH",
+      "🟠 NU VISTA",
+      "🟤 High Strength",
+      "🔴 EMAMI DOUBLE BULL",
     ],
   },
 ];
