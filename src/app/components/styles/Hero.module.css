@@ -54,8 +54,9 @@
   z-index: 1;
   position: relative;
   max-width: 90%;
-  margin-top: 155px;
-  filter: invert(1);
+  margin-top: 145px;
+  /* margin-top: 155px; */
+  /* filter: invert(1); */
   opacity: 0; /* Initially hide images */
   animation: fadeInImage 2s ease-in-out forwards;
 }

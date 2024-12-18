@@ -1,10 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
-import FAQ from "../components/FAQ";
 import ContactModal from "../components/ContactModal";
 import GetInTouchForm from "../components/GetInTouchForm";
-import Image from "next/image";
 import { infoData, contactData } from "../common/constant";
 import { handleLocationClick } from "../components/fabComponents/FABLocation";
 import { contactHeaderH1, contactHeaderP } from "../common/constant/contact ";
@@ -17,13 +15,6 @@ export default function Contact() {
     <>
       <div className={styles.main}>
         <div className={styles.info}>
-          <Image
-            alt="bg logo logo"
-            src="/images/bg-logo2.png"
-            height={200}
-            width={550}
-            className={styles.imgaeBG}
-          />
           <div className={styles.title}>{infoData.title}</div>
           <div className={styles.infoWindow}>
             <div className={styles.subTitle}>{infoData.subTitle}</div>
@@ -47,8 +38,20 @@ export default function Contact() {
                 <button className={styles.button} onClick={handleLocationClick}>
                   {contact.contactInfo}
                 </button>
+              ) : contact.contactInfo.includes("@") ? (
+                // If the contactInfo is an email, open Gmail compose window
+                <a
+                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=${contact.contactInfo}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <p className={styles.email}>{contact.contactInfo}</p>
+                </a>
               ) : (
-                <p className={styles.email}>{contact.contactInfo}</p>
+                // If the contactInfo is a phone number, open the dialer
+                <a href={`tel:${contact.contactInfo}`} className={styles.phone}>
+                  <p>{contact.contactInfo}</p>
+                </a>
               )}
             </div>
           ))}
@@ -57,7 +60,6 @@ export default function Contact() {
         <ContactModal open={openModal} onClose={() => setOpenModal(false)} />
       </div>
       <GetInTouchForm />
-      {/* <FAQ /> */}
     </>
   );
 }

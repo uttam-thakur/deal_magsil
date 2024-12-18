@@ -11,9 +11,11 @@ export default function Hero() {
           <div className={styles.imageLogo}>
             <Image
               alt="bg logo logo"
-              src="/images/bg-logo2.png"
-              height={300}
-              width={1250}
+              src="/images/bacgroundImageLogo.png"
+              // height={300}
+              // width={1250}
+              height={450}
+              width={850}
               className={styles.imgaeBG}
             />
           </div>
@@ -52,7 +54,7 @@ export default function Hero() {
                 width={220}
                 className={styles.imgaeHero}
               />
-              <span className={styles.span}>RECYCLE</span>
+              <span className={styles.span}>RECYCLE CONCRETING</span>
             </div>
           </div>
         </div>

@@ -1,5 +1,7 @@
 export const introHeading =
-  "             We take immense pride in contributing to transformative projects that redefine possibilities and shape a brighter future.";
+  // "             We take immense pride in contributing to transformative projects that redefine possibilities and shape a brighter future.";
+
+  " Some of our Esteemed Projects and their Clients over the years are as follows :";
 export const introSubHeading =
   "        With over 33 years of trusted expertise, we are dedicated to offering innovative solutions tailored to your needs. Let us help you create spaces that inspire, with products that stand the test of time ";
 export const ctaContainer =

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -29,6 +29,17 @@ const ProjectsPage = () => {
   const [showProjectView, setShowProjectView] = useState(false);
   const [selectedProject, setSelectedProject]: any = useState({});
 
+  const sliderRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (sliderRef.current) {
+        sliderRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 1500);
+    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, []);
+
   const onProjectClick = (projectData: any) => {
     setSelectedProject(projectData);
     setShowProjectView(true);
@@ -55,15 +66,17 @@ const ProjectsPage = () => {
       <div className={styles.mainSection}>
         <div className={styles.introContainer}>
           <p className={styles.introHeading}>{introHeading}</p>
-          <p className={styles.introSubHeading}>{introSubHeading}</p>
-          <div className={styles.ctaContainer}>
+          {/* <p className={styles.introSubHeading}>{introSubHeading}</p> */}
+          {/* <div className={styles.ctaContainer}>
             <p>{ctaContainer}</p>
-          </div>
+          </div> */}
         </div>
       </div>
 
       {/* Clients Section */}
-      <Client />
+      <div ref={sliderRef}>
+        <Client />
+      </div>
       {/* Projects Section */}
       <div className={styles.projectSection}>
         <div className={styles.projectGreeting}>

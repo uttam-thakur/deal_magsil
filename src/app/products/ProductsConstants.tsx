@@ -78,10 +78,13 @@ type precastItemsWhatsapp = {
 export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
   {
     images: [
-      "/images/tiles/Dotted/1.jpg",
-      "/images/tiles/Dotted/2.webp",
-      "/images/tiles/Dotted/3.jpg",
-      "/images/tiles/Dotted/4.jpg",
+      "/images/tiles/Rcc/1.txt",
+      "/images/tiles/Rcc/2.txt",
+      "/images/tiles/Rcc/3.txt",
+      "/images/tiles/Rcc/4.txt",
+      "/images/tiles/Rcc/5.txt",
+      "/images/tiles/Rcc/6.txt",
+      "/images/tiles/Rcc/7.txt",
     ],
     title:
       "RCC / PCC Base Plate Pad SLABS For PCC Electricity Distribution Poles",
@@ -121,14 +124,20 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/ZigZagUniPaver/5.txt",
       "/images/tiles/ZigZagUniPaver/6.txt",
       "/images/tiles/ZigZagUniPaver/7.jpg",
-      "/images/tiles/ZigZagUniPaver/8.jpg",
-      "/images/tiles/ZigZagUniPaver/9.jpg",
+      // "/images/tiles/ZigZagUniPaver/8.jpg",
+      // "/images/tiles/ZigZagUniPaver/9.jpg",
+      "/images/tiles/ZigZagUniPaver/10.txt",
+      "/images/tiles/ZigZagUniPaver/11.txt",
     ],
     title: "ZIG - ZAG INTERLOCKING PAVER",
     description: `A unique zig-zag pattern that provides strong interlocking support for outdoor paving needs.
       Available on 60mm or 80mm Height of Different Grades & Standards.
     `,
     subDescription: [
+      "A unique zig-zag pattern that provides strong interlocking support for outdoor paving needs.Available on 60mm or 80mm Height of Different Grades & Standards.",
+    ],
+
+    specification: [
       "🟡 Economical",
       "🟢 Variety in Design Patterns, Styles & Colours",
       "🟣 Easy & Fast Installation",
@@ -142,10 +151,16 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
   {
     images: [
       "/images/tiles/Chequered/1.jpg",
-      "/images/tiles/Chequered/2.webp",
+      "/images/tiles/Chequered/2.jpg",
       "/images/tiles/Chequered/3.jpg",
       "/images/tiles/Chequered/4.jpg",
       "/images/tiles/Chequered/5.jpg",
+      "/images/tiles/Chequered/6.txt",
+      "/images/tiles/Chequered/7.txt",
+      "/images/tiles/Chequered/8.txt",
+      "/images/tiles/Chequered/9.txt",
+      "/images/tiles/Chequered/10.txt",
+      "/images/tiles/Chequered/11.txt",
     ],
     title: "25 SQUARE CHEQUERED TILES (CADBURRY)",
     description: `A classic chequered pattern that brings a bold, timeless style to interiors and exteriors.`,
@@ -174,11 +189,22 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/products/Fencing Poles/5.jpg",
       "/images/products/Fencing Poles/6.jpg",
       "/images/products/Fencing Poles/7.jpg",
+      "/images/products/Fencing Poles/8.txt",
+      "/images/products/Fencing Poles/9.txt",
+      "/images/products/Fencing Poles/10.txt",
+      "/images/products/Fencing Poles/11.txt",
+      "/images/products/Fencing Poles/12.txt",
     ],
     title: "Fencing Pillar Post",
-    description: `Barbed wire fencing posts / Chain link fencing posts / Precast boundary wall pillar support / Guard pillar posts. Fencing poles offered by us is the right choice for fencing of agricultural land or land under possession. Manufactured by us in a variety of sizes and widths. Estimated life of each Fencing Pole is not less than 50 years, and due to this, they are highly demanded in the market. The fencing poles can be supplied in bulk at affordable prices
+    description: `Barbed wire fencing posts / Chain link fencing posts / Precast boundary wall pillar support / Guard pillar posts.
     `,
     subDescription: [
+      "Fencing poles offered by us is the right choice for fencing of agricultural land or land under possession.",
+      " Manufactured by us in a variety of sizes and widths.",
+      " Estimated life of each Fencing Pole is not less than 50 years, and due to this, they are highly demanded in the market.",
+      " The fencing poles can be supplied in bulk at affordable prices",
+    ],
+    specification: [
       "🔴 Usage/Application: *Fencing Boundary / Demarcation* ",
       "🟢 Length of Pillar: *3feet to 10feet*",
       "🟡 Design: *RCC (Reinforced Cement Concrete)*",
@@ -199,9 +225,17 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/products/Precast Drains/6.jpg",
     ],
     title: "Precast RCC Drains",
-    description: `We are one of the topmost manufacturers and supplier of a wide range of Precast R.C.C. Drains in our domain.  These drains have holes and permit the collected water to get discharges into another drainage system. Designed by experienced and knowledgeable professionals, these drains exhibit optimum operational features.Precast U / V- Shaped Drains of various sizes for drainage of water along road sides, and in commercial, residential, and industrial areas. These products are made available to the customers in varied specifications, in order to meet their diverse requirements effectively.We are offering a wide range of Precast Concrete Box Culverts provide high flow capacity even where there is low gradient or headroom is not allowed. Our range of precast concrete box culverts are highly durable and can be easily installed on the site. Each Box Culverts are individually designed so as to cater to a varied external loading conditions.We accept Order of Precast Drains only in Bulk /Huge Quantities.
+    description: `We are one of the topmost manufacturers and supplier of a wide range of Precast R.C.C. Drains in our domain. We accept Order of Precast Drains only in Bulk /Huge Quantities.
      `,
     subDescription: [
+      "These drains have holes and permit the collected water to get discharges into another drainage system.",
+      "  these drains exhibit optimum operational features.Precast U / V- Shaped Drains of various sizes for drainage of water along road sides, and in commercial, residential, and industrial areas.",
+      " These products are made available to the customers in varied specifications, in order to meet their diverse requirements effectively.",
+      " We are offering a wide range of Precast Concrete Box Culverts provide high flow capacity even where there is low gradient or headroom is not allowed.",
+      " Our range of precast concrete box culverts are highly durable and can be easily installed on the site. ",
+      "  Each Box Culverts are individually designed so as to cater to a varied external loading conditions.",
+    ],
+    specification: [
       "🟣 Shape: *Customerised Specifications & Sizes*",
       "🟠 Material: *RCC*",
       "🟡 Grade: *M-25 / M-30 / M-40*",
@@ -216,11 +250,16 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/products/Precast Boundary Walls/4.jpg",
       "/images/products/Precast Boundary Walls/5.webp",
       "/images/products/Precast Boundary Walls/6.webp",
+      "/images/products/Precast Boundary Walls/7.txt",
     ],
     title: "Boundary wall",
-    description: `Our product range includes a wide range of Boundary Walls such as Concrete Boundary Walls, Industrial Boundary Walls, Precast RCC Wall Panels, Precast RCC Columns/ Struts/ Posts and many more items.Our offered walls are manufactured from optimum quality materials and advanced technology at our sound manufacturing premises in adherence to the defined industry standards.We have performed strict quality inspection regarding strength and quality of the walls. Thereby, these are widely preferred and appreciated among our clients. In order to meet clients’ specific demands, our entire range is available in various standard length options such as 1800mm , 2100mm , 2400mm and also can be customerized according to client's requirements
+    description: `Our product range includes a wide range of Boundary Walls such as Concrete Boundary Walls, Industrial Boundary Walls, Precast RCC Wall Panels, Precast RCC Columns/ Struts/ Posts and many more items. In order to meet clients’ specific demands, our entire range is available in various standard length options such as 1800mm , 2100mm , 2400mm and also can be customerized according to client's requirements
    `,
     subDescription: [
+      "Our offered walls are manufactured from optimum quality materials and advanced technology at our sound manufacturing premises in adherence to the defined industry standards.",
+      "We have performed strict quality inspection regarding strength and quality of the walls.",
+      "Thereby, these are widely preferred and appreciated among our clients.",
+      "",
       "🟡 Reliability",
       "🟣 Excellent finish",
       "🟠 Unique outlook",
@@ -238,20 +277,28 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
 
   {
     images: [
-      "/images/products/Newly Launch Product/cement bench.avif",
-      "/images/products/Newly Launch Product/cement bench1.jfif",
       "/images/products/Newly Launch Product/cement bench2.jpg",
+
+      "/images/products/Newly Launch Product/4.avif",
+      "/images/products/Newly Launch Product/5.jfif",
+      "/images/products/Newly Launch Product/7.txt",
+      "/images/products/Newly Launch Product/8.txt",
+      "/images/products/Newly Launch Product/9.txt",
+      "/images/products/Newly Launch Product/10.txt",
+      "/images/products/Newly Launch Product/11.txt",
+      "/images/products/Newly Launch Product/12.txt",
     ],
     title: "Precast RCC Garden Bench",
     description: ` We Manufacture & Supply superior quality RCC Garden Benches With / Without Arm Rests. 
    `,
     subDescription: [
-      "🟡 The offered array of RCC garden benches is designed by our professionals in compliance with the global quality standards.",
+      " The offered array of RCC garden benches is designed by our professionals in compliance with the global quality standards.",
 
-      "🟣 These spacious RCC garden benches are very beautiful and provide aesthetic looks to parks and lawns.",
+      " These spacious RCC garden benches are very beautiful and provide aesthetic looks to parks and lawns.",
 
-      "🔵 Clients can avail these benches from us in various types and other specifications.",
+      " Clients can avail these benches from us in various types and other specifications.",
     ],
+    specification: ["Coustomised"],
   },
   {
     images: [
@@ -260,10 +307,24 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/SquaredStoneFinish/3.jpg",
       "/images/tiles/SquaredStoneFinish/4.jpg",
       "/images/tiles/SquaredStoneFinish/5.jpg",
+      "/images/tiles/SquaredStoneFinish/6.txt",
+      "/images/tiles/SquaredStoneFinish/7.txt",
+      "/images/tiles/SquaredStoneFinish/8.txt",
+      "/images/tiles/SquaredStoneFinish/9.txt",
     ],
     title: "SQUARED SHAPED STONE FINISH PAVER BLOCKS ",
     description:
-      "Features a natural stone finish that adds earthy tones and texture to floors or walls.These Exquisite design of Paver Blocks makes You feel like Cobble Stone Finishes & Touches.",
+      "Transform your spaces with the timeless elegance of our paver blocks, featuring a natural stone finish that brings earthy tones and textures to life. Designed to mimic the charm and authenticity of cobblestone, these exquisite pavers add character and sophistication to any floor or wall. Perfect for creating stunning outdoor patios, walkways, or accent walls, their durable and versatile design ensures both beauty and functionality for years to come.",
+    subDescription: [
+      "Features a natural stone finish that adds earthy tones and texture to floors or walls.",
+      "These exquisite designs of paver blocks make you feel like cobblestone finishes and touches.",
+    ],
+    specification: [
+      "Natural Stone",
+      "Earthy Tones and Textures",
+      "Cobblestone Finish",
+      "Floors or Walls",
+    ],
   },
   {
     images: [
@@ -275,6 +336,7 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/LShapedSandBlast/6.txt",
       "/images/tiles/LShapedSandBlast/7.txt",
       "/images/tiles/LShapedSandBlast/8.txt",
+      "/images/tiles/LShapedSandBlast/9.txt",
     ],
     title: "L-SHAPED Interlocking PAVER BLOCKS",
     description:
@@ -284,36 +346,37 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "  _These paving blocks are most suitable for heavy-duty applications, able to support substantial loads and resist shearing and braking forces._",
     ],
     specification: [
-      `Available with Sand-Blast Texture & various Colour Option.
-  🔴🟡⚪️⚫️🔵🟢🟤`,
+      "Available with Sand-Blast Texture & various Colour Option.",
+      "🔴🟡⚪️⚫️🔵🟢🟤",
     ],
   },
   {
     images: [
       "/images/tiles/BrickShaped/1.txt",
-      "/images/tiles/BrickShaped/2.txt",
       "/images/tiles/BrickShaped/3.txt",
-      "/images/tiles/BrickShaped/4.txt",
       "/images/tiles/BrickShaped/5.txt",
-      "/images/tiles/BrickShaped/6.txt",
-      "/images/tiles/BrickShaped/7.txt",
       "/images/tiles/BrickShaped/8.txt",
       "/images/tiles/BrickShaped/9.txt",
+      "/images/tiles/BrickShaped/2.txt",
+      "/images/tiles/BrickShaped/4.txt",
+
       "/images/tiles/BrickShaped/10.txt",
+      "/images/tiles/BrickShaped/6.txt",
+      "/images/tiles/BrickShaped/7.txt",
     ],
     title: "BRICK SHAPED PAVER BLOCKS",
     description:
       "A classic brick shape that offers a rustic, timeless appeal for both indoor and outdoor spaces.",
 
     subDescription: [
-      "  _These paving blocks are most suitable for heavy-duty applications, able to support substantial loads and resist shearing and braking forces._",
+      "  These paving blocks are most suitable for heavy-duty applications, able to support substantial loads and resist shearing and braking forces.",
     ],
     specification: [
-      `🟩 Thickness: 40mm / 60mm
-🟧 Dimension: 200mm × 100 mm
-🟦 Application: Low Traffic Area, Footpath, Parking.
-🟪 Finish: Matt 
-⬛️ Manufacturing Technique: Hydraullic Vibro-Compaction`,
+      "🟩 Thickness: 40mm / 60mm",
+      "🟧 Dimension: 200mm × 100 mm",
+      "🟦 Application: Low Traffic Area, Footpath, Parking.",
+      "🟪 Finish: Matt ",
+      "⬛️ Manufacturing Technique: Hydraullic Vibro-Compaction",
     ],
   },
 
@@ -327,21 +390,17 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/Milano/6.txt",
       "/images/tiles/Milano/7.txt",
       "/images/tiles/Milano/8.txt",
-      "/images/tiles/Milano/9.txt",
     ],
     title: "MILANO INTERLOCKING PAVER BLOCKS",
     description:
       "Elegant and smooth, Milano tiles are designed to bring Italian charm and sophistication to any surface.",
 
     subDescription: [
-      `
-        💠  _It is made out of Appropriate Grade of Concrete with the incorporation of cutting-edge technology._
+      "  It is made out of Appropriate Grade of Concrete with the incorporation of cutting-edge technology.",
 
-🔶️ _The Paver Block is the most suitable for exterior applications as the tile is capable of enduring tough climate conditions, dust, chemical attacks, and other degrading factors._
- 
-🔷️ _Milano Paver Block has got an impressive design and unique appearance, for this reason, we are seeing a huge demand for the Paver Block in the marketplace._
-▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪
-        `,
+      " The Paver Block is the most suitable for exterior applications as the tile is capable of enduring tough climate conditions, dust, chemical attacks, and other degrading factors.",
+
+      " Milano Paver Block has got an impressive design and unique appearance, for this reason, we are seeing a huge demand for the Paver Block in the marketplace.",
     ],
   },
   {
@@ -358,14 +417,13 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     description:
       "Combines triangular and hexagonal shapes, perfect for creating eye-catching, intricate patterns.",
     subDescription: [
-      ` _Owing to our rich industrial experience, we are engaged in manufacturing and supplying a commendable range of_  *TRI - HEX Interlocking PAVER BLOCK.* 
+      " Owing to our rich industrial experience, we are engaged in manufacturing and supplying a commendable range of  *TRI - HEX Interlocking PAVER BLOCK.",
 
-☑️ _These blocks are precision-engineered by our team of highly qualified and experienced professionals in order to ensure their adherence with the well-defined standards._
-        `,
+      "These blocks are precision-engineered by our team of highly qualified and experienced professionals in order to ensure their adherence with the well-defined standards.",
     ],
     specification: [
       `
-        ☆ _Manufactured by Hydraullic Vibro-Press Technique of Variable Thickness from 40mm to 100mm as per Client's requirement._☆
+        Manufactured by Hydraullic Vibro-Press Technique of Variable Thickness from 40mm to 100mm as per Client's requirement.
         `,
     ],
   },
@@ -375,7 +433,7 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
       "/images/tiles/RoofTile/2.txt",
       "/images/tiles/RoofTile/3.txt",
       "/images/tiles/RoofTile/4.txt",
-      "/images/tiles/RoofTile/5.jpg",
+      "/images/tiles/RoofTile/5.txt",
     ],
     title: "PRECAST PCC ROOF TILE",
     description:
@@ -397,29 +455,24 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     description:
       "We are a prominent manufacturer & supplier of huge assortment of Kerbstone, Precast Concrete Kerb Stones, Curbstone; that are widely used in construction sector and available in various sizes and shapes.We are concerned in offering an adequate range of Kerb Stones which have Cutting - Edge Or Champhered Edge Finish as per client's requirements. These are manufactured using the quality raw material and are widely used in the construction industries using Vibration or Hydraullic Manufacturing Process.Various tests are done by our quality controllers in order to achieve prevailing industrial standards. Apart from these, we offer these ranges to the clients at market-leading prices with Durability & Dimensions & Designs.",
     subDescription: [
-      `
-  Our Roof Tiles are designed in such a way that it reflects more Sunlight and absorbs less heat._
+      "Our Roof Tiles are designed in such a way that it reflects more Sunlight and absorbs less heat.",
 
-☑️ _By reflecting the heat of the Sun instead of absorbing it, they keep buildings cooler and reduces the amount of energy needed to cool them, in turn reducing the use of air conditioners and electricity consumption._
+      " By reflecting the heat of the Sun instead of absorbing it, they keep buildings cooler and reduces the amount of energy needed to cool them, in turn reducing the use of air conditioners and electricity consumption.",
 
-✅️ _Our Roof Tiles are Water Proof in property keeping Your Terrace free from any Dampness due to Rain._
-    `,
+      " Our Roof Tiles are Water Proof in property keeping Your Terrace free from any Dampness due to Rain.",
     ],
     specification: [
-      `
-    
-
-🔵 Pattern: *Flat Tiles*
-🟡 Size: *250mm × 250mm*
-🟣 Thickness: *20mm to 25mm*
-🟠 Colour: *Light Grey*
-🟢 Features: *Water Proof*
-🔴 Material: *Precast Plain Cement Concrete (M15 Grade)*
-🟤 Finish: *Matt (Can be Polished Further after Installation by Tiles Poloshing Machine)*
-    `,
+      "🔵 Pattern : Flat Tiles",
+      "🟡 Size : 250mm × 250mm",
+      "🟣 Thickness : 20mm to 25mm",
+      "🟠 Colour : Light Grey",
+      "🟢 Features : Water Proof",
+      "🔴 Material : Precast Plain Cement Concrete (M15 Grade)",
+      "🟤 Finish : Matt (Can be Polished Further after Installation by Tiles Poloshing Machine)",
     ],
   },
 
+  //new Products
   {
     images: [
       "/images/products/Precast Cement Products/1.avif",
@@ -431,9 +484,25 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     ],
     title: "Precast Cement Products",
     description:
-      "We are a leading supplier and processor of all allied precast concrete products no matter how bulk the quantity is.You provide us your requirement in precasting and we will deliver you our best solution and service.We produce Precast Concrete Products From 50 lbs to 10 tons, no matter what shape or size we meet the commitments.(But we entertain requirements of special designed Precast Products only in Bulk / Huge Quantities requirement.All our products are processed from high quality raw materials which make the construction of various products durable, structurally sound, versatile and economic as compared to Cast-In-Situ Procedure. ​Honesty, impeccable quality, on time delivery, affordable pricing and customer satisfaction has helped us maintain a close association with our clients.",
+      "We specialize in precast concrete products, offering solutions from 50 lbs to 10 tons in bulk quantities. Crafted from high-quality materials, our products ensure durability, structural integrity, and cost-effectiveness. With a focus on honesty, quality, timely delivery, and customer satisfaction, we deliver exceptional service tailored to your needs.",
+    subDescription: [
+      "We are a leading supplier and processor of all allied precast concrete products, regardless of bulk quantity.",
+      "Provide us with your requirements in precasting, and we will deliver the best solutions and services.",
+      "We produce precast concrete products ranging from 50 lbs to 10 tons, accommodating various shapes and sizes.",
+      "Specially designed precast products are catered to only in bulk or large quantity requirements.",
+      "All products are made from high-quality raw materials, ensuring durability, structural soundness, versatility, and cost-effectiveness compared to cast-in-situ methods.",
+      "Our core values of honesty, quality, timely delivery, affordable pricing, and customer satisfaction strengthen our client relationships.",
+    ],
+    specification: [
+      "50 lbs to 10 tons",
+      "Precast Concrete Products",
+      "Available for bulk or large quantities only",
+      "High-quality raw materials",
+      "Durable, structurally sound, versatile, and cost-effective",
+      "Superior to cast-in-situ methods",
+      "Honesty, quality, timely delivery, affordability, customer satisfaction",
+    ],
   },
-  //new Products
   {
     images: [
       "/images/products/Newly Launch Product/1.jfif",
@@ -444,32 +513,21 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
     description:
       "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
     subDescription: [
-      `
-    
-    _
-🟨 Provide additional strength to the edge of the carriageway.
-🟩 Provide a demarcation line between roads and footway and deter traffic from mounting on the footway, thereby ensuring the safety of the pedestrians.
-🟦 Prevent vegetation from encroaching on to the roads.
-🟪 Generally improve the aesthetics and contribute to a formal paved environment. 
+      "🟨 Provide additional strength to the edge of the carriageway.",
+      "🟩 Provide a demarcation line between roads and footway and deter traffic from mounting on the footway, thereby ensuring the safety of the pedestrians.",
+      "🟦 Prevent vegetation from encroaching on to the roads.",
+      "🟪 Generally improve the aesthetics and contribute to a formal paved environment. ",
 
-❇️ _KerbStones can be effectively used in pedestrian areas, domestic drives, public, private and commercial footways, school playgrounds, pedestrian precincts and industrial pavements._ ❇️
-    `,
+      "❇️ KerbStones can be effectively used in pedestrian areas, domestic drives, public, private and commercial footways, school playgrounds, pedestrian precincts and industrial pavements.",
     ],
     specification: [
-      `
-    ___
-
-🟠 Type: *Outdoor*
-🟢 Usage: *Roadway, Side Walls, Gutter Drainage, etc.*
-🔵 Color: *Grey Cement Color*
-🟤 Form: *Block*
-⚫️ Grade: *M-20*
-🔴 Size: *(300×230×100)mm , (300×250×150)mm , (300×450×100)mm.*
-🟣 Material: *Plain Cement Concrete*
-
-Due to prosperous industry practice, we are involved in providing a broad range of Kerb Stones. This range is enormously employed owing to their reasonable rates and strong nature.
-    
-    `,
+      "🟠 Type: Outdoor",
+      "🟢 Usage: Roadway, Side Walls, Gutter Drainage, etc.",
+      "🔵 Color: Grey Cement Color",
+      "🟤 Form: Block",
+      "⚫️ Grade: M-20",
+      "🔴 Size: (300×230×100)mm , (300×250×150)mm , (300×450×100)mm.",
+      "🟣 Material: Plain Cement Concrete",
     ],
   },
 
@@ -482,6 +540,18 @@ Due to prosperous industry practice, we are involved in providing a broad range 
     title: "CEMENT DOOR WINDOW FRAME",
     description:
       "Foam Concrete Products / CLC Bricks / CLC Blocks / Eco-Friendly Light Weight Bricks",
+    subDescription: [
+      "Foam concrete products designed for lightweight and versatile construction solutions.",
+      "CLC bricks offering excellent thermal insulation and durability for sustainable building practices.",
+      "CLC blocks engineered for strength and reduced environmental impact in construction.",
+      "Eco-friendly lightweight bricks crafted to minimize load while ensuring structural integrity.",
+    ],
+    specification: [
+      "Foam Concrete Products",
+      "CLC Bricks",
+      "CLC Blocks",
+      "Eco-Friendly Lightweight Bricks",
+    ],
   },
 
   {
@@ -493,6 +563,18 @@ Due to prosperous industry practice, we are involved in providing a broad range 
     ],
     title: "Beam & columns / Wall Panels / Stairs / Structural Slab",
     description: "Beam & columns / Wall Panels / Stairs / Structural Slab",
+    subDescription: [
+      "Beam and columns designed for robust structural support and load-bearing applications.",
+      "Wall panels crafted for durability and aesthetic appeal in modern construction.",
+      "Precast stairs offering precision, safety, and ease of installation.",
+      "Structural slabs engineered for strength and versatility in various construction projects.",
+    ],
+    specification: [
+      "Beam & Columns",
+      "Wall Panels",
+      "Stairs",
+      "Structural Slab",
+    ],
   },
   {
     images: [
