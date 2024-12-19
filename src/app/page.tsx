@@ -93,11 +93,13 @@ const Home = () => {
 
   return (
     <div style={{ overflowX: "hidden" }}>
-      <div ref={(el: any) => (sectionRefs.current[0] = el)}>
+      <Hero />
+      <RegistrationSection />
+      {/* <div ref={(el: any) => (sectionRefs.current[0] = el)}>
         <Hero />
-      </div>
+      </div> */}
 
-      <div ref={(el: any) => (sectionRefs.current[1] = el)}>
+      {/* <div ref={(el: any) => (sectionRefs.current[1] = el)}>
         <CardItems2 />
       </div>
 
@@ -107,11 +109,11 @@ const Home = () => {
 
       <div ref={(el: any) => (sectionRefs.current[3] = el)}>
         <FeedbackSlider />
-      </div>
+      </div> */}
 
-      <div ref={(el: any) => (sectionRefs.current[4] = el)}>
+      {/* <div ref={(el: any) => (sectionRefs.current[4] = el)}>
         <RegistrationSection />
-      </div>
+      </div> */}
     </div>
   );
 };

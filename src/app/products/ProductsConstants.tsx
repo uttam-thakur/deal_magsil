@@ -556,7 +556,7 @@ export const precastItemsWhatsapp: precastItemsWhatsapp[] = [
 
   {
     images: [
-      "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
+      // "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
       "/images/products/Newly Launch Product/precast wall pannels.jfif",
       "/images/products/Newly Launch Product/stairs.jfif",
       "/images/products/Newly Launch Product/precast housing unit.jpg",
@@ -951,7 +951,7 @@ export const precastItems: PrecastItem[] = [
 
   {
     images: [
-      "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
+      // "/images/products/Newly Launch Product/precast beam and coloumn.jfif",
       "/images/products/Newly Launch Product/precast wall pannels.jfif",
       "/images/products/Newly Launch Product/stairs.jfif",
       "/images/products/Newly Launch Product/precast housing unit.jpg",

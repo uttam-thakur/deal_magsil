@@ -345,9 +345,8 @@ const navItems = [
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [activeLink, setActiveLink] = React.useState<string>(
-    localStorage?.getItem("activeLink") || navItems[0].path
-  );
+  const [activeLink, setActiveLink] = React.useState<string>("/");
+  // localStorage?.getItem("activeLink") || navItems[0].path
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -355,7 +354,7 @@ export default function DrawerAppBar(props: Props) {
 
   const handleLinkClick = (path: string) => {
     setActiveLink(path);
-    localStorage.setItem("activeLink", path); // Save the active link in localStorage
+    // localStorage.setItem("activeLink", path); // Save the active link in localStorage
   };
 
   const drawer = (

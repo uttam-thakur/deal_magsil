@@ -9,7 +9,7 @@ import FABProduct from "./components/fabComponents/FABProduct";
 import SEO from "./components/SEO";
 
 export const metadata = {
-  title: "Deal Magsil",
+  title: "Deal Magsil - 8670288140",
   description: "A professional Cement product Manufracture",
 };
 
@@ -23,7 +23,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
           title="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
           description="Deal Magsil specializes in high-quality cement products including precast slabs, fencing pillars, roofing tiles, RCC pipes, and more for industrial and commercial use."
           keywords="Cement Concrete Products, Rcc Products, Bricks, Slabs, Tiles, Pavers, Interlocking Paver Blocks, Paver Blocks, Bench, Drain, Precast Boundary Walls, Asansol cement product, durgapur cement product, cement products, precast concrete, roofing tiles, fencing pillars, RCC pipes, cement slabs, concrete blocks, precast construction materials, precast housing solutions, high-quality concrete, tiles, bricks, zigzag, pavour, interlocking, cement bricks,cement tiles, tiles, precast, precasting, precast products, slabs, deal, deal magsil, magsil"
-          author="Deal Magsil"
+          author="Deal Magsil "
           canonical="https://yourwebsite.com"
           ogTitle="Cement Products Manufacturing | Slabs, Tiles, Fencing, Pipes"
           ogDescription="Deal Magsil provides high-quality cement products for industrial and commercial use. Learn more about our slabs, tiles, fencing, and more."

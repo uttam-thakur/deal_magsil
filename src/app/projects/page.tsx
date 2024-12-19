@@ -28,6 +28,8 @@ import { projects } from "./projectsConstants";
 const ProjectsPage = () => {
   const [showProjectView, setShowProjectView] = useState(false);
   const [selectedProject, setSelectedProject]: any = useState({});
+  const [isClientSectionVisible, setIsClientSectionVisible] = useState(false);
+  const clientSectionRef = useRef<HTMLDivElement>(null);
 
   const sliderRef = useRef<HTMLDivElement>(null);
 
@@ -36,8 +38,28 @@ const ProjectsPage = () => {
       if (sliderRef.current) {
         sliderRef.current.scrollIntoView({ behavior: "smooth" });
       }
-    }, 1500);
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    }, 5500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
+        setIsClientSectionVisible(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (clientSectionRef.current) {
+      observer.observe(clientSectionRef.current);
+    }
+
+    return () => {
+      if (clientSectionRef.current) {
+        observer.unobserve(clientSectionRef.current);
+      }
+    };
   }, []);
 
   const onProjectClick = (projectData: any) => {
@@ -48,6 +70,9 @@ const ProjectsPage = () => {
   const onProjectImageViewClose = () => {
     setSelectedProject({});
     setShowProjectView(false);
+  };
+  const scrollDown = () => {
+    window.scrollBy({ top: window.innerHeight * 0.5, behavior: "smooth" });
   };
 
   const uniqueKeywords = Array.from(
@@ -66,16 +91,22 @@ const ProjectsPage = () => {
       <div className={styles.mainSection}>
         <div className={styles.introContainer}>
           <p className={styles.introHeading}>{introHeading}</p>
-          {/* <p className={styles.introSubHeading}>{introSubHeading}</p> */}
-          {/* <div className={styles.ctaContainer}>
-            <p>{ctaContainer}</p>
-          </div> */}
         </div>
       </div>
-
       {/* Clients Section */}
       <div ref={sliderRef}>
-        <Client />
+        <div ref={clientSectionRef}>
+          <Client />
+        </div>
+        {isClientSectionVisible && (
+          <button
+            className={styles.scrollArrow}
+            onClick={scrollDown}
+            aria-label="Scroll Down"
+          >
+            ↓
+          </button>
+        )}
       </div>
       {/* Projects Section */}
       <div className={styles.projectSection}>
