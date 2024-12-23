@@ -25,9 +25,7 @@ const ProductInfo: React.FC = () => {
           <p className={styles.introSubHeading}>{introSubHeading}</p>
         </div>
       </div>
-      {/* client design */}
-      {/* <FeatureGridSlider /> */}
-      {/* my design */}
+
       <div ref={sliderRef}>
         <FeatureGridSlider2 />
       </div>

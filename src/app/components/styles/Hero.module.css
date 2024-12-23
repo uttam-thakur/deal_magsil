@@ -131,9 +131,8 @@
     z-index: 1;
     position: relative;
     margin-top: 205px;
-    filter: invert(1);
-    height: 100px;
-    width: 385px;
+    height: 240px;
+    width: 395px;
   }
   .projectSection {
     padding: 20px;
@@ -144,6 +143,7 @@
     text-align: center;
     width: 393px;
     margin-left: -10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
   .introSubHeading {

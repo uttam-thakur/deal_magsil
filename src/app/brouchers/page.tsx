@@ -21,16 +21,14 @@ const brochures = [
     description:
       "An overview of our offerings products and lookeratives deals.",
     file: "/brochure/DEALMAGSILCatalogue.pdf",
-    image:
-      "https://i.pinimg.com/736x/39/c9/6f/39c96f566d55eff2bf3d273bb41a8037.jpg",
+    image: "/images/cover/c1.jpg",
   },
   {
     id: 2,
     title: "Petrolium Sector Brochure",
     description: "A complete guide to our React-based products and services.",
     file: "/brochure/Elite Petroleum Sector.pdf",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFe-4mMn4TW-r6aHxzUGyC6tUrrWXVYskOnqvhMuz1TeoKpOA-qgkgUeF0PofGftlywp8&usqp=CAU",
+    image: "/images/cover/c7.jpg",
   },
   {
     id: 3,

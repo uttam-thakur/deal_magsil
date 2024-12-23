@@ -1,5 +1,4 @@
 "use client";
-import { Category } from "@mui/icons-material";
 import styles from "./styles/Hero.module.css";
 import Image from "next/image";
 
@@ -12,8 +11,6 @@ export default function Hero() {
             <Image
               alt="bg logo logo"
               src="/images/bacgroundImageLogo.png"
-              // height={300}
-              // width={1250}
               height={450}
               width={850}
               className={styles.imgaeBG}
