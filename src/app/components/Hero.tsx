@@ -17,7 +17,7 @@ export default function Hero() {
             />
           </div>
           <p className={styles.introHeading}>
-            <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil —</span>
+            <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil — </span>
             the world of precasting, where engineering precision and design
             artistry converge to create structures that stand the test of time.
           </p>

@@ -37,14 +37,15 @@
 .introHeading {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: #fdba74;
   margin-bottom: 20px;
 }
 
 .introSubHeading {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   color: #f0f0f0;
   margin-bottom: 30px;
+  font-family: "Playfair Display", Serif;
 }
 
 /* Search Bar */
