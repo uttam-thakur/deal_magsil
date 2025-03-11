@@ -71,7 +71,7 @@ const Footer = () => {
                 <p className={styles.sectionText}>
                   {"Email: "}
                   <a
-                    href="uttamthakur2016@gmail.com"
+                    href="            abhradey11@gmail.com"
                     className={styles.underline}
                   >
                     abhradey11@gmail.com

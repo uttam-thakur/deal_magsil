@@ -49,8 +49,8 @@ const projectImages1 = [
 ];
 const corporateSectorAsansol = [
   {
-    // src: "/images/projectsImage/Corporate sector/AsansolPaharpur/1.jpg",
-    src: "/images/11.jpg",
+    src: "/images/projectsImage/Corporate sector/AsansolPaharpur/1.jpg",
+    // src: "/images/11.jpg",
     caption: "one",
   },
   {

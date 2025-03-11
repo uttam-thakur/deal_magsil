@@ -1,3 +1,5 @@
+//second one
+
 "use client";
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
@@ -20,6 +22,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import Image from "next/image";
+
 interface Props {
   window?: () => Window;
 }
@@ -36,7 +39,7 @@ const navItems = [
 export default function DrawerAppBar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const [activeLink, setActiveLink] = React.useState(navItems[0].path);
+  const [activeLink, setActiveLink] = React.useState<string>("/");
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -78,9 +81,9 @@ export default function DrawerAppBar(props: Props) {
                 onClick={() => handleLinkClick(item.path)}
                 sx={{
                   textAlign: "center",
-                  color: activeLink === item.path ? "red" : "black",
+                  color: activeLink === item.path ? " #fdba74" : "black",
                   borderBottom:
-                    activeLink === item.path ? "2px solid red" : "none",
+                    activeLink === item.path ? "2px solid  #fdba74" : "none",
 
                   "&:hover": {
                     scale: "1.2",
@@ -215,15 +218,44 @@ export default function DrawerAppBar(props: Props) {
               sx={{ display: { xs: "none", sm: "block", marginTop: "10px" } }}
             >
               {
-                <Image
-                  src="/images/logo1.png"
-                  alt="DEAL MAGSIL"
-                  width={200}
-                  height={20}
-                  style={{
-                    marginTop: "5px",
-                  }}
-                />
+                <>
+                  <Image
+                    src="/images/dmlogo.jpeg"
+                    alt="Company Logo"
+                    width={70}
+                    height={70}
+                    // style={{
+                    //   height: "60px",
+                    //   width: "60px",
+                    //   marginTop: "10px",
+                    //   cursor: "pointer",
+                    // }}
+                  />
+                  <Image
+                    src="/images/logo1.png"
+                    alt="DEAL MAGSIL"
+                    width={200}
+                    height={20}
+                    style={{
+                      marginTop: "-18px",
+                      marginLeft: "10px",
+                    }}
+                  />
+                  <button
+                    style={{
+                      background: "transparent",
+                      border: "1px solid #fdba74",
+                      color: "white",
+                      padding: "10px",
+                      letterSpacing: "1px",
+                      marginLeft: "10px",
+                      marginTop: "-25px",
+                    }}
+                  >
+                    {" "}
+                    +91 9332331442
+                  </button>
+                </>
               }
             </Box>
           </Link>
@@ -251,12 +283,12 @@ export default function DrawerAppBar(props: Props) {
                 <Button
                   onClick={() => handleLinkClick(item.path)}
                   sx={{
-                    color: activeLink === item.path ? "red" : "#fff",
+                    color: activeLink === item.path ? "#fdba74" : "#fff",
                     marginLeft: 2,
                     letterSpacing: "0.15rem",
                     marginTop: "15px",
                     borderBottom:
-                      activeLink === item.path ? "2px solid red" : "none",
+                      activeLink === item.path ? "2px solid #fdba74" : "none",
 
                     "&:hover": {
                       transition:

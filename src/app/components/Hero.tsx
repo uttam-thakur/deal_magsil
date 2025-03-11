@@ -1,5 +1,4 @@
 "use client";
-import { Category } from "@mui/icons-material";
 import styles from "./styles/Hero.module.css";
 import Image from "next/image";
 
@@ -11,14 +10,14 @@ export default function Hero() {
           <div className={styles.imageLogo}>
             <Image
               alt="bg logo logo"
-              src="/images/bg-logo2.png"
-              height={300}
-              width={1250}
+              src="/images/bacgroundImageLogo.png"
+              height={450}
+              width={850}
               className={styles.imgaeBG}
             />
           </div>
           <p className={styles.introHeading}>
-            <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil —</span>
+            <span style={{ color: "#fdba74" }}> Welcome to Deal Magsil — </span>
             the world of precasting, where engineering precision and design
             artistry converge to create structures that stand the test of time.
           </p>
@@ -52,7 +51,7 @@ export default function Hero() {
                 width={220}
                 className={styles.imgaeHero}
               />
-              <span className={styles.span}>RECYCLE</span>
+              <span className={styles.span}>RECYCLE CONCRETING</span>
             </div>
           </div>
         </div>

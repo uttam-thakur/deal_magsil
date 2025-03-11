@@ -46,8 +46,6 @@ const Clients = () => {
         </div>
       </div>{" "}
       <div className={styles.clientsSection}>
-        {/* <h5 className={styles.subHeading}>MEET OUR CLIENTS</h5> */}
-
         <h2 className={styles.heading}>{heading}</h2>
         <p className={styles.description}>{description}</p>
         <div className={styles.clientsGrid}>

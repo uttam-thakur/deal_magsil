@@ -54,8 +54,9 @@
   z-index: 1;
   position: relative;
   max-width: 90%;
-  margin-top: 155px;
-  filter: invert(1);
+  margin-top: 145px;
+  /* margin-top: 155px; */
+  /* filter: invert(1); */
   opacity: 0; /* Initially hide images */
   animation: fadeInImage 2s ease-in-out forwards;
 }
@@ -67,6 +68,7 @@
   margin-bottom: 20px;
   padding: 20px;
   text-align: left;
+  font-family: "Playfair Display", Serif;
 }
 
 .introSubHeading {
@@ -130,9 +132,8 @@
     z-index: 1;
     position: relative;
     margin-top: 205px;
-    filter: invert(1);
-    height: 100px;
-    width: 385px;
+    height: 240px;
+    width: 395px;
   }
   .projectSection {
     padding: 20px;
@@ -143,6 +144,7 @@
     text-align: center;
     width: 393px;
     margin-left: -10px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   }
 
   .introSubHeading {
