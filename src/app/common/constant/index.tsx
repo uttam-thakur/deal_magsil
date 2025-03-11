@@ -1,6 +1,6 @@
-export const phoneNumber = 8670288140;
+export const phoneNumber = 9332331442;
 
-export const whatsappNumber = 8670288140;
+export const whatsappNumber = 9332331442;
 
 export const dealMagsilLogo = "/images/dmlogo.jpeg";
 

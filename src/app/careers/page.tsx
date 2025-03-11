@@ -158,11 +158,12 @@ const Careers: React.FC = () => {
         <p className={styles.contactInfo}>
           Drop us your CV at{" "}
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=uttamthakur2016@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=            abhradey11@gmail.com
+"
             target="_blank"
             rel="noopener noreferrer"
           >
-            uttamthakur2016@gmail.com
+            abhradey11@gmail.com
           </a>
         </p>
       </div>

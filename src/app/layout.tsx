@@ -9,7 +9,7 @@ import FABProduct from "./components/fabComponents/FABProduct";
 import SEO from "./components/SEO";
 
 export const metadata = {
-  title: "Deal Magsil - 8670288140",
+  title: "Deal Magsil - 9332331442",
   description: "A professional Cement product Manufracture",
 };
 
