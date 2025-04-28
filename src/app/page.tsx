@@ -8,6 +8,9 @@ import FeedbackSlider from "./components/FeedbackSlider";
 import RegistrationSection from "./components/RegistrationSection";
 
 import "slick-carousel/slick/slick.css";
+import FeaturesSection from "./components/FeaturesSection";
+import ProductRange from "./components/ProductRange";
+import Certificates from "./components/Certificates";
 
 const Home = () => {
   // Ref to store multiple section references
@@ -48,7 +51,10 @@ const Home = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Hero />
+      <FeaturesSection />
+      <Certificates />
       <RegistrationSection />
+      <ProductRange />
     </div>
   );
 };

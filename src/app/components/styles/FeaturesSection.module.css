@@ -1,0 +1,47 @@
+.featuresSection {
+  background-color: #8c2d24;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.featuresContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; /* space between all items */
+  align-items: center;
+  text-align: center;
+}
+
+.featureCard {
+  flex: 1; /* take equal space */
+  margin: 0 1rem; /* little side margin */
+}
+
+.icon {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .featuresContainer {
+    flex-direction: column;
+  }
+
+  .featureCard {
+    margin-bottom: 2rem;
+  }
+}

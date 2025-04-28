@@ -22,7 +22,7 @@ export default function Hero() {
             artistry converge to create structures that stand the test of time.
           </p>
 
-          <div className={styles.div}>
+          {/* <div className={styles.div}>
             <Image
               alt="make in india logo"
               src="/images/iso_iaf-removebg.png"
@@ -53,7 +53,7 @@ export default function Hero() {
               />
               <span className={styles.span}>RECYCLE CONCRETING</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
