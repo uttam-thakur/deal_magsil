@@ -12,7 +12,7 @@ const certificates: Certificate[] = [
   {
     category: "Quality Certificate",
     images: [
-      "/images/4.jpg",
+      "/images/certificate.jfif",
       "/images/quality-certificate-2.jpg",
       "/images/quality-certificate-3.jpg",
     ],
@@ -23,6 +23,7 @@ const certificates: Certificate[] = [
       "/images/iso_iaf-removebg.png",
       "/images/makeinindia6.png",
       "/images/recycle.webp",
+      "/images/iso1.png",
     ],
   },
   {

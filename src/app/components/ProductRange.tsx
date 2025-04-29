@@ -29,7 +29,22 @@ const products: Product[] = [
     description: "Strong kerbstones to define roads and pathways.",
   },
   {
-    title: "KERBSTONES",
+    title: "DRAIN COVERS",
+    image: "/images/4.jpg", // <-- replace with your real images
+    description: "Strong kerbstones to define roads and pathways.",
+  },
+  {
+    title: "GRASS PAVERS & GEIDS",
+    image: "/images/4.jpg", // <-- replace with your real images
+    description: "Strong kerbstones to define roads and pathways.",
+  },
+  {
+    title: "LANDSCAPING TILES",
+    image: "/images/4.jpg", // <-- replace with your real images
+    description: "Strong kerbstones to define roads and pathways.",
+  },
+  {
+    title: "PAVEIT",
     image: "/images/4.jpg", // <-- replace with your real images
     description: "Strong kerbstones to define roads and pathways.",
   },
