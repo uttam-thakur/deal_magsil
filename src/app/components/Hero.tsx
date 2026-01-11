@@ -1,10 +1,23 @@
 "use client";
 import styles from "./styles/Hero.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Hero() {
+ useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      document.body.style.overflowX = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
   return (
     <>
+    
       <div className={styles.heroSection}>
         <div className={styles.introContainer}>
           <div className={styles.imageLogo}>

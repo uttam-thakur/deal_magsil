@@ -9,16 +9,9 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
+
   {
-    category: "Quality Certificate",
-    images: [
-      "/images/certificate.jfif",
-      "/images/quality-certificate-2.jpg",
-      "/images/quality-certificate-3.jpg",
-    ],
-  },
-  {
-    category: "Trademark Registration",
+    category: "Certifications & Recognitions",
     images: [
       "/images/iso_iaf-removebg.png",
       "/images/makeinindia6.png",
@@ -26,15 +19,23 @@ const certificates: Certificate[] = [
       "/images/iso1.png",
     ],
   },
-  {
-    category: "Test Results",
-    images: ["/images/test-results-1.jpg", "/images/test-results-2.jpg"],
-  },
+  //   {
+  //   category: "Quality Certificate",
+  //   images: [
+  //     "/images/certificate.jfif",
+  //     "/images/quality-certificate-2.jpg",
+  //     "/images/quality-certificate-3.jpg",
+  //   ],
+  // },
+  // {
+  //   category: "Test Results",
+  //   images: ["/images/test-results-1.jpg", "/images/test-results-2.jpg"],
+  // },
 ];
 
 const Certificates = () => {
   const [activeCategory, setActiveCategory] = useState<string>(
-    "Quality Certificate"
+    "Certifications & Recognitions"
   );
 
   const activeCertificates = certificates.find(
