@@ -1,10 +1,23 @@
 "use client";
 import styles from "./styles/Hero.module.css";
 import Image from "next/image";
+import { useEffect } from "react";
 
 export default function Hero() {
+ useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+
+    if (isMobile) {
+      document.body.style.overflowX = "hidden";
+    }
+
+    return () => {
+      document.body.style.overflowX = "auto";
+    };
+  }, []);
   return (
     <>
+    
       <div className={styles.heroSection}>
         <div className={styles.introContainer}>
           <div className={styles.imageLogo}>
@@ -22,7 +35,7 @@ export default function Hero() {
             artistry converge to create structures that stand the test of time.
           </p>
 
-          <div className={styles.div}>
+          {/* <div className={styles.div}>
             <Image
               alt="make in india logo"
               src="/images/iso_iaf-removebg.png"
@@ -53,7 +66,7 @@ export default function Hero() {
               />
               <span className={styles.span}>RECYCLE CONCRETING</span>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
