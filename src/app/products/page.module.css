@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   transition: opacity 1s ease-in-out;
+  overflow-x: hidden;
 }
 
 .main::after {
@@ -169,6 +170,7 @@
 @media (max-width: 768px) {
   .main {
     padding: 16px;
+    overflow-x: hidden;
   }
   .productSection {
     flex-direction: column;
