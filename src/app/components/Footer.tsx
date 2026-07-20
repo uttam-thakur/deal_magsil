@@ -102,9 +102,10 @@ const Footer = () => {
               <div className={styles.section}>
                 <h3 className={styles.sectionTitle}>Our Address</h3>
                 <p className={styles.sectionText}>Deal Magsil</p>
-                <p className={styles.sectionText}>Kalyanpur Hosuing, Asansol</p>
-                <p className={styles.sectionText}>Asansol, 713305</p>
+                <p className={styles.sectionText}>Plot A/7, A/8 ADDA Industrial Estate,</p>
+                <p className={styles.sectionText}>Kanyapur, Asansol - 713305</p>
               </div>
+
 
               {/* Additional Section */}
               <div className={styles.section}>
