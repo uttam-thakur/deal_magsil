@@ -100,7 +100,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
 
         {/* Google Analytics */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-123345"
+          src="https://www.googletagmanager.com/gtag/js?id=G-X08TH5NRLW"
           strategy="afterInteractive"
         />
 
