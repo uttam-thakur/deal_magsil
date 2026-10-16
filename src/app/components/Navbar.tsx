@@ -450,17 +450,17 @@ export default function DrawerAppBar() {
                 },
               }}
             >
-              <ListItemText
-                primary={item.label}
-                slotProps={{
-                  primary: {
-                    sx: {
-                      textAlign: "center",
-                      letterSpacing: "0.06em",
-                    },
-                  },
-                }}
-              />
+              
+<ListItemText
+  primary={item.label}
+  primaryTypographyProps={{
+    sx: {
+      textAlign: "center",
+      letterSpacing: "...",
+    },
+  }}
+/>
+
             </ListItemButton>
           </ListItem>
         );
