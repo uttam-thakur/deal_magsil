@@ -3,11 +3,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Pagination, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import {
   introHeading,
-  introSubHeading,
-  ctaContainer,
   projectDescription,
   projectHeading,
 } from "../common/constant/projects";
@@ -157,3 +154,7 @@ const ProjectsPage = () => {
 };
 
 export default ProjectsPage;
+
+
+
+
