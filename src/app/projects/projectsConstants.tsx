@@ -50,7 +50,6 @@ const projectImages1 = [
 const corporateSectorAsansol = [
   {
     src: "/images/projectsImage/Corporate sector/AsansolPaharpur/1.jpg",
-    // src: "/images/11.jpg",
     caption: "one",
   },
   {
@@ -66,13 +65,29 @@ const corporateSectorAsansol = [
     caption: "one",
   },
   {
+    src: "/images/projectsImage/Corporate sector/AsansolPaharpur/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Corporate sector/AsansolPaharpur/5.jpg",
+    caption: "one",
+  },
+  {
     src: "http://nebula.wsimg.com/63efeadc42b8d9f889f915dcbea58452?AccessKeyId=EE46D1080F0D18C989B0&disposition=0&alloworigin=1",
     caption: "Caption one",
   },
 ];
 const corporateSectorPinnacle = [
   {
-    src: "/images/projectsImage/Corporate sector/Pinnacle Honda/1.jpg",
+    src: "/images/projectsImage/Corporate sector/Pinnacle Honda/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Corporate sector/Pinnacle Honda/7.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Corporate sector/Pinnacle Honda/8.jpg",
     caption: "one",
   },
   {
@@ -94,7 +109,7 @@ const corporateSectorPinnacle = [
 ];
 const corporateSectorJhonson = [
   {
-    src: "/images/projectsImage/Corporate sector/Johnson/1.jpg",
+    src: "/images/projectsImage/Corporate sector/Johnson/7.jpg",
     caption: "one",
   },
   {
@@ -113,14 +128,22 @@ const corporateSectorJhonson = [
     src: "/images/projectsImage/Corporate sector/Johnson/5.avif",
     caption: "one",
   },
-];
-const corporateSectorLnt = [
   {
-    src: "/images/projectsImage/Corporate sector/L&TConstruction/1.jpg",
+    src: "/images/projectsImage/Corporate sector/Johnson/6.jpg",
     caption: "one",
   },
   {
-    src: "/images/projectsImage/Corporate sector/L&TConstruction/2.webp",
+    src: "/images/projectsImage/Corporate sector/Johnson/1.jpg",
+    caption: "one",
+  },
+];
+const corporateSectorLnt = [
+  {
+    src: "/images/projectsImage/Corporate sector/L&TConstruction/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Corporate sector/L&TConstruction/2.jpg",
     caption: "one",
   },
   {
@@ -135,10 +158,30 @@ const corporateSectorLnt = [
     src: "/images/projectsImage/Corporate sector/L&TConstruction/5.webp",
     caption: "one",
   },
+  {
+    src: "/images/projectsImage/Corporate sector/L&TConstruction/1.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Corporate sector/L&TConstruction/2.webp",
+    caption: "one",
+  },
 ];
 const Airport = [
   {
-    src: "/images/projectsImage/Airport/4.webp",
+    src: "/images/projectsImage/Airport/9.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Airport/6.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Airport/7.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Airport/8.jpg",
     caption: "one",
   },
   {
@@ -180,6 +223,14 @@ const roadHighway = [
     src: "/images/projectsImage/roadHighway/5.jpg",
     caption: "one",
   },
+  {
+    src: "/images/projectsImage/roadHighway/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/roadHighway/7.jpg",
+    caption: "one",
+  },
 ];
 
 const roadHighway2 = [
@@ -203,11 +254,27 @@ const roadHighway2 = [
     src: "/images/projectsImage/roadHighway2/5.jpg",
     caption: "one",
   },
+   {
+    src: "/images/projectsImage/roadHighway2/6.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/roadHighway2/7.jpg",
+    caption: "one",
+  },
 ];
 
 const coal = [
   {
     src: "/images/projectsImage/Coal/1.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Coal/6.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Coal/7.jpg",
     caption: "one",
   },
   {
@@ -229,6 +296,14 @@ const coal = [
 ];
 
 const Electricity = [
+  {
+    src: "/images/projectsImage/Electricity/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Electricity/7.jpg",
+    caption: "one",
+  },
   {
     src: "/images/projectsImage/Electricity/1.jpg",
     caption: "one",
@@ -257,6 +332,14 @@ const army = [
     caption: "one",
   },
   {
+    src: "/images/projectsImage/Army/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Army/7.jpg",
+    caption: "one",
+  },
+  {
     src: "/images/projectsImage/Army/2.jpg",
     caption: "one",
   },
@@ -269,7 +352,11 @@ const army = [
     caption: "one",
   },
   {
-    src: "/images/projectsImage/Army/5.png",
+    src: "/images/projectsImage/Army/6.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Army/7.png",
     caption: "one",
   },
 ];
@@ -347,6 +434,10 @@ const Reliance = [
 ];
 
 const water = [
+   {
+    src: "/images/projectsImage/Water/6.jpg",
+    caption: "one",
+  },
   {
     src: "/images/projectsImage/Water/1.jpg",
     caption: "one",
@@ -370,7 +461,17 @@ const water = [
 ];
 const DVCMejhia = [
   {
+    src: "/images/projectsImage/Power Plant/DVC Mejhia/6.jpg",
+    caption: "one",
+  },
+  
+  
+  {
     src: "/images/projectsImage/Power Plant/DVC Mejhia/1.jpg",
+    caption: "one",
+  },
+  {
+    src: "/images/projectsImage/Power Plant/DVC Mejhia/7.jpg",
     caption: "one",
   },
   {
@@ -391,6 +492,14 @@ const DVCMejhia = [
   },
 ];
 const DVCRaghunathpur = [
+    {
+    src: "/images/projectsImage/Power Plant/DVC Raghunathpur/6.jpg",
+    caption: "one",
+  },
+    {
+    src: "/images/projectsImage/Power Plant/DVC Raghunathpur/7.jpg",
+    caption: "one",
+  },
   {
     src: "/images/projectsImage/Power Plant/DVC Raghunathpur/1.jpg",
     caption: "one",
@@ -482,6 +591,14 @@ const DUMKA = [
   },
 ];
 const BPCL = [
+   {
+    src: "/images/projectsImage/Oil/BPCL/6.jpg",
+    caption: "one",
+  },
+   {
+    src: "/images/projectsImage/Oil/BPCL/7.jpg",
+    caption: "one",
+  },
   {
     src: "/images/projectsImage/Oil/BPCL/1.jpg",
     caption: "one",
@@ -505,6 +622,10 @@ const BPCL = [
 ];
 
 const IOCL = [
+    {
+    src: "/images/projectsImage/Oil/IOCL/6.jpg",
+    caption: "one",
+  },
   {
     src: "/images/projectsImage/Oil/IOCL/1.jpg",
     caption: "one",

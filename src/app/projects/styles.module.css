@@ -1,7 +1,5 @@
-/* General Section Styling */
 .mainSection {
-  /* background-image: url("/images/projectImage.jpg"); */
-  background-image: url("/images/cover/c5.jpg");
+  background-image: url("/images/cover/bg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -62,7 +60,6 @@
   color: #fdba74;
 }
 
-/* Project Section */
 .projectSection {
   padding: 40px;
   padding-top: 10vh;
@@ -105,7 +102,6 @@
   max-width: 800px;
 }
 
-/* Swiper Styles */
 .projectSlider {
   padding: 36px;
 }
@@ -114,7 +110,6 @@
   width: fit-content !important;
 }
 
-/* Keyframes */
 @keyframes fadeInText {
   0% {
     opacity: 0;
@@ -164,7 +159,6 @@
   background-color: #444;
 }
 
-/* Media Queries */
 @media (max-width: 768px) {
   .projectSlider {
     padding: 36px 16px;
@@ -195,4 +189,8 @@
   .projectSlider {
     padding: 36px 8px;
   }
-}
+} 
+
+
+
+

@@ -1,6 +1,5 @@
-.container {
+/* .container {
   padding: 15rem;
-  /* background-color: #ffffff; */
   background-color: #fffff7;
   overflow-x: hidden;
 }
@@ -10,8 +9,8 @@
   align-items: center;
   gap: 2rem;
   margin-bottom: 4rem;
-  opacity: 0; /* Start with opacity 0 */
-  transition: opacity 0.3s ease-in-out; /* Smooth fade in */
+  opacity: 0; 
+  transition: opacity 0.3s ease-in-out; 
 }
 
 .reverse {
@@ -43,7 +42,6 @@
 .title {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   color: #000;
   font-family: "Raleway ", sans-serif;
 }
@@ -206,5 +204,879 @@
   .searchbar::placeholder {
     color: #aaa;
     font-style: italic;
+  }
+} */
+
+
+
+/* =====================================
+   CATALOGUE CONTAINER
+===================================== */
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 24px 28px 60px;
+  background: #fffff7;
+  color: #252525;
+  overflow-x: clip;
+  box-sizing: border-box;
+}
+
+.container *,
+.container *::before,
+.container *::after {
+  box-sizing: border-box;
+}
+
+/* =====================================
+   CATALOGUE HEADER
+===================================== */
+
+.catalogueHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 34px;
+}
+
+.catalogueEyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #a35b27;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.catalogueTitle {
+  margin: 0 0 12px;
+  color: #202b36;
+  font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.7px;
+  text-wrap: balance;
+}
+
+.catalogueDescription {
+  max-width: 700px;
+  margin: 0;
+  color: #62676c;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.productCount {
+  flex: 0 0 auto;
+  min-width: 95px;
+  padding: 13px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+
+  border: 1px solid #eadfce;
+  border-radius: 12px;
+  background: #ffffff;
+  color: #202b36;
+}
+
+.productCount span {
+  font-size: 1.65rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.productCount small {
+  color: #777777;
+  font-size: 0.78rem;
+}
+
+/* =====================================
+   SEARCH BAR
+===================================== */
+
+.searchBarContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  max-width: 580px;
+  min-height: 54px;
+  margin: 0 0 44px auto;
+  padding: 0 16px;
+
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  background: #ffffff;
+
+  box-shadow: 0 3px 14px rgba(20, 35, 50, 0.035);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.searchBarContainer:focus-within {
+  border-color: #b77b45;
+  box-shadow: 0 0 0 3px rgba(183, 123, 69, 0.12);
+}
+
+.searchIcon {
+  flex: 0 0 auto;
+  color: #7d858d;
+  font-size: 1.8rem;
+  line-height: 1;
+  transform: rotate(-20deg);
+}
+
+.searchbar {
+  width: 100%;
+  min-width: 0;
+  min-height: 50px;
+  padding: 12px 0;
+
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #252525;
+
+  font-family: inherit;
+  font-size: 0.96rem;
+}
+
+.searchbar::placeholder {
+  color: #969ba1;
+}
+
+.searchbar::-webkit-search-cancel-button {
+  cursor: pointer;
+}
+
+.clearSearch {
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f2f3;
+  color: #414141;
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.clearSearch:hover {
+  background: #e3e5e7;
+}
+
+/* =====================================
+   PRODUCT LIST
+===================================== */
+
+.productList {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 55px);
+
+  width: 100%;
+  min-width: 0;
+  padding: 24px;
+
+  border: 1px solid #eae7df;
+  border-radius: 16px;
+  background: #ffffff;
+
+  box-shadow: 0 5px 24px rgba(25, 35, 45, 0.045);
+  opacity: 1;
+
+  transition:
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.section:hover {
+  border-color: #ded4c5;
+  box-shadow: 0 12px 32px rgba(25, 35, 45, 0.085);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* =====================================
+   PRODUCT IMAGE
+===================================== */
+
+.imageContainer {
+  position: relative;
+  flex: 1 1 50%;
+  min-width: 0;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #eeece6;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.45s ease;
+}
+
+.section:hover .image {
+  transform: scale(1.035);
+}
+
+.imageBadge {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+
+  max-width: calc(100% - 28px);
+  padding: 8px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+  background: rgba(25, 35, 45, 0.85);
+  color: #ffffff;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.imagePlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  color: #777777;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* =====================================
+   PRODUCT DETAILS
+===================================== */
+
+.textContainer {
+  flex: 1 1 50%;
+  min-width: 0;
+  padding: 10px 0;
+}
+
+.productLabel {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #a35b27;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 1.7px;
+}
+
+.title {
+  margin: 0 0 16px;
+  color: #202b36;
+  font-size: clamp(1.55rem, 2.4vw, 2.1rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+  overflow-wrap: anywhere;
+}
+
+.subtitle {
+  margin: 0 0 22px;
+  color: #62676c;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 0 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  position: relative;
+  padding-left: 25px;
+  color: #454b50;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+.list li::before {
+  content: "✓";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #26774d;
+  font-weight: 800;
+}
+
+/* =====================================
+   ACTION BUTTONS
+===================================== */
+
+.buttonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.detailsButton.detailsButton {
+  min-height: 46px;
+  padding: 11px 17px;
+  border-radius: 7px;
+  background: #185c8c;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+  box-shadow: none;
+}
+
+.detailsButton.detailsButton:hover {
+  background: #12466d;
+  box-shadow: none;
+}
+
+.enquiryButton.enquiryButton {
+  min-height: 46px;
+  padding: 10px 15px;
+  border: 1px solid #26834e;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #247647;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: none;
+}
+
+.enquiryButton.enquiryButton:hover {
+  border-color: #1e6c3e;
+  background: #edf8f0;
+}
+
+.productDivider {
+  width: 100%;
+  height: 1px;
+  margin-top: 30px;
+  background: linear-gradient(
+    90deg,
+    #e6c994,
+    #eeeeee 80%,
+    transparent
+  );
+}
+
+/* =====================================
+   EMPTY SEARCH RESULTS
+===================================== */
+
+.noResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+  padding: 40px 20px;
+
+  border: 1px dashed #d8d3ca;
+  border-radius: 14px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.noResultsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 62px;
+  height: 62px;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: #f3eee7;
+  color: #8d653d;
+  font-size: 2.4rem;
+}
+
+.noResults h3 {
+  margin: 0 0 10px;
+  color: #202b36;
+  font-size: 1.35rem;
+}
+
+.noResults p {
+  max-width: 440px;
+  margin: 0 0 22px;
+  color: #6b7075;
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+.resetButton.resetButton {
+  min-height: 44px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  background: #185c8c;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: none;
+}
+
+/* =====================================
+   PRODUCT DETAILS MODAL
+===================================== */
+
+.modalContent {
+  width: min(900px, 100%);
+  max-height: 85vh;
+  max-height: 85dvh;
+  margin: 0 auto;
+  padding: clamp(18px, 4vw, 36px);
+
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  border: 1px solid #eae5dc;
+  border-radius: 16px;
+  outline: none;
+  background: #ffffff;
+  color: #252525;
+
+  text-align: left;
+  box-shadow: 0 20px 65px rgba(0, 0, 0, 0.2);
+}
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.modalEyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #a35b27;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  line-height: 1.6;
+}
+
+.modalTitle.modalTitle {
+  margin: 0;
+  color: #202b36;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.modalClose {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #e3e3e3;
+  border-radius: 50%;
+  background: #f8f8f8;
+  color: #333333;
+  font-size: 1.65rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.modalClose:hover {
+  background: #eeeeee;
+}
+
+.modalGallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 30px;
+}
+
+.modalImageWrapper {
+  min-width: 0;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border-radius: 9px;
+  background: #f1f0ec;
+}
+
+.modalImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.modalImageWrapper:hover .modalImage {
+  transform: scale(1.04);
+}
+
+.modalSection {
+  margin-top: 25px;
+  padding-top: 22px;
+  border-top: 1px solid #ece8e1;
+}
+
+.modalSection h3 {
+  margin: 0 0 12px;
+  color: #202b36;
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.modalDescription {
+  margin: 0;
+  color: #5c6268;
+  font-size: 0.96rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.modalList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  color: #555b61;
+}
+
+.modalList li {
+  padding-left: 4px;
+  font-size: 0.94rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.mutedText {
+  margin: 0;
+  color: #777777;
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+.modalActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #ece8e1;
+}
+
+.modalEnquiryButton.modalEnquiryButton {
+  min-height: 46px;
+  padding: 11px 20px;
+  border-radius: 7px;
+  background: #247647;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.modalEnquiryButton.modalEnquiryButton:hover {
+  background: #1b5d38;
+}
+
+.modalDismissButton.modalDismissButton {
+  min-height: 46px;
+  padding: 10px 20px;
+  border-color: #d5d9dc;
+  border-radius: 7px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.modalDismissButton.modalDismissButton:hover {
+  border-color: #9da4aa;
+  background: #f7f7f7;
+}
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 24px 22px 45px;
+  }
+
+  .section {
+    gap: 26px;
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 1.65rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .buttonGroup {
+    gap: 10px;
+  }
+}
+
+/* =====================================
+   MOBILE AND SMALL TABLETS
+===================================== */
+
+@media (max-width: 760px) {
+  .container {
+    padding: 30px 16px 40px;
+  }
+
+  .catalogueHeader {
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 25px;
+  }
+
+  .catalogueEyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 1.3px;
+  }
+
+  .catalogueTitle {
+    font-size: 1.9rem;
+  }
+
+  .catalogueDescription {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .productCount {
+    min-width: 70px;
+    padding: 10px;
+  }
+
+  .productCount span {
+    font-size: 1.4rem;
+  }
+
+  .productCount small {
+    font-size: 0.7rem;
+  }
+
+  .searchBarContainer {
+    max-width: none;
+    min-height: 50px;
+    margin-bottom: 28px;
+    padding: 0 12px;
+  }
+
+  .searchbar {
+    font-size: 0.9rem;
+  }
+
+  .productList {
+    gap: 22px;
+  }
+
+  .section,
+  .reverse {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .imageContainer {
+    flex: none;
+    width: 100%;
+    aspect-ratio: 5 / 4;
+  }
+
+  .imageBadge {
+    bottom: 10px;
+    left: 10px;
+    font-size: 0.62rem;
+  }
+
+  .textContainer {
+    padding: 4px 2px 0;
+  }
+
+  .productLabel {
+    margin-bottom: 8px;
+    font-size: 0.68rem;
+  }
+
+  .title {
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    margin-bottom: 18px;
+    font-size: 0.94rem;
+    line-height: 1.8;
+  }
+
+  .list {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .list li {
+    font-size: 0.9rem;
+  }
+
+  .buttonGroup {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .detailsButton.detailsButton,
+  .enquiryButton.enquiryButton {
+    width: 100%;
+    min-height: 46px;
+    margin: 0;
+  }
+
+  .productDivider {
+    margin-top: 22px;
+  }
+
+  .modalContent {
+    max-height: 88vh;
+    max-height: 88dvh;
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .modalGallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .modalActions {
+    flex-direction: column;
+  }
+
+  .modalEnquiryButton.modalEnquiryButton,
+  .modalDismissButton.modalDismissButton {
+    width: 100%;
+  }
+}
+
+/* =====================================
+   SMALL PHONES
+===================================== */
+
+@media (max-width: 400px) {
+  .container {
+    padding: 24px 12px 32px;
+  }
+
+  .catalogueHeader {
+    gap: 8px;
+  }
+
+  .catalogueTitle {
+    font-size: 1.6rem;
+  }
+
+  .catalogueDescription {
+    font-size: 0.88rem;
+  }
+
+  .productCount {
+    min-width: 60px;
+    padding: 8px;
+  }
+
+  .productCount span {
+    font-size: 1.2rem;
+  }
+
+  .section {
+    padding: 11px;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .modalContent {
+    padding: 14px;
+  }
+
+  .modalGallery {
+    grid-template-columns: 1fr;
+  }
+
+  .modalImageWrapper {
+    aspect-ratio: 5 / 3;
+  }
+
+  .modalHeader {
+    gap: 10px;
+  }
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .section,
+  .image,
+  .modalImage {
+    transition: none;
+  }
+
+  .section:hover .image,
+  .modalImageWrapper:hover .modalImage {
+    transform: none;
   }
 }

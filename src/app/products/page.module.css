@@ -1,8 +1,7 @@
-/* Main page styling */
-.main {
+/* .main {
   padding: 36px;
   margin-top: 0;
-  background-image: url("/images/cover/c7.jpg");
+  background-image: url("/images/cover/c13.jpg");
   background-size: cover;
   background-position: center;
   height: 100svh;
@@ -49,7 +48,6 @@
   font-family: "Playfair Display", Serif;
 }
 
-/* Search Bar */
 .searchBarContainer {
   display: flex;
   justify-content: flex-start;
@@ -72,7 +70,6 @@
   border-color: #51a3ff;
 }
 
-/* Product Container */
 .productContainer {
   display: grid;
   margin: 20px;
@@ -81,7 +78,6 @@
   background-position: center;
 }
 
-/* Product Section */
 .productSection {
   display: flex;
   align-items: center;
@@ -111,7 +107,6 @@
   object-fit: cover;
 }
 
-/* Product Titles & Descriptions */
 .productTitle {
   font-size: 2em;
   margin-bottom: 10px;
@@ -127,7 +122,6 @@
   color: #555;
 }
 
-/* Keyframes */
 @keyframes fadeInText {
   0% {
     opacity: 0;
@@ -154,7 +148,6 @@
   }
 }
 
-/* Responsiveness */
 @media (max-width: 1024px) {
   .productDescription {
     font-size: 1.1rem;
@@ -198,7 +191,7 @@
   }
 
   .searchbar {
-    width: 100% !important; /* Override for small screens */
+    width: 100% !important;
   }
 
   .projectSection {
@@ -245,44 +238,39 @@
   }
 }
 
-/* Search Bar Container */
 .searchBarContainer {
   display: flex;
-  justify-content: flex-end; /* Align the search bar container to the right */
+  justify-content: flex-end; 
   width: 100%;
   margin-top: 50px;
 }
 
-/* Search Bar Styling with Bottom Border */
 .searchbar {
   width: 100%;
-  max-width: 450px; /* Limit max width for larger screens */
-  padding: 12px 0; /* Padding only on top and bottom */
+  max-width: 450px; 
+  padding: 12px 0; 
   font-size: 1.1rem;
   color: #333;
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #ccc; /* Add a bottom border */
-  text-align: left; /* Keep text left-aligned */
+  border-bottom: 2px solid #ccc;
+  text-align: left; 
   transition: border-color 0.3s ease;
   outline: none;
 }
 
-/* Focus and Hover States */
 .searchbar:focus {
-  border-bottom: 2px solid #51a3ff; /* Change bottom border color on focus */
+  border-bottom: 2px solid #51a3ff;
 }
 
-/* Placeholder Styling */
 .searchbar::placeholder {
   color: #aaa;
   font-style: italic;
 }
 
-/* Responsiveness */
 @media (max-width: 768px) {
   .searchbar {
-    max-width: 90%; /* Full width on smaller screens */
+    max-width: 90%;
     font-size: 1rem;
   }
 }
@@ -291,5 +279,702 @@
   .searchbar {
     padding: 10px 0;
     font-size: 1rem;
+  }
+} */
+
+
+
+
+
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+
+.pageWrapper {
+  width: 100%;
+  min-width: 0;
+  overflow-x: clip;
+  background-color: #f4f4f4;
+  color: #252525;
+  box-sizing: border-box;
+}
+
+.pageWrapper *,
+.pageWrapper *::before,
+.pageWrapper *::after {
+  box-sizing: border-box;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.main {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: 680px;
+  min-height: max(680px, 100svh);
+  padding: 100px 24px 110px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("/images/cover/c13.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+/* Dark gradient for text readability */
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 12, 16, 0.82) 0%,
+      rgba(8, 12, 16, 0.65) 55%,
+      rgba(8, 12, 16, 0.38) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.35),
+      transparent 50%,
+      rgba(0, 0, 0, 0.15)
+    );
+}
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.introContainer {
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  text-align: center;
+  color: #ffffff;
+
+  animation: fadeInText 0.9s ease-out both;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
+  padding: 9px 15px;
+
+  border: 1px solid rgba(253, 186, 116, 0.55);
+  border-radius: 30px;
+
+  background: rgba(20, 20, 20, 0.35);
+  color: #ffd09c;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+}
+
+.introHeading {
+  max-width: 900px;
+  margin: 0 auto 24px;
+
+  color: #ffffff;
+  font-size: clamp(2.25rem, 4.5vw, 4.1rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -1.4px;
+  text-wrap: balance;
+}
+
+.introHeading span {
+  display: block;
+  margin-top: 8px;
+  color: #fdba74;
+}
+
+.introSubHeading {
+  max-width: 780px;
+  margin: 0 auto;
+
+  color: rgba(255, 255, 255, 0.9);
+  font-family: inherit;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.85;
+  text-wrap: pretty;
+}
+
+/* =========================
+   PRODUCT HIGHLIGHTS
+========================= */
+
+.productHighlights {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 12px 24px;
+  margin-top: 30px;
+}
+
+.productHighlights span {
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.primaryButton,
+.secondaryButton {
+  min-height: 50px;
+  padding: 14px 25px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  border: 1px solid transparent;
+  border-radius: 7px;
+
+  font-size: 0.96rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: center;
+  text-decoration: none;
+
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.primaryButton {
+  background-color: #fdba74;
+  color: #242424;
+}
+
+.primaryButton:hover {
+  background-color: #f9a653;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #ffffff;
+}
+
+.secondaryButton:hover {
+  border-color: #fdba74;
+  background-color: rgba(255, 255, 255, 0.13);
+  color: #ffd09c;
+}
+
+.primaryButton:focus-visible,
+.secondaryButton:focus-visible,
+.scrollIndicator:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+.heroNote {
+  margin: 24px 0 0;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   SCROLL INDICATOR
+========================= */
+
+.scrollIndicator {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  text-decoration: none;
+
+  transform: translateX(-50%);
+}
+
+.scrollArrow {
+  font-size: 1.4rem;
+  animation: arrowBounce 1.5s ease-in-out infinite;
+}
+
+/* =========================
+   PRODUCT CATALOGUE INTRO
+========================= */
+
+.productsSection {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 75px 30px 60px;
+  scroll-margin-top: 20px;
+}
+
+.productsIntro {
+  max-width: 780px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.sectionEyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  color: #b86a2b;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.sectionHeading {
+  margin: 0 0 16px;
+  color: #242424;
+
+  font-size: clamp(1.7rem, 3vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.25;
+  text-wrap: balance;
+}
+
+.sectionDescription {
+  max-width: 700px;
+  margin: 0 auto;
+
+  color: #606060;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   EXISTING PRODUCT STYLES
+========================= */
+
+.searchBarContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.searchbar {
+  width: 100%;
+  max-width: 450px;
+  padding: 12px 0;
+
+  border: 0;
+  border-bottom: 2px solid #cccccc;
+  border-radius: 0;
+  outline: none;
+
+  background: transparent;
+  color: #333333;
+
+  font-size: 1rem;
+  text-align: left;
+
+  transition: border-color 0.25s ease;
+}
+
+.searchbar:focus {
+  border-bottom-color: #b86a2b;
+}
+
+.searchbar::placeholder {
+  color: #888888;
+  font-style: italic;
+}
+
+.productContainer {
+  display: grid;
+  min-width: 0;
+  margin: 20px 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.productSection {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  min-width: 0;
+}
+
+.normalLayout {
+  flex-direction: row;
+}
+
+.reverseLayout {
+  flex-direction: row-reverse;
+}
+
+.imageWrapper {
+  position: relative;
+  flex: 0 1 450px;
+  width: 100%;
+  max-width: 450px;
+  height: 360px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.imageWrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productTitle {
+  margin-bottom: 12px;
+  color: #3333cc;
+
+  font-size: clamp(1.4rem, 2vw, 2rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.2px;
+}
+
+.productDescription {
+  color: #555555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes arrowBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+/* =========================
+   TABLETS
+========================= */
+
+@media (max-width: 1024px) {
+  .main {
+    min-height: 680px;
+    padding: 100px 30px;
+  }
+
+  .introContainer {
+    max-width: 800px;
+  }
+
+  .introHeading {
+    font-size: clamp(2.1rem, 5vw, 3.3rem);
+  }
+
+  .introSubHeading {
+    max-width: 700px;
+    font-size: 1.05rem;
+  }
+
+  .productSection {
+    gap: 22px;
+  }
+
+  .imageWrapper {
+    flex-basis: 400px;
+    height: 320px;
+  }
+
+  .productsSection {
+    padding: 60px 24px 45px;
+  }
+}
+
+/* =========================
+   MOBILE AND SMALL TABLETS
+========================= */
+
+@media (max-width: 768px) {
+  .main {
+    min-height: 650px;
+    min-height: max(650px, 88svh);
+    padding: 90px 22px 105px;
+    background-position: 55% center;
+  }
+
+  .heroOverlay {
+    background: rgba(7, 11, 15, 0.72);
+  }
+
+  .eyebrow {
+    margin-bottom: 20px;
+    padding: 8px 12px;
+    font-size: 0.68rem;
+    letter-spacing: 1.3px;
+  }
+
+  .introHeading {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 6vw, 2.8rem);
+    line-height: 1.2;
+    letter-spacing: -0.7px;
+  }
+
+  .introHeading span {
+    margin-top: 5px;
+  }
+
+  .introSubHeading {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .productHighlights {
+    gap: 10px 16px;
+    margin-top: 24px;
+  }
+
+  .productHighlights span {
+    font-size: 0.85rem;
+  }
+
+  .heroActions {
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    min-height: 48px;
+    padding: 12px 17px;
+    font-size: 0.9rem;
+  }
+
+  .heroNote {
+    margin-top: 20px;
+    font-size: 0.82rem;
+  }
+
+  .scrollIndicator {
+    bottom: 18px;
+    font-size: 0.72rem;
+  }
+
+  .productsSection {
+    padding: 48px 18px 35px;
+  }
+
+  .productsIntro {
+    margin-bottom: 30px;
+  }
+
+  .sectionDescription {
+    font-size: 0.95rem;
+    line-height: 1.75;
+  }
+
+  .productSection {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .normalLayout,
+  .reverseLayout {
+    flex-direction: column;
+  }
+
+  .imageWrapper {
+    flex: none;
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    aspect-ratio: 5 / 4;
+  }
+
+  .productTitle {
+    font-size: 1.4rem;
+  }
+
+  .productDescription {
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+
+  .searchBarContainer {
+    justify-content: center;
+    margin-top: 24px;
+  }
+
+  .searchbar {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+  .main {
+    min-height: 670px;
+    min-height: max(670px, 90svh);
+    padding: 80px 17px 90px;
+    background-position: 55% center;
+  }
+
+  .introHeading {
+    font-size: clamp(1.85rem, 8vw, 2.3rem);
+    line-height: 1.22;
+  }
+
+  .introSubHeading {
+    font-size: 0.94rem;
+    line-height: 1.75;
+  }
+
+  .productHighlights {
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+  }
+
+  .productHighlights span {
+    font-size: 0.85rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    padding: 13px 12px;
+  }
+
+  .heroNote {
+    font-size: 0.8rem;
+  }
+
+  .scrollIndicator {
+    bottom: 13px;
+  }
+
+  .productsSection {
+    padding: 40px 14px 28px;
+  }
+
+  .sectionHeading {
+    font-size: 1.65rem;
+  }
+
+  .sectionDescription {
+    font-size: 0.9rem;
+  }
+
+  .productContainer {
+    margin: 12px 0;
+  }
+
+  .productSection {
+    gap: 14px;
+    padding: 6px 0;
+  }
+
+  .imageWrapper {
+    aspect-ratio: 4 / 3;
+    border-radius: 8px;
+  }
+
+  .productTitle {
+    font-size: 1.25rem;
+  }
+
+  .productDescription {
+    font-size: 0.94rem;
+  }
+}
+
+/* =========================
+   REDUCED MOTION ACCESSIBILITY
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .introContainer,
+  .scrollArrow {
+    animation: none;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    transition: none;
   }
 }
